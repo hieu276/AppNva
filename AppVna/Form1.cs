@@ -24,7 +24,7 @@ namespace AppVna
         string SRealTime = String.Empty; // Khai báo chuỗi để lưu thời gian gửi qua Serial
         int status = 0; // Khai báo biến để xử lý sự kiện vẽ đồ thị
         double realtime = 0; //Khai báo biến thời gian để vẽ đồ thị
-        double datas = 0; //Khai báo biến dữ liệu cảm biến để vẽ đồ thị
+        double datas = 0; //Khai báo biến dữ liệu để vẽ đồ thị
 
         public ComName()
         {
@@ -53,7 +53,21 @@ namespace AppVna
 
             myPane.AxisChange();
         }
-
+        // Hàm Tick bắt sự kiện cổng Serial mở hay không
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (!serialPort1.IsOpen)
+            {
+                progressBar1.Value = 0;
+            }
+            else if (serialPort1.IsOpen)
+            {
+                progressBar1.Value = 100;
+                Draw();
+                Data_Listview();
+                status = 0;
+            }
+        }
         private void zedGraphControl1_Load(object sender, EventArgs e)
         {
 
@@ -61,15 +75,13 @@ namespace AppVna
 
 
         // Hàm này lưu lại cổng COM đã chọn cho lần kết nối
-        private
-            void SaveSetting()
+        private void SaveSetting()
         {
             Properties.Settings.Default.ComName = comboBox1.Text;
             Properties.Settings.Default.Save();
         }
         // Nhận và xử lý string gửi từ Serial
-        private
-            void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             try
             {
@@ -88,8 +100,7 @@ namespace AppVna
             }
         }
         // Hiển thị dữ liệu trong ListView
-        private
-            void Data_Listview()
+        private void Data_Listview()
         {
             if (status == 0)
                 return;
@@ -104,8 +115,7 @@ namespace AppVna
             }
         }
         // Vẽ đồ thị
-        private
-            void Draw()
+        private void Draw()
         {
 
             if (zedGraphControl1.GraphPane.CurveList.Count <= 0)
@@ -145,9 +155,8 @@ namespace AppVna
             zedGraphControl1.Invalidate();
             zedGraphControl1.Refresh();
         }
-        // Xóa đồ thị, với ZedGraph thì phải khai báo lại như ở hàm Form1_Load, nếu không sẽ không hiển thị
-        private
-            void ClearZedGraph()
+        // Xóa đồ thị
+        private void ClearZedGraph()
         {
             zedGraphControl1.GraphPane.CurveList.Clear(); // Xóa đường
             zedGraphControl1.GraphPane.GraphObjList.Clear(); // Xóa đối tượng
@@ -173,8 +182,7 @@ namespace AppVna
             zedGraphControl1.AxisChange();
         }
         // Hàm xóa dữ liệu
-        private
-            void ResetValue()
+        private void ResetValue()
         {
             realtime = 0;
             datas = 0;
@@ -182,9 +190,49 @@ namespace AppVna
             SRealTime = String.Empty;
             status = 0; // Chuyển status về 0
         }
+
+
+
+
+
+        // Hàm lưu ListView sang Excel
+        private void SaveToExcel()
+        {
+            Microsoft.Office.Interop.Excel.Application xla = new Microsoft.Office.Interop.Excel.Application();
+            xla.Visible = true;
+            Microsoft.Office.Interop.Excel.Workbook wb = xla.Workbooks.Add(Microsoft.Office.Interop.Excel.XlSheetType.xlWorksheet);
+            Microsoft.Office.Interop.Excel.Worksheet ws = (Microsoft.Office.Interop.Excel.Worksheet)xla.ActiveSheet;
+
+            // Đặt tên cho hai ô A1. B1 lần lượt là "Thời gian (s)" và "Dữ liệu", sau đó tự động dãn độ rộng
+            Microsoft.Office.Interop.Excel.Range rg = (Microsoft.Office.Interop.Excel.Range)ws.get_Range("A1", "B1");
+            ws.Cells[1, 1] = "Thời gian (s)";
+            ws.Cells[1, 2] = "Dữ liệu";
+            rg.Columns.AutoFit();
+
+            // Lưu từ ô đầu tiên của dòng thứ 2, tức ô A2
+            int i = 2;
+            int j = 1;
+
+            foreach (ListViewItem comp in listView1.Items)
+            {
+                ws.Cells[i, j] = comp.Text.ToString();
+                foreach (ListViewItem.ListViewSubItem drv in comp.SubItems)
+                {
+                    ws.Cells[i, j] = drv.Text.ToString();
+                    j++;
+                }
+                j = 1;
+                i++;
+            }
+        }
+
+
+
+
+
+
         // Sự kiện nhấn nút btConnect
-        private
-            void btConnect_Click(object sender, EventArgs e)
+        private void btConnect_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
@@ -210,9 +258,12 @@ namespace AppVna
                 }
             }
         }
-        // Sự kiện nhấn nút btExxit
-        private
-            void btExit_Click(object sender, EventArgs e)
+
+
+
+
+        // Sự kiện nhấn nút btExit
+        private void btExit_Click(object sender, EventArgs e)
         {
             DialogResult traloi;
             traloi = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -223,8 +274,7 @@ namespace AppVna
         }
 
         // Sự kiện nhấn nút btSave
-        private
-            void btSave_Click(object sender, EventArgs e)
+        private void btSave_Click(object sender, EventArgs e)
         {
             DialogResult traloi;
             traloi = MessageBox.Show("Bạn có muốn lưu số liệu?", "Lưu", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -234,8 +284,7 @@ namespace AppVna
             }
         }
         // Sự kiện nhấn nút btRun
-        private
-            void btRun_Click(object sender, EventArgs e)
+        private void btRun_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
@@ -245,8 +294,7 @@ namespace AppVna
                 MessageBox.Show("Bạn không thể chạy khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         // Sự kiện nhấn nút btPause
-        private
-            void btPause_Click(object sender, EventArgs e)
+        private void btPause_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
@@ -255,9 +303,11 @@ namespace AppVna
             else
                 MessageBox.Show("Bạn không thể dừng khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+
+
         // Sự kiện nhấn nút Clear
-        private
-        void btClear_Click(object sender, EventArgs e)
+        private void btClear_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
@@ -284,14 +334,7 @@ namespace AppVna
                 MessageBox.Show("Bạn không thể xóa khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
