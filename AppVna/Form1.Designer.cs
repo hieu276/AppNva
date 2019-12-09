@@ -60,7 +60,6 @@
             this.zedGraphControl1.Size = new System.Drawing.Size(502, 572);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
-            this.zedGraphControl1.Load += new System.EventHandler(this.zedGraphControl1_Load);
             // 
             // listView1
             // 
@@ -74,7 +73,6 @@
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            //this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -94,6 +92,7 @@
             this.btClear.TabIndex = 2;
             this.btClear.Text = "Clear";
             this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // btConnect
             // 
@@ -103,6 +102,7 @@
             this.btConnect.TabIndex = 3;
             this.btConnect.Text = "Connect";
             this.btConnect.UseVisualStyleBackColor = true;
+            this.btConnect.Click += new System.EventHandler(this.btConnect_Click);
             // 
             // btPause
             // 
@@ -112,6 +112,7 @@
             this.btPause.TabIndex = 4;
             this.btPause.Text = "Pause";
             this.btPause.UseVisualStyleBackColor = true;
+            this.btPause.Click += new System.EventHandler(this.btPause_Click);
             // 
             // btExit
             // 
@@ -121,6 +122,7 @@
             this.btExit.TabIndex = 5;
             this.btExit.Text = "Exit";
             this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // btSave
             // 
@@ -130,6 +132,7 @@
             this.btSave.TabIndex = 6;
             this.btSave.Text = "Save";
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btRun
             // 
@@ -139,6 +142,7 @@
             this.btRun.TabIndex = 7;
             this.btRun.Text = "Run";
             this.btRun.UseVisualStyleBackColor = true;
+            this.btRun.Click += new System.EventHandler(this.btRun_Click);
             // 
             // comboBox1
             // 
@@ -159,10 +163,12 @@
             // 
             // serialPort1
             // 
+            this.serialPort1.PortName = "COM3";
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -200,8 +206,8 @@
         private System.Windows.Forms.Button btRun;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Timer timer1;
+        public System.IO.Ports.SerialPort serialPort1;
     }
 }
 

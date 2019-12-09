@@ -68,11 +68,6 @@ namespace AppVna
                 status = 0;
             }
         }
-        private void zedGraphControl1_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
         // Hàm này lưu lại cổng COM đã chọn cho lần kết nối
         private void SaveSetting()
@@ -86,6 +81,7 @@ namespace AppVna
             try
             {
                 string[] arrList = serialPort1.ReadLine().Split('|'); // Đọc một dòng của Serial, cắt chuỗi khi gặp ký tự gạch đứng
+                Console.WriteLine(arrList);
                 SRealTime = arrList[0]; // Chuỗi đầu tiên lưu vào SRealTime
                 SDatas = arrList[1]; // Chuỗi thứ hai lưu vào SDatas
 
@@ -99,6 +95,9 @@ namespace AppVna
                 return;
             }
         }
+
+
+
         // Hiển thị dữ liệu trong ListView
         private void Data_Listview()
         {
@@ -114,6 +113,9 @@ namespace AppVna
                 listView1.Items[listView1.Items.Count - 1].EnsureVisible(); // Hiện thị dòng được gán gần nhất ở ListView, tức là mình cuộn ListView theo dữ liệu gần nhất đó
             }
         }
+
+
+
         // Vẽ đồ thị
         private void Draw()
         {
@@ -142,6 +144,7 @@ namespace AppVna
                 xScale.Max = realtime + xScale.MajorStep;
                 xScale.Min = xScale.Max - 30;
             }
+
             // Tự động Scale theo trục y
             if (datas > yScale.Max - yScale.MajorStep)
             {
@@ -151,10 +154,13 @@ namespace AppVna
             {
                 yScale.Min = datas - yScale.MajorStep;
             }
+
             zedGraphControl1.AxisChange();
             zedGraphControl1.Invalidate();
             zedGraphControl1.Refresh();
         }
+
+
         // Xóa đồ thị
         private void ClearZedGraph()
         {
@@ -181,6 +187,9 @@ namespace AppVna
 
             zedGraphControl1.AxisChange();
         }
+
+
+
         // Hàm xóa dữ liệu
         private void ResetValue()
         {
@@ -229,14 +238,12 @@ namespace AppVna
 
 
 
-
-
         // Sự kiện nhấn nút btConnect
         private void btConnect_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write("2"); //Gửi ký tự "2" qua Serial, tương ứng với state = 2
+                serialPort1.WriteLine("2"); //Gửi ký tự "2" qua Serial, tương ứng với state = 2
                 serialPort1.Close();
                 btConnect.Text = "Kết nối";
                 btExit.Enabled = true;
@@ -244,17 +251,17 @@ namespace AppVna
             }
             else
             {
-                serialPort1.PortName = comboBox1.Text; // Lấy cổng COM
-                serialPort1.BaudRate = 9600; // Baudrate là 9600, trùng với baudrate của Arduino
                 try
                 {
+                    serialPort1.PortName = comboBox1.Text; // Lấy cổng COM
+                    serialPort1.BaudRate = 9600; // Baudrate là 9600, trùng với baudrate của Arduino
                     serialPort1.Open();
                     btConnect.Text = "Ngắt kết nối";
                     btExit.Enabled = false;
                 }
                 catch
                 {
-                    MessageBox.Show("Không thể mở cổng" + serialPort1.PortName, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Không thể mở cổng " + serialPort1.PortName, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -280,25 +287,29 @@ namespace AppVna
             traloi = MessageBox.Show("Bạn có muốn lưu số liệu?", "Lưu", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (traloi == DialogResult.OK)
             {
-
+                SaveToExcel(); // Thực thi hàm lưu ListView sang Excel
             }
         }
+
+
         // Sự kiện nhấn nút btRun
         private void btRun_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write("1"); //Gửi ký tự "1" qua Serial, chạy hàm tạo Random ở Arduino
+                serialPort1.WriteLine("1"); //Gửi ký tự "1" qua Serial, chạy hàm tạo Random ở Arduino
             }
             else
                 MessageBox.Show("Bạn không thể chạy khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+
         // Sự kiện nhấn nút btPause
         private void btPause_Click(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write("0"); //Gửi ký tự "0" qua Serial, Dừng Arduino
+                serialPort1.WriteLine("0"); //Gửi ký tự "0" qua Serial, Dừng Arduino
             }
             else
                 MessageBox.Show("Bạn không thể dừng khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -333,8 +344,5 @@ namespace AppVna
             else
                 MessageBox.Show("Bạn không thể xóa khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-
-        
-
     }
 }
