@@ -43,6 +43,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.sfSmithChart1 = new Syncfusion.WinForms.SmithChart.SfSmithChart();
             this.SuspendLayout();
             // 
             // zedGraphControl1
@@ -57,7 +58,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(502, 572);
+            this.zedGraphControl1.Size = new System.Drawing.Size(492, 281);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
@@ -67,9 +68,9 @@
             this.columnHeader1,
             this.columnHeader2});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 126);
+            this.listView1.Location = new System.Drawing.Point(532, 303);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(513, 459);
+            this.listView1.Size = new System.Drawing.Size(493, 272);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -172,9 +173,27 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // sfSmithChart1
+            // 
+            this.sfSmithChart1.AccessibleName = "SfSmithChart";
+            this.sfSmithChart1.ColorModel.CustomColors = null;
+            this.sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.Metro;
+            this.sfSmithChart1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
+            this.sfSmithChart1.HorizontalAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.sfSmithChart1.Legend.Style.LabelFont = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.sfSmithChart1.Location = new System.Drawing.Point(12, 72);
+            this.sfSmithChart1.Name = "sfSmithChart1";
+            this.sfSmithChart1.RadialAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.sfSmithChart1.Size = new System.Drawing.Size(514, 503);
+            this.sfSmithChart1.Style.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
+            this.sfSmithChart1.TabIndex = 10;
+            this.sfSmithChart1.Text = "SmithChart";
+            this.sfSmithChart1.TooltipOptions.Font = new System.Drawing.Font("Segoe UI", 10F);
+            // 
             // ComName
             // 
             this.ClientSize = new System.Drawing.Size(1037, 587);
+            this.Controls.Add(this.sfSmithChart1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btRun);
@@ -208,6 +227,8 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         public System.IO.Ports.SerialPort serialPort1;
+        private Syncfusion.WinForms.SmithChart.SfSmithChart sfSmithChart1;
+    
     }
 }
 
