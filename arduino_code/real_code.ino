@@ -42,7 +42,7 @@ struct measurement_t
 /* --------------------------------------------------------------------------*/
 struct measurement_t g_pt;
 
-
+int controlState; // biến state để lưu trạng thái điều khiển arduino
 
 
 /* --------------------------------------------------------------------------*/
@@ -117,8 +117,13 @@ void setup() {
 
   
 void loop(){
-  
-  
-  
-  
+  controlState = 1;
+  if(Serial.available()){ // điều khiển arduino qua giao thức Serial
+    char temp = Serial.read();
+    if (temp == '0') controlState = 0;
   }
+  if (controlState == 0) {
+    swr_measure();
+    swr_calculate();
+  }
+}

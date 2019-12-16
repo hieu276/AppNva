@@ -37,3 +37,14 @@ C:\Users\ngocd\Downloads\VNA\ADF435x\ADF435x\obj\Debug\ADF435x.csproj.GenerateRe
 C:\Users\ngocd\Downloads\VNA\ADF435x\ADF435x\obj\Debug\ADF435x.csproj.CopyComplete
 C:\Users\ngocd\Downloads\VNA\ADF435x\ADF435x\obj\Debug\ADF435x.exe
 C:\Users\ngocd\Downloads\VNA\ADF435x\ADF435x\obj\Debug\ADF435x.pdb
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\bin\Debug\ADF435x.exe
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\bin\Debug\ADF435x.pdb
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\bin\Debug\CyUSB.dll
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\bin\Debug\sdpApi1.dll
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\obj\Debug\ADF435x.csprojAssemblyReference.cache
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\obj\Debug\ADF435x.Main_Form.resources
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\obj\Debug\ADF435x.Properties.Resources.resources
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\obj\Debug\ADF435x.csproj.GenerateResource.cache
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\obj\Debug\ADF435x.csproj.CopyComplete
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\obj\Debug\ADF435x.exe
+E:\Project\IOT\VNA\AppNva\ADF435x_Lan 2\ADF435x\obj\Debug\ADF435x.pdb
