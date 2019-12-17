@@ -15,7 +15,6 @@
 // one measurement point
 struct measurement_t 
 {  
-  uint32_t freq_khz;
 
   // read from adc
   int16_t amp;      // amplitude
@@ -125,5 +124,17 @@ void loop(){
   if (controlState == 0) {
     swr_measure();
     swr_calculate();
+    // gửi dữ liệu về GUI
+    Serial.print(g_pt.rl_db);
+    Serial.print("|");
+    Serial.print(g_pt.phi_deg);
+    Serial.print("|");
+    Serial.print(g_pt.rs);
+    Serial.print("|");
+    Serial.print(g_pt.xs);
+    Serial.print("|");
+    Serial.print(g_pt.swr);
+    Serial.print("|");
+    Serial.println(g_pt.z);
   }
 }
