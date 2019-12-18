@@ -29,7 +29,8 @@ namespace AppVna
         string Sxs = String.Empty;
         string Sswr = String.Empty;
         string Sz = String.Empty;
-
+        string Sre = String.Empty;
+        string Sim = String.Empty;
 
 
         int status = 0; // Khai báo biến để xử lý sự kiện vẽ đồ thị
@@ -39,6 +40,8 @@ namespace AppVna
         double xs = 0;
         double swr = 0;
         double z = 0;
+        double re = 0;// dùng để vẽ smith chart
+        double im = 0;// dùng để vẽ smith chart
 
 
         ViewModel vm = new ViewModel(); //Khai báo ...
@@ -124,18 +127,22 @@ namespace AppVna
             try
             {
                 string[] measure_result = serialPort1.ReadLine().Split('|'); // Đọc một dòng của Serial, cắt chuỗi khi gặp ký tự gạch đứng
-                Srl_db = measure_result[0]; 
-                Sphi_deg = measure_result[1];
-                Srs = measure_result[2];
-                Sxs = measure_result[3];
-                Sswr = measure_result[4];
-                Sz = measure_result[5];
+                Srl_db = measure_result[2]; 
+                Sphi_deg = measure_result[3];
+                Srs = measure_result[4];
+                Sxs = measure_result[5];
+                Sre = measure_result[6];
+                Sim = measure_result[7];
+                Sswr = measure_result[8];
+                Sz = measure_result[9];
 
 
                 double.TryParse(Srl_db, out rl_db); // Chuyển đổi sang kiểu double
                 double.TryParse(Sphi_deg, out phi_deg);
                 double.TryParse(Srs, out rs);
                 double.TryParse(Sxs, out xs);
+                double.TryParse(Sre, out re);
+                double.TryParse(Sim, out im);
                 double.TryParse(Sswr, out swr);
                 double.TryParse(Sz, out z);
                 status = 1; // Bắt sự kiện xử lý xong chuỗi, đổi starus về 1 để hiển thị dữ liệu trong ListView và vẽ đồ thị
@@ -239,7 +246,7 @@ namespace AppVna
         }
 
 
-
+         
         // Hàm xóa dữ liệu
         private void ResetValue()
         {
