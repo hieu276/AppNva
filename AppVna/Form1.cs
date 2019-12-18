@@ -22,29 +22,48 @@ namespace AppVna
 {
     public partial class ComName : Form
     {
-        string SDatas = String.Empty; // Khai báo chuỗi để lưu dữ liệu cảm biến gửi qua Serial
-        string SRealTime = String.Empty; // Khai báo chuỗi để lưu thời gian gửi qua Serial
+        // biến string để lấy dữ liệu từ Serial
+        string Srl_db = String.Empty; 
+        string Sphi_deg = String.Empty;
+        string Srs = String.Empty;
+        string Sxs = String.Empty;
+        string Sswr = String.Empty;
+        string Sz = String.Empty;
+        string Sre = String.Empty;
+        string Sim = String.Empty;
+
+
         int status = 0; // Khai báo biến để xử lý sự kiện vẽ đồ thị
-        double realtime = 0; //Khai báo biến thời gian để vẽ đồ thị
-        double datas = 0; //Khai báo biến dữ liệu để vẽ đồ thị
+        double rl_db = 0; //convert string thành số để vẽ đồ thị
+        double phi_deg = 0;
+        double rs = 0;
+        double xs = 0;
+        double swr = 0;
+        double z = 0;
+        double re = 0;// dùng để vẽ smith chart
+        double im = 0;// dùng để vẽ smith chart
+
+
         ViewModel vm = new ViewModel(); //Khai báo ...
 
         public ComName()
         {
             InitializeComponent();
             
+            //real impedance part 
             LineSeries series = new LineSeries();
             series.MarkerVisible = true;
-            series.LegendText = "Transmission1";
+            series.LegendText = "real";
             series.DataSource = vm.Trace1;
             series.ResistanceMember = "Resistance";
             series.ReactanceMember = "Reactance";
             series.TooltipVisible = true;
             sfSmithChart1.Series.Add(series);
 
+            // complex impedance part
             LineSeries series1 = new LineSeries();
             series1.MarkerVisible = true;
-            series1.LegendText = "Transmission2";
+            series1.LegendText = "complex";
             series1.DataSource = vm.Trace2;
             series1.ResistanceMember = "Resistance";
             series1.ReactanceMember = "Reactance";
@@ -107,14 +126,25 @@ namespace AppVna
         {
             try
             {
-                string[] arrList = serialPort1.ReadLine().Split('|'); // Đọc một dòng của Serial, cắt chuỗi khi gặp ký tự gạch đứng
-                Console.WriteLine(arrList);
-                SRealTime = arrList[0]; // Chuỗi đầu tiên lưu vào SRealTime
-                SDatas = arrList[1]; // Chuỗi thứ hai lưu vào SDatas
+                string[] measure_result = serialPort1.ReadLine().Split('|'); // Đọc một dòng của Serial, cắt chuỗi khi gặp ký tự gạch đứng
+                Srl_db = measure_result[2]; 
+                Sphi_deg = measure_result[3];
+                Srs = measure_result[4];
+                Sxs = measure_result[5];
+                Sre = measure_result[6];
+                Sim = measure_result[7];
+                Sswr = measure_result[8];
+                Sz = measure_result[9];
 
-                double.TryParse(SDatas, out datas); // Chuyển đổi sang kiểu double
-                double.TryParse(SRealTime, out realtime);
-                realtime = realtime / 1000.0; // Đối ms sang s
+
+                double.TryParse(Srl_db, out rl_db); // Chuyển đổi sang kiểu double
+                double.TryParse(Sphi_deg, out phi_deg);
+                double.TryParse(Srs, out rs);
+                double.TryParse(Sxs, out xs);
+                double.TryParse(Sre, out re);
+                double.TryParse(Sim, out im);
+                double.TryParse(Sswr, out swr);
+                double.TryParse(Sz, out z);
                 status = 1; // Bắt sự kiện xử lý xong chuỗi, đổi starus về 1 để hiển thị dữ liệu trong ListView và vẽ đồ thị
             }
             catch
@@ -216,7 +246,7 @@ namespace AppVna
         }
 
 
-
+         
         // Hàm xóa dữ liệu
         private void ResetValue()
         {
