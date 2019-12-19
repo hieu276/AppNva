@@ -70,3 +70,15 @@ C:\Users\ngocd\Downloads\VNA\New folder\Test\ADF435x_Lan 2_Final\ADF435x\obj\Deb
 C:\Users\ngocd\Downloads\VNA\New folder\Test\ADF435x_Lan 2_Final\ADF435x\obj\Debug\ADF435x.csproj.CopyComplete
 C:\Users\ngocd\Downloads\VNA\New folder\Test\ADF435x_Lan 2_Final\ADF435x\obj\Debug\ADF435x.exe
 C:\Users\ngocd\Downloads\VNA\New folder\Test\ADF435x_Lan 2_Final\ADF435x\obj\Debug\ADF435x.pdb
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\obj\Debug\ADF435x.csprojAssemblyReference.cache
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\obj\Debug\ADF435x.Main_Form.resources
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\obj\Debug\ADF435x.Properties.Resources.resources
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\obj\Debug\ADF435x.csproj.GenerateResource.cache
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\obj\Debug\ADF435x.exe
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\obj\Debug\ADF435x.pdb
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\bin\Debug\ADF435x.exe.config
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\bin\Debug\ADF435x.exe
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\bin\Debug\ADF435x.pdb
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\bin\Debug\CyUSB.dll
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\bin\Debug\sdpApi1.dll
+D:\VisualStudio\LocalResponsitory\AppVna\ADF435x\ADF435x_Lan 2_Final_Final\ADF435x\obj\Debug\ADF435x.csproj.CopyComplete

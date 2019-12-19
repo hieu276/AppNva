@@ -49,7 +49,7 @@
             // zedGraphControl1
             // 
             this.zedGraphControl1.Location = new System.Drawing.Point(532, 15);
-            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
             this.zedGraphControl1.ScrollMaxX = 0D;
@@ -68,7 +68,7 @@
             this.columnHeader1,
             this.columnHeader2});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(532, 444);
+            this.listView1.Location = new System.Drawing.Point(546, 387);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.OwnerDraw = true;
@@ -154,7 +154,7 @@
             "COM9"});
             this.comboBox1.Location = new System.Drawing.Point(12, 14);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(75, 24);
+            this.comboBox1.Size = new System.Drawing.Size(75, 21);
             this.comboBox1.TabIndex = 8;
             // 
             // progressBar1

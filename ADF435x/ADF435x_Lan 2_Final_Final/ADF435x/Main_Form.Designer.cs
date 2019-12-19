@@ -34,28 +34,6 @@
             this.DeviceConnectionStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.StatusBarLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.EventLog = new System.Windows.Forms.TextBox();
-            this.MainFormMenu = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SaveConfigurationStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LoadConfigurationStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetToDefaultValuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EnableGCD = new System.Windows.Forms.ToolStripMenuItem();
-            this.Autowrite = new System.Windows.Forms.ToolStripMenuItem();
-            this.importADIsimPLLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.UseSPI_SEL_BOption = new System.Windows.Forms.ToolStripMenuItem();
-            this.enableEventLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.websiteStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ADIsimPLLLink = new System.Windows.Forms.ToolStripMenuItem();
-            this.EngineerZoneLink = new System.Windows.Forms.ToolStripMenuItem();
-            this.productPagesonlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDF4350ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDF4351ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PartInUseLabel2 = new System.Windows.Forms.Label();
             this.PartInUseLabel = new System.Windows.Forms.Label();
             this.RegisterGroup = new System.Windows.Forms.GroupBox();
@@ -97,30 +75,9 @@
             this.BSCWarning1Icon = new System.Windows.Forms.PictureBox();
             this.BSCWarning2Icon = new System.Windows.Forms.PictureBox();
             this.BSCWarning3Icon = new System.Windows.Forms.PictureBox();
-            this.WarningsPanel = new System.Windows.Forms.Panel();
-            this.WarningsIcon = new System.Windows.Forms.PictureBox();
-            this.WarningsLabel = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.SoftwareVersionLabel = new System.Windows.Forms.Label();
             this.SweepHopTab = new System.Windows.Forms.TabPage();
-            this.SweepGroupBox = new System.Windows.Forms.GroupBox();
-            this.SweepReturnStartBox = new System.Windows.Forms.CheckBox();
-            this.time_remaining = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.SweepPercentage = new System.Windows.Forms.Label();
-            this.SweepSpacingBox = new System.Windows.Forms.TextBox();
-            this.SweepProgress = new System.Windows.Forms.ProgressBar();
-            this.label43 = new System.Windows.Forms.Label();
-            this.SweepCurrent = new System.Windows.Forms.TextBox();
-            this.SweepStopButton = new System.Windows.Forms.Button();
-            this.SweepStartButton = new System.Windows.Forms.Button();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.SweepDelayBox = new System.Windows.Forms.TextBox();
-            this.SweepStopBox = new System.Windows.Forms.TextBox();
-            this.SweepStartBox = new System.Windows.Forms.TextBox();
             this.RegistersTab = new System.Windows.Forms.TabPage();
             this.WriteR5HexButton = new System.Windows.Forms.Button();
             this.WriteR4HexButton = new System.Windows.Forms.Button();
@@ -144,27 +101,6 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label53 = new System.Windows.Forms.Label();
             this.LDPinModeBox = new System.Windows.Forms.ComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.RFOutputPowerBox = new System.Windows.Forms.ComboBox();
-            this.AuxOutputEnableBox = new System.Windows.Forms.ComboBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.RFOutputEnableBox = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BandSelectClockFrequencyBox = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.BandSelectClockDividerBox = new System.Windows.Forms.NumericUpDown();
-            this.BandSelectClockAutosetBox = new System.Windows.Forms.CheckBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.AuxOutputPowerBox = new System.Windows.Forms.ComboBox();
-            this.AuxOutputSelectBox = new System.Windows.Forms.ComboBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.MTLDBox = new System.Windows.Forms.ComboBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.VCOPowerdownBox = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.TsyncLabel = new System.Windows.Forms.Label();
             this.ClockDividerValueBox = new System.Windows.Forms.NumericUpDown();
@@ -254,7 +190,46 @@
             this.label14 = new System.Windows.Forms.Label();
             this.ChannelUpDownButton = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.AuxOutputEnableBox = new System.Windows.Forms.ComboBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.RFOutputEnableBox = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BandSelectClockFrequencyBox = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.BandSelectClockDividerBox = new System.Windows.Forms.NumericUpDown();
+            this.BandSelectClockAutosetBox = new System.Windows.Forms.CheckBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.AuxOutputPowerBox = new System.Windows.Forms.ComboBox();
+            this.AuxOutputSelectBox = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.MTLDBox = new System.Windows.Forms.ComboBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.VCOPowerdownBox = new System.Windows.Forms.ComboBox();
             this.DeviceSelectionTab = new System.Windows.Forms.TabPage();
+            this.SweepGroupBox = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.SweepReturnStartBox = new System.Windows.Forms.CheckBox();
+            this.RFOutputPowerBox = new System.Windows.Forms.ComboBox();
+            this.time_remaining = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.SweepPercentage = new System.Windows.Forms.Label();
+            this.SweepSpacingBox = new System.Windows.Forms.TextBox();
+            this.SweepProgress = new System.Windows.Forms.ProgressBar();
+            this.label43 = new System.Windows.Forms.Label();
+            this.SweepCurrent = new System.Windows.Forms.TextBox();
+            this.SweepStopButton = new System.Windows.Forms.Button();
+            this.SweepStartButton = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.SweepDelayBox = new System.Windows.Forms.TextBox();
+            this.SweepStopBox = new System.Windows.Forms.TextBox();
+            this.SweepStartBox = new System.Windows.Forms.TextBox();
             this.ConnectionSelectorGroup = new System.Windows.Forms.GroupBox();
             this.ADF4351 = new System.Windows.Forms.RadioButton();
             this.USBDelayBar = new System.Windows.Forms.ProgressBar();
@@ -263,8 +238,50 @@
             this.ConnectDeviceButton = new System.Windows.Forms.Button();
             this.ConnectingLabel = new System.Windows.Forms.Label();
             this.TabControl = new System.Windows.Forms.TabControl();
+            this.WarningsLabel = new System.Windows.Forms.Label();
+            this.WarningsIcon = new System.Windows.Forms.PictureBox();
+            this.WarningsPanel = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveConfigurationStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LoadConfigurationStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetToDefaultValuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnableGCD = new System.Windows.Forms.ToolStripMenuItem();
+            this.Autowrite = new System.Windows.Forms.ToolStripMenuItem();
+            this.importADIsimPLLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.advancedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.UseSPI_SEL_BOption = new System.Windows.Forms.ToolStripMenuItem();
+            this.enableEventLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.websiteStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ADIsimPLLLink = new System.Windows.Forms.ToolStripMenuItem();
+            this.EngineerZoneLink = new System.Windows.Forms.ToolStripMenuItem();
+            this.productPagesonlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDF4350ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aDF4351ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainFormMenu = new System.Windows.Forms.MenuStrip();
+            this.btConnect = new System.Windows.Forms.Button();
+            this.btSave = new System.Windows.Forms.Button();
+            this.btPause = new System.Windows.Forms.Button();
+            this.btExit = new System.Windows.Forms.Button();
+            this.btClear = new System.Windows.Forms.Button();
+            this.btRun = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.sfSmithChart1 = new Syncfusion.WinForms.SmithChart.SfSmithChart();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.MainFormStatusBar.SuspendLayout();
-            this.MainFormMenu.SuspendLayout();
             this.RegisterGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeviceWarningIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrescalerWarningIcon)).BeginInit();
@@ -279,15 +296,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning3Icon)).BeginInit();
-            this.WarningsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WarningsIcon)).BeginInit();
-            this.SweepGroupBox.SuspendLayout();
             this.RegistersTab.SuspendLayout();
             this.MainControlsTab.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BandSelectClockDividerBox)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClockDividerValueBox)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -295,20 +306,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.PhaseValueBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RcounterBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelUpDownButton)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BandSelectClockDividerBox)).BeginInit();
             this.DeviceSelectionTab.SuspendLayout();
+            this.SweepGroupBox.SuspendLayout();
             this.ConnectionSelectorGroup.SuspendLayout();
             this.panel1.SuspendLayout();
             this.TabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WarningsIcon)).BeginInit();
+            this.WarningsPanel.SuspendLayout();
+            this.MainFormMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainFormStatusBar
             // 
+            this.MainFormStatusBar.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MainFormStatusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.DeviceConnectionStatus,
             this.StatusBarLabel});
-            this.MainFormStatusBar.Location = new System.Drawing.Point(0, 601);
+            this.MainFormStatusBar.Location = new System.Drawing.Point(0, 740);
             this.MainFormStatusBar.Name = "MainFormStatusBar";
-            this.MainFormStatusBar.Size = new System.Drawing.Size(1021, 22);
+            this.MainFormStatusBar.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.MainFormStatusBar.Size = new System.Drawing.Size(1343, 27);
             this.MainFormStatusBar.TabIndex = 0;
             this.MainFormStatusBar.Text = "statusStrip1";
             // 
@@ -318,224 +338,46 @@
             this.DeviceConnectionStatus.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeviceConnectionStatus.ForeColor = System.Drawing.Color.Tomato;
             this.DeviceConnectionStatus.Name = "DeviceConnectionStatus";
-            this.DeviceConnectionStatus.Size = new System.Drawing.Size(127, 17);
+            this.DeviceConnectionStatus.Size = new System.Drawing.Size(155, 21);
             this.DeviceConnectionStatus.Text = "No device connected";
             // 
             // StatusBarLabel
             // 
             this.StatusBarLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.StatusBarLabel.Name = "StatusBarLabel";
-            this.StatusBarLabel.Size = new System.Drawing.Size(0, 17);
+            this.StatusBarLabel.Size = new System.Drawing.Size(0, 21);
             // 
             // EventLog
             // 
-            this.EventLog.Location = new System.Drawing.Point(0, 530);
+            this.EventLog.Location = new System.Drawing.Point(0, 652);
+            this.EventLog.Margin = new System.Windows.Forms.Padding(4);
             this.EventLog.Multiline = true;
             this.EventLog.Name = "EventLog";
             this.EventLog.ReadOnly = true;
             this.EventLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.EventLog.Size = new System.Drawing.Size(315, 71);
+            this.EventLog.Size = new System.Drawing.Size(419, 86);
             this.EventLog.TabIndex = 11;
             this.EventLog.Text = "Application started.";
             this.ToolTip.SetToolTip(this.EventLog, "Event log");
-            // 
-            // MainFormMenu
-            // 
-            this.MainFormMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.MainFormMenu.Location = new System.Drawing.Point(0, 0);
-            this.MainFormMenu.Name = "MainFormMenu";
-            this.MainFormMenu.Size = new System.Drawing.Size(1021, 24);
-            this.MainFormMenu.TabIndex = 2;
-            this.MainFormMenu.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SaveConfigurationStripMenuItem,
-            this.LoadConfigurationStripMenuItem,
-            this.toolStripSeparator1,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // SaveConfigurationStripMenuItem
-            // 
-            this.SaveConfigurationStripMenuItem.Name = "SaveConfigurationStripMenuItem";
-            this.SaveConfigurationStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.SaveConfigurationStripMenuItem.Text = "Save Configuration...";
-            this.SaveConfigurationStripMenuItem.Click += new System.EventHandler(this.SaveConfigurationStripMenuItem_Click);
-            // 
-            // LoadConfigurationStripMenuItem
-            // 
-            this.LoadConfigurationStripMenuItem.Name = "LoadConfigurationStripMenuItem";
-            this.LoadConfigurationStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.LoadConfigurationStripMenuItem.Text = "Load Configuration...";
-            this.LoadConfigurationStripMenuItem.Click += new System.EventHandler(this.LoadConfigurationStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.resetToDefaultValuesToolStripMenuItem,
-            this.EnableGCD,
-            this.Autowrite,
-            this.importADIsimPLLToolStripMenuItem,
-            this.advancedToolStripMenuItem,
-            this.enableEventLogToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.toolsToolStripMenuItem.Text = "Tools";
-            // 
-            // resetToDefaultValuesToolStripMenuItem
-            // 
-            this.resetToDefaultValuesToolStripMenuItem.Name = "resetToDefaultValuesToolStripMenuItem";
-            this.resetToDefaultValuesToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            this.resetToDefaultValuesToolStripMenuItem.Text = "Reset to default values";
-            this.resetToDefaultValuesToolStripMenuItem.Click += new System.EventHandler(this.resetToDefaultValuesToolStripMenuItem_Click);
-            // 
-            // EnableGCD
-            // 
-            this.EnableGCD.Checked = true;
-            this.EnableGCD.CheckOnClick = true;
-            this.EnableGCD.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.EnableGCD.Name = "EnableGCD";
-            this.EnableGCD.Size = new System.Drawing.Size(382, 22);
-            this.EnableGCD.Text = "Enable FRAC/MOD GCD";
-            this.EnableGCD.CheckedChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // Autowrite
-            // 
-            this.Autowrite.CheckOnClick = true;
-            this.Autowrite.Name = "Autowrite";
-            this.Autowrite.Size = new System.Drawing.Size(382, 22);
-            this.Autowrite.Text = "Auto-write (immediately writes a register when it changes)";
-            // 
-            // importADIsimPLLToolStripMenuItem
-            // 
-            this.importADIsimPLLToolStripMenuItem.Name = "importADIsimPLLToolStripMenuItem";
-            this.importADIsimPLLToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            this.importADIsimPLLToolStripMenuItem.Text = "Import ADIsimPLL txt file";
-            this.importADIsimPLLToolStripMenuItem.Click += new System.EventHandler(this.importADIsimPLLToolStripMenuItem_Click);
-            // 
-            // advancedToolStripMenuItem
-            // 
-            this.advancedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.UseSPI_SEL_BOption});
-            this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
-            this.advancedToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            this.advancedToolStripMenuItem.Text = "Advanced";
-            // 
-            // UseSPI_SEL_BOption
-            // 
-            this.UseSPI_SEL_BOption.CheckOnClick = true;
-            this.UseSPI_SEL_BOption.Name = "UseSPI_SEL_BOption";
-            this.UseSPI_SEL_BOption.Size = new System.Drawing.Size(190, 22);
-            this.UseSPI_SEL_BOption.Text = "Use SPI_SEL_B (Pin 37)";
-            this.UseSPI_SEL_BOption.Click += new System.EventHandler(this.UseSPI_SEL_BOption_Click);
-            // 
-            // enableEventLogToolStripMenuItem
-            // 
-            this.enableEventLogToolStripMenuItem.Checked = true;
-            this.enableEventLogToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.enableEventLogToolStripMenuItem.Name = "enableEventLogToolStripMenuItem";
-            this.enableEventLogToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            this.enableEventLogToolStripMenuItem.Text = "Enable event log";
-            this.enableEventLogToolStripMenuItem.Click += new System.EventHandler(this.enableEventLogToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.websiteStripMenuItem,
-            this.ADIsimPLLLink,
-            this.EngineerZoneLink,
-            this.productPagesonlineToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // websiteStripMenuItem
-            // 
-            this.websiteStripMenuItem.Name = "websiteStripMenuItem";
-            this.websiteStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.websiteStripMenuItem.Text = "Analog.com (PLLs) (online)";
-            this.websiteStripMenuItem.Click += new System.EventHandler(this.websiteStripMenuItem_Click);
-            // 
-            // ADIsimPLLLink
-            // 
-            this.ADIsimPLLLink.Name = "ADIsimPLLLink";
-            this.ADIsimPLLLink.Size = new System.Drawing.Size(218, 22);
-            this.ADIsimPLLLink.Text = "ADIsimPLL (online)";
-            this.ADIsimPLLLink.Click += new System.EventHandler(this.ADIsimPLLLink_Click);
-            // 
-            // EngineerZoneLink
-            // 
-            this.EngineerZoneLink.Name = "EngineerZoneLink";
-            this.EngineerZoneLink.Size = new System.Drawing.Size(218, 22);
-            this.EngineerZoneLink.Text = "EngineerZone (RF) (online)";
-            this.EngineerZoneLink.Click += new System.EventHandler(this.EngineerZoneLink_Click);
-            // 
-            // productPagesonlineToolStripMenuItem
-            // 
-            this.productPagesonlineToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aDF4350ToolStripMenuItem,
-            this.aDF4351ToolStripMenuItem});
-            this.productPagesonlineToolStripMenuItem.Name = "productPagesonlineToolStripMenuItem";
-            this.productPagesonlineToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.productPagesonlineToolStripMenuItem.Text = "Product pages (online)";
-            // 
-            // aDF4350ToolStripMenuItem
-            // 
-            this.aDF4350ToolStripMenuItem.Name = "aDF4350ToolStripMenuItem";
-            this.aDF4350ToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.aDF4350ToolStripMenuItem.Text = "ADF4350";
-            this.aDF4350ToolStripMenuItem.Click += new System.EventHandler(this.aDF4350ToolStripMenuItem_Click);
-            // 
-            // aDF4351ToolStripMenuItem
-            // 
-            this.aDF4351ToolStripMenuItem.Name = "aDF4351ToolStripMenuItem";
-            this.aDF4351ToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.aDF4351ToolStripMenuItem.Text = "ADF4351";
-            this.aDF4351ToolStripMenuItem.Click += new System.EventHandler(this.aDF4351ToolStripMenuItem_Click);
             // 
             // PartInUseLabel2
             // 
             this.PartInUseLabel2.AutoSize = true;
             this.PartInUseLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PartInUseLabel2.Location = new System.Drawing.Point(790, 547);
+            this.PartInUseLabel2.Location = new System.Drawing.Point(1053, 673);
+            this.PartInUseLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PartInUseLabel2.Name = "PartInUseLabel2";
-            this.PartInUseLabel2.Size = new System.Drawing.Size(37, 13);
+            this.PartInUseLabel2.Size = new System.Drawing.Size(46, 17);
             this.PartInUseLabel2.TabIndex = 1;
             this.PartInUseLabel2.Text = "None";
             // 
             // PartInUseLabel
             // 
             this.PartInUseLabel.AutoSize = true;
-            this.PartInUseLabel.Location = new System.Drawing.Point(718, 547);
+            this.PartInUseLabel.Location = new System.Drawing.Point(957, 673);
+            this.PartInUseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PartInUseLabel.Name = "PartInUseLabel";
-            this.PartInUseLabel.Size = new System.Drawing.Size(78, 13);
+            this.PartInUseLabel.Size = new System.Drawing.Size(101, 17);
             this.PartInUseLabel.TabIndex = 0;
             this.PartInUseLabel.Text = "Device in use: ";
             // 
@@ -574,7 +416,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(765, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 24);
+            this.label3.Size = new System.Drawing.Size(37, 29);
             this.label3.TabIndex = 1008;
             this.label3.Text = "0x";
             // 
@@ -584,7 +426,7 @@
             this._0xLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._0xLabel3.Location = new System.Drawing.Point(311, 19);
             this._0xLabel3.Name = "_0xLabel3";
-            this._0xLabel3.Size = new System.Drawing.Size(30, 24);
+            this._0xLabel3.Size = new System.Drawing.Size(37, 29);
             this._0xLabel3.TabIndex = 1008;
             this._0xLabel3.Text = "0x";
             // 
@@ -594,7 +436,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(613, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 24);
+            this.label2.Size = new System.Drawing.Size(37, 29);
             this.label2.TabIndex = 1009;
             this.label2.Text = "0x";
             // 
@@ -604,7 +446,7 @@
             this._0xLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._0xLabel2.Location = new System.Drawing.Point(161, 19);
             this._0xLabel2.Name = "_0xLabel2";
-            this._0xLabel2.Size = new System.Drawing.Size(30, 24);
+            this._0xLabel2.Size = new System.Drawing.Size(37, 29);
             this._0xLabel2.TabIndex = 1009;
             this._0xLabel2.Text = "0x";
             // 
@@ -614,7 +456,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(462, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 24);
+            this.label1.Size = new System.Drawing.Size(37, 29);
             this.label1.TabIndex = 1010;
             this.label1.Text = "0x";
             // 
@@ -624,7 +466,7 @@
             this._0xLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._0xLabel1.Location = new System.Drawing.Point(9, 19);
             this._0xLabel1.Name = "_0xLabel1";
-            this._0xLabel1.Size = new System.Drawing.Size(30, 24);
+            this._0xLabel1.Size = new System.Drawing.Size(37, 29);
             this._0xLabel1.TabIndex = 1010;
             this._0xLabel1.Text = "0x";
             // 
@@ -634,7 +476,7 @@
             this.R3Box.Location = new System.Drawing.Point(460, 16);
             this.R3Box.Name = "R3Box";
             this.R3Box.ReadOnly = true;
-            this.R3Box.Size = new System.Drawing.Size(145, 29);
+            this.R3Box.Size = new System.Drawing.Size(145, 34);
             this.R3Box.TabIndex = 1006;
             this.R3Box.TabStop = false;
             this.R3Box.Text = "AAAAAAAA";
@@ -646,7 +488,7 @@
             this.R0Box.Location = new System.Drawing.Point(7, 16);
             this.R0Box.Name = "R0Box";
             this.R0Box.ReadOnly = true;
-            this.R0Box.Size = new System.Drawing.Size(145, 29);
+            this.R0Box.Size = new System.Drawing.Size(145, 34);
             this.R0Box.TabIndex = 1006;
             this.R0Box.TabStop = false;
             this.R0Box.Text = "AAAAAAAA";
@@ -718,7 +560,7 @@
             this.R5Box.Location = new System.Drawing.Point(762, 16);
             this.R5Box.Name = "R5Box";
             this.R5Box.ReadOnly = true;
-            this.R5Box.Size = new System.Drawing.Size(145, 29);
+            this.R5Box.Size = new System.Drawing.Size(145, 34);
             this.R5Box.TabIndex = 1005;
             this.R5Box.TabStop = false;
             this.R5Box.Text = "AAAAAAAA";
@@ -742,7 +584,7 @@
             this.R4Box.Location = new System.Drawing.Point(611, 16);
             this.R4Box.Name = "R4Box";
             this.R4Box.ReadOnly = true;
-            this.R4Box.Size = new System.Drawing.Size(145, 29);
+            this.R4Box.Size = new System.Drawing.Size(145, 34);
             this.R4Box.TabIndex = 1007;
             this.R4Box.TabStop = false;
             this.R4Box.Text = "AAAAAAAA";
@@ -754,7 +596,7 @@
             this.R2Box.Location = new System.Drawing.Point(309, 16);
             this.R2Box.Name = "R2Box";
             this.R2Box.ReadOnly = true;
-            this.R2Box.Size = new System.Drawing.Size(145, 29);
+            this.R2Box.Size = new System.Drawing.Size(145, 34);
             this.R2Box.TabIndex = 1005;
             this.R2Box.TabStop = false;
             this.R2Box.Text = "AAAAAAAA";
@@ -767,7 +609,7 @@
             this.R1Box.Location = new System.Drawing.Point(158, 16);
             this.R1Box.Name = "R1Box";
             this.R1Box.ReadOnly = true;
-            this.R1Box.Size = new System.Drawing.Size(145, 29);
+            this.R1Box.Size = new System.Drawing.Size(145, 34);
             this.R1Box.TabIndex = 1007;
             this.R1Box.TabStop = false;
             this.R1Box.Text = "AAAAAAAA";
@@ -781,9 +623,10 @@
             // 
             this.UsingSPISELBLabel.AutoSize = true;
             this.UsingSPISELBLabel.ForeColor = System.Drawing.Color.Maroon;
-            this.UsingSPISELBLabel.Location = new System.Drawing.Point(730, 586);
+            this.UsingSPISELBLabel.Location = new System.Drawing.Point(973, 721);
+            this.UsingSPISELBLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UsingSPISELBLabel.Name = "UsingSPISELBLabel";
-            this.UsingSPISELBLabel.Size = new System.Drawing.Size(93, 13);
+            this.UsingSPISELBLabel.Size = new System.Drawing.Size(120, 17);
             this.UsingSPISELBLabel.TabIndex = 0;
             this.UsingSPISELBLabel.Text = "Using SPI_SEL_B";
             this.UsingSPISELBLabel.Visible = false;
@@ -801,9 +644,10 @@
             // DeviceWarningIcon
             // 
             this.DeviceWarningIcon.Image = ((System.Drawing.Image)(resources.GetObject("DeviceWarningIcon.Image")));
-            this.DeviceWarningIcon.Location = new System.Drawing.Point(828, 544);
+            this.DeviceWarningIcon.Location = new System.Drawing.Point(1104, 670);
+            this.DeviceWarningIcon.Margin = new System.Windows.Forms.Padding(4);
             this.DeviceWarningIcon.Name = "DeviceWarningIcon";
-            this.DeviceWarningIcon.Size = new System.Drawing.Size(18, 18);
+            this.DeviceWarningIcon.Size = new System.Drawing.Size(24, 22);
             this.DeviceWarningIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.DeviceWarningIcon.TabIndex = 13;
             this.DeviceWarningIcon.TabStop = false;
@@ -958,41 +802,13 @@
             this.WarningTooltip.SetToolTip(this.BSCWarning3Icon, "Band Select Clock Frequency too high. It should be less than 125 kHz.");
             this.BSCWarning3Icon.Visible = false;
             // 
-            // WarningsPanel
-            // 
-            this.WarningsPanel.Controls.Add(this.WarningsIcon);
-            this.WarningsPanel.Controls.Add(this.WarningsLabel);
-            this.WarningsPanel.Location = new System.Drawing.Point(354, 552);
-            this.WarningsPanel.Name = "WarningsPanel";
-            this.WarningsPanel.Size = new System.Drawing.Size(331, 27);
-            this.WarningsPanel.TabIndex = 13;
-            this.WarningsPanel.Visible = false;
-            // 
-            // WarningsIcon
-            // 
-            this.WarningsIcon.Image = ((System.Drawing.Image)(resources.GetObject("WarningsIcon.Image")));
-            this.WarningsIcon.Location = new System.Drawing.Point(3, 4);
-            this.WarningsIcon.Name = "WarningsIcon";
-            this.WarningsIcon.Size = new System.Drawing.Size(18, 18);
-            this.WarningsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.WarningsIcon.TabIndex = 13;
-            this.WarningsIcon.TabStop = false;
-            // 
-            // WarningsLabel
-            // 
-            this.WarningsLabel.AutoSize = true;
-            this.WarningsLabel.Location = new System.Drawing.Point(22, 7);
-            this.WarningsLabel.Name = "WarningsLabel";
-            this.WarningsLabel.Size = new System.Drawing.Size(296, 13);
-            this.WarningsLabel.TabIndex = 0;
-            this.WarningsLabel.Text = "Hover your mouse over the warning icon for more information.";
-            // 
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(707, 566);
+            this.label75.Location = new System.Drawing.Point(943, 697);
+            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(89, 13);
+            this.label75.Size = new System.Drawing.Size(117, 17);
             this.label75.TabIndex = 0;
             this.label75.Text = "Software version:";
             // 
@@ -1000,9 +816,10 @@
             // 
             this.SoftwareVersionLabel.AutoSize = true;
             this.SoftwareVersionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SoftwareVersionLabel.Location = new System.Drawing.Point(791, 566);
+            this.SoftwareVersionLabel.Location = new System.Drawing.Point(1055, 697);
+            this.SoftwareVersionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SoftwareVersionLabel.Name = "SoftwareVersionLabel";
-            this.SoftwareVersionLabel.Size = new System.Drawing.Size(31, 13);
+            this.SoftwareVersionLabel.Size = new System.Drawing.Size(40, 17);
             this.SoftwareVersionLabel.TabIndex = 1;
             this.SoftwareVersionLabel.Text = "1.2.3";
             // 
@@ -1016,195 +833,6 @@
             this.SweepHopTab.Text = "Sweep and Hop";
             this.SweepHopTab.UseVisualStyleBackColor = true;
             this.SweepHopTab.Click += new System.EventHandler(this.SweepHopTab_Click);
-            // 
-            // SweepGroupBox
-            // 
-            this.SweepGroupBox.BackColor = System.Drawing.Color.Transparent;
-            this.SweepGroupBox.Controls.Add(this.label21);
-            this.SweepGroupBox.Controls.Add(this.SweepReturnStartBox);
-            this.SweepGroupBox.Controls.Add(this.RFOutputPowerBox);
-            this.SweepGroupBox.Controls.Add(this.time_remaining);
-            this.SweepGroupBox.Controls.Add(this.label46);
-            this.SweepGroupBox.Controls.Add(this.SweepPercentage);
-            this.SweepGroupBox.Controls.Add(this.SweepSpacingBox);
-            this.SweepGroupBox.Controls.Add(this.SweepProgress);
-            this.SweepGroupBox.Controls.Add(this.label43);
-            this.SweepGroupBox.Controls.Add(this.SweepCurrent);
-            this.SweepGroupBox.Controls.Add(this.SweepStopButton);
-            this.SweepGroupBox.Controls.Add(this.SweepStartButton);
-            this.SweepGroupBox.Controls.Add(this.label42);
-            this.SweepGroupBox.Controls.Add(this.label41);
-            this.SweepGroupBox.Controls.Add(this.label40);
-            this.SweepGroupBox.Controls.Add(this.label39);
-            this.SweepGroupBox.Controls.Add(this.SweepDelayBox);
-            this.SweepGroupBox.Controls.Add(this.SweepStopBox);
-            this.SweepGroupBox.Controls.Add(this.SweepStartBox);
-            this.SweepGroupBox.Location = new System.Drawing.Point(6, 5);
-            this.SweepGroupBox.Name = "SweepGroupBox";
-            this.SweepGroupBox.Size = new System.Drawing.Size(194, 308);
-            this.SweepGroupBox.TabIndex = 13;
-            this.SweepGroupBox.TabStop = false;
-            this.SweepGroupBox.Text = "Frequency Sweep";
-            this.SweepGroupBox.Enter += new System.EventHandler(this.SweepGroupBox_Enter);
-            // 
-            // SweepReturnStartBox
-            // 
-            this.SweepReturnStartBox.AutoSize = true;
-            this.SweepReturnStartBox.Location = new System.Drawing.Point(18, 206);
-            this.SweepReturnStartBox.Name = "SweepReturnStartBox";
-            this.SweepReturnStartBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SweepReturnStartBox.Size = new System.Drawing.Size(150, 17);
-            this.SweepReturnStartBox.TabIndex = 16;
-            this.SweepReturnStartBox.Text = ":Return to start and repeat";
-            this.SweepReturnStartBox.UseVisualStyleBackColor = true;
-            // 
-            // time_remaining
-            // 
-            this.time_remaining.AutoSize = true;
-            this.time_remaining.Location = new System.Drawing.Point(131, 252);
-            this.time_remaining.Name = "time_remaining";
-            this.time_remaining.Size = new System.Drawing.Size(49, 13);
-            this.time_remaining.TabIndex = 15;
-            this.time_remaining.Text = "00:00:00";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(10, 252);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(122, 13);
-            this.label46.TabIndex = 14;
-            this.label46.Text = "Time remaining (approx):";
-            // 
-            // SweepPercentage
-            // 
-            this.SweepPercentage.AutoSize = true;
-            this.SweepPercentage.Location = new System.Drawing.Point(159, 231);
-            this.SweepPercentage.Name = "SweepPercentage";
-            this.SweepPercentage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SweepPercentage.Size = new System.Drawing.Size(21, 13);
-            this.SweepPercentage.TabIndex = 13;
-            this.SweepPercentage.Text = "0%";
-            // 
-            // SweepSpacingBox
-            // 
-            this.SweepSpacingBox.Location = new System.Drawing.Point(99, 78);
-            this.SweepSpacingBox.Name = "SweepSpacingBox";
-            this.SweepSpacingBox.Size = new System.Drawing.Size(81, 20);
-            this.SweepSpacingBox.TabIndex = 2;
-            this.SweepSpacingBox.Text = "1";
-            // 
-            // SweepProgress
-            // 
-            this.SweepProgress.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.SweepProgress.Location = new System.Drawing.Point(13, 231);
-            this.SweepProgress.Name = "SweepProgress";
-            this.SweepProgress.Size = new System.Drawing.Size(140, 18);
-            this.SweepProgress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.SweepProgress.TabIndex = 12;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(20, 136);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(72, 13);
-            this.label43.TabIndex = 11;
-            this.label43.Text = "Current (MHz)";
-            // 
-            // SweepCurrent
-            // 
-            this.SweepCurrent.Enabled = false;
-            this.SweepCurrent.Location = new System.Drawing.Point(99, 133);
-            this.SweepCurrent.Name = "SweepCurrent";
-            this.SweepCurrent.ReadOnly = true;
-            this.SweepCurrent.Size = new System.Drawing.Size(81, 20);
-            this.SweepCurrent.TabIndex = 10;
-            this.SweepCurrent.TabStop = false;
-            // 
-            // SweepStopButton
-            // 
-            this.SweepStopButton.Enabled = false;
-            this.SweepStopButton.Location = new System.Drawing.Point(99, 268);
-            this.SweepStopButton.Name = "SweepStopButton";
-            this.SweepStopButton.Size = new System.Drawing.Size(76, 34);
-            this.SweepStopButton.TabIndex = 5;
-            this.SweepStopButton.Text = "Stop";
-            this.SweepStopButton.UseVisualStyleBackColor = true;
-            this.SweepStopButton.Click += new System.EventHandler(this.SweepStopButton_Click);
-            // 
-            // SweepStartButton
-            // 
-            this.SweepStartButton.Location = new System.Drawing.Point(8, 268);
-            this.SweepStartButton.Name = "SweepStartButton";
-            this.SweepStartButton.Size = new System.Drawing.Size(76, 34);
-            this.SweepStartButton.TabIndex = 4;
-            this.SweepStartButton.Text = "Start";
-            this.SweepStartButton.UseVisualStyleBackColor = true;
-            this.SweepStartButton.Click += new System.EventHandler(this.SweepStartButton_Click);
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(10, 107);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(82, 13);
-            this.label42.TabIndex = 7;
-            this.label42.Text = "Time Delay (ms)";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(15, 81);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(77, 13);
-            this.label41.TabIndex = 6;
-            this.label41.Text = "Spacing (MHz)";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(5, 55);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(87, 13);
-            this.label40.TabIndex = 5;
-            this.label40.Text = "Stop Freq. (MHz)";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(5, 29);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(87, 13);
-            this.label39.TabIndex = 4;
-            this.label39.Text = "Start Freq. (MHz)";
-            this.label39.Click += new System.EventHandler(this.label39_Click);
-            // 
-            // SweepDelayBox
-            // 
-            this.SweepDelayBox.Location = new System.Drawing.Point(99, 104);
-            this.SweepDelayBox.Name = "SweepDelayBox";
-            this.SweepDelayBox.Size = new System.Drawing.Size(81, 20);
-            this.SweepDelayBox.TabIndex = 3;
-            this.SweepDelayBox.Text = "100";
-            // 
-            // SweepStopBox
-            // 
-            this.SweepStopBox.Location = new System.Drawing.Point(99, 52);
-            this.SweepStopBox.Name = "SweepStopBox";
-            this.SweepStopBox.Size = new System.Drawing.Size(81, 20);
-            this.SweepStopBox.TabIndex = 1;
-            this.SweepStopBox.Text = "1010";
-            this.SweepStopBox.TextChanged += new System.EventHandler(this.SweepStopBox_TextChanged);
-            // 
-            // SweepStartBox
-            // 
-            this.SweepStartBox.Location = new System.Drawing.Point(99, 26);
-            this.SweepStartBox.Name = "SweepStartBox";
-            this.SweepStartBox.Size = new System.Drawing.Size(81, 20);
-            this.SweepStartBox.TabIndex = 0;
-            this.SweepStartBox.Text = "1000";
-            this.SweepStartBox.TextChanged += new System.EventHandler(this.SweepStartBox_TextChanged);
             // 
             // RegistersTab
             // 
@@ -1309,7 +937,7 @@
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
             this.label58.Location = new System.Drawing.Point(387, 284);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(33, 25);
+            this.label58.Size = new System.Drawing.Size(39, 29);
             this.label58.TabIndex = 1;
             this.label58.Text = "0x";
             // 
@@ -1319,7 +947,7 @@
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
             this.label57.Location = new System.Drawing.Point(387, 239);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(33, 25);
+            this.label57.Size = new System.Drawing.Size(39, 29);
             this.label57.TabIndex = 1;
             this.label57.Text = "0x";
             // 
@@ -1329,7 +957,7 @@
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
             this.label56.Location = new System.Drawing.Point(387, 194);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(33, 25);
+            this.label56.Size = new System.Drawing.Size(39, 29);
             this.label56.TabIndex = 1;
             this.label56.Text = "0x";
             // 
@@ -1339,7 +967,7 @@
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
             this.label55.Location = new System.Drawing.Point(387, 149);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(33, 25);
+            this.label55.Size = new System.Drawing.Size(39, 29);
             this.label55.TabIndex = 1;
             this.label55.Text = "0x";
             // 
@@ -1349,7 +977,7 @@
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
             this.label54.Location = new System.Drawing.Point(387, 104);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(33, 25);
+            this.label54.Size = new System.Drawing.Size(39, 29);
             this.label54.TabIndex = 1;
             this.label54.Text = "0x";
             // 
@@ -1359,7 +987,7 @@
             this._0xLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
             this._0xLabel4.Location = new System.Drawing.Point(387, 59);
             this._0xLabel4.Name = "_0xLabel4";
-            this._0xLabel4.Size = new System.Drawing.Size(33, 25);
+            this._0xLabel4.Size = new System.Drawing.Size(39, 29);
             this._0xLabel4.TabIndex = 1;
             this._0xLabel4.Text = "0x";
             // 
@@ -1368,7 +996,7 @@
             this.R5HexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R5HexBox.Location = new System.Drawing.Point(385, 282);
             this.R5HexBox.Name = "R5HexBox";
-            this.R5HexBox.Size = new System.Drawing.Size(153, 29);
+            this.R5HexBox.Size = new System.Drawing.Size(153, 34);
             this.R5HexBox.TabIndex = 5;
             this.R5HexBox.Text = "AAAAAAAA";
             this.R5HexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1378,7 +1006,7 @@
             this.R4HexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R4HexBox.Location = new System.Drawing.Point(385, 237);
             this.R4HexBox.Name = "R4HexBox";
-            this.R4HexBox.Size = new System.Drawing.Size(153, 29);
+            this.R4HexBox.Size = new System.Drawing.Size(153, 34);
             this.R4HexBox.TabIndex = 4;
             this.R4HexBox.Text = "AAAAAAAA";
             this.R4HexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1388,7 +1016,7 @@
             this.R3HexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R3HexBox.Location = new System.Drawing.Point(385, 192);
             this.R3HexBox.Name = "R3HexBox";
-            this.R3HexBox.Size = new System.Drawing.Size(153, 29);
+            this.R3HexBox.Size = new System.Drawing.Size(153, 34);
             this.R3HexBox.TabIndex = 3;
             this.R3HexBox.Text = "AAAAAAAA";
             this.R3HexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1398,7 +1026,7 @@
             this.R2HexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R2HexBox.Location = new System.Drawing.Point(385, 147);
             this.R2HexBox.Name = "R2HexBox";
-            this.R2HexBox.Size = new System.Drawing.Size(153, 29);
+            this.R2HexBox.Size = new System.Drawing.Size(153, 34);
             this.R2HexBox.TabIndex = 2;
             this.R2HexBox.Text = "AAAAAAAA";
             this.R2HexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1408,7 +1036,7 @@
             this.R1HexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R1HexBox.Location = new System.Drawing.Point(385, 102);
             this.R1HexBox.Name = "R1HexBox";
-            this.R1HexBox.Size = new System.Drawing.Size(153, 29);
+            this.R1HexBox.Size = new System.Drawing.Size(153, 34);
             this.R1HexBox.TabIndex = 1;
             this.R1HexBox.Text = "AAAAAAAA";
             this.R1HexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1418,7 +1046,7 @@
             this.R0HexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R0HexBox.Location = new System.Drawing.Point(385, 57);
             this.R0HexBox.Name = "R0HexBox";
-            this.R0HexBox.Size = new System.Drawing.Size(153, 29);
+            this.R0HexBox.Size = new System.Drawing.Size(153, 34);
             this.R0HexBox.TabIndex = 0;
             this.R0HexBox.Text = "AAAAAAAA";
             this.R0HexBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1456,7 +1084,7 @@
             this.label53.AutoSize = true;
             this.label53.Location = new System.Drawing.Point(6, 21);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(72, 13);
+            this.label53.Size = new System.Drawing.Size(93, 17);
             this.label53.TabIndex = 0;
             this.label53.Text = "LD Pin Mode:";
             // 
@@ -1471,271 +1099,9 @@
             "High"});
             this.LDPinModeBox.Location = new System.Drawing.Point(79, 17);
             this.LDPinModeBox.Name = "LDPinModeBox";
-            this.LDPinModeBox.Size = new System.Drawing.Size(139, 21);
+            this.LDPinModeBox.Size = new System.Drawing.Size(139, 25);
             this.LDPinModeBox.TabIndex = 7;
             this.LDPinModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label35);
-            this.groupBox5.Controls.Add(this.label52);
-            this.groupBox5.Controls.Add(this.AuxOutputEnableBox);
-            this.groupBox5.Controls.Add(this.label51);
-            this.groupBox5.Controls.Add(this.RFOutputEnableBox);
-            this.groupBox5.Controls.Add(this.groupBox2);
-            this.groupBox5.Controls.Add(this.label50);
-            this.groupBox5.Controls.Add(this.AuxOutputPowerBox);
-            this.groupBox5.Controls.Add(this.AuxOutputSelectBox);
-            this.groupBox5.Controls.Add(this.label49);
-            this.groupBox5.Controls.Add(this.MTLDBox);
-            this.groupBox5.Controls.Add(this.label38);
-            this.groupBox5.Controls.Add(this.VCOPowerdownBox);
-            this.groupBox5.Location = new System.Drawing.Point(743, 6);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(224, 273);
-            this.groupBox5.TabIndex = 3;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Register 4";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(5, 174);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(92, 13);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "RF Output Power:";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(14, 94);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(99, 13);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "Aux Output Enable:";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(18, 142);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(95, 13);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "RF Output Enable:";
-            // 
-            // RFOutputPowerBox
-            // 
-            this.RFOutputPowerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RFOutputPowerBox.FormattingEnabled = true;
-            this.RFOutputPowerBox.Items.AddRange(new object[] {
-            "-4 dBm",
-            "-1 dBm",
-            "+2 dBm",
-            "+5 dBm"});
-            this.RFOutputPowerBox.Location = new System.Drawing.Point(97, 170);
-            this.RFOutputPowerBox.Name = "RFOutputPowerBox";
-            this.RFOutputPowerBox.Size = new System.Drawing.Size(83, 21);
-            this.RFOutputPowerBox.TabIndex = 7;
-            this.RFOutputPowerBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // AuxOutputEnableBox
-            // 
-            this.AuxOutputEnableBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AuxOutputEnableBox.FormattingEnabled = true;
-            this.AuxOutputEnableBox.Items.AddRange(new object[] {
-            "0. Disabled",
-            "1. Enabled"});
-            this.AuxOutputEnableBox.Location = new System.Drawing.Point(114, 90);
-            this.AuxOutputEnableBox.Name = "AuxOutputEnableBox";
-            this.AuxOutputEnableBox.Size = new System.Drawing.Size(86, 21);
-            this.AuxOutputEnableBox.TabIndex = 4;
-            this.AuxOutputEnableBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(17, 118);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(96, 13);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Aux Output Power:";
-            // 
-            // RFOutputEnableBox
-            // 
-            this.RFOutputEnableBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RFOutputEnableBox.FormattingEnabled = true;
-            this.RFOutputEnableBox.Items.AddRange(new object[] {
-            "0. Disabled",
-            "1. Enabled"});
-            this.RFOutputEnableBox.Location = new System.Drawing.Point(114, 138);
-            this.RFOutputEnableBox.Name = "RFOutputEnableBox";
-            this.RFOutputEnableBox.Size = new System.Drawing.Size(86, 21);
-            this.RFOutputEnableBox.TabIndex = 6;
-            this.RFOutputEnableBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.BandSelectClockFrequencyBox);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.BSCWarning3Icon);
-            this.groupBox2.Controls.Add(this.BandSelectClockDividerBox);
-            this.groupBox2.Controls.Add(this.BSCWarning2Icon);
-            this.groupBox2.Controls.Add(this.BandSelectClockAutosetBox);
-            this.groupBox2.Controls.Add(this.BSCWarning1Icon);
-            this.groupBox2.Location = new System.Drawing.Point(8, 193);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(206, 71);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Band Select Clock";
-            // 
-            // BandSelectClockFrequencyBox
-            // 
-            this.BandSelectClockFrequencyBox.Location = new System.Drawing.Point(132, 43);
-            this.BandSelectClockFrequencyBox.Name = "BandSelectClockFrequencyBox";
-            this.BandSelectClockFrequencyBox.ReadOnly = true;
-            this.BandSelectClockFrequencyBox.Size = new System.Drawing.Size(65, 20);
-            this.BandSelectClockFrequencyBox.TabIndex = 3;
-            this.BandSelectClockFrequencyBox.Text = "125.000";
-            this.BandSelectClockFrequencyBox.TextChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(72, 47);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 13);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Freq (kHz):";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(88, 22);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(43, 13);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Divider:";
-            // 
-            // BandSelectClockDividerBox
-            // 
-            this.BandSelectClockDividerBox.Enabled = false;
-            this.BandSelectClockDividerBox.Location = new System.Drawing.Point(132, 18);
-            this.BandSelectClockDividerBox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.BandSelectClockDividerBox.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.BandSelectClockDividerBox.Name = "BandSelectClockDividerBox";
-            this.BandSelectClockDividerBox.Size = new System.Drawing.Size(65, 20);
-            this.BandSelectClockDividerBox.TabIndex = 1;
-            this.BandSelectClockDividerBox.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.BandSelectClockDividerBox.ValueChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // BandSelectClockAutosetBox
-            // 
-            this.BandSelectClockAutosetBox.AutoSize = true;
-            this.BandSelectClockAutosetBox.Checked = true;
-            this.BandSelectClockAutosetBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.BandSelectClockAutosetBox.Location = new System.Drawing.Point(6, 20);
-            this.BandSelectClockAutosetBox.Name = "BandSelectClockAutosetBox";
-            this.BandSelectClockAutosetBox.Size = new System.Drawing.Size(65, 17);
-            this.BandSelectClockAutosetBox.TabIndex = 0;
-            this.BandSelectClockAutosetBox.Text = "Auto set";
-            this.BandSelectClockAutosetBox.UseVisualStyleBackColor = true;
-            this.BandSelectClockAutosetBox.CheckedChanged += new System.EventHandler(this.BandSelectClockAutosetBox_CheckedChanged);
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(17, 70);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(96, 13);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "Aux Output Select:";
-            // 
-            // AuxOutputPowerBox
-            // 
-            this.AuxOutputPowerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AuxOutputPowerBox.FormattingEnabled = true;
-            this.AuxOutputPowerBox.Items.AddRange(new object[] {
-            "-4 dBm",
-            "-1 dBm",
-            "+2 dBm",
-            "+5 dBm"});
-            this.AuxOutputPowerBox.Location = new System.Drawing.Point(114, 114);
-            this.AuxOutputPowerBox.Name = "AuxOutputPowerBox";
-            this.AuxOutputPowerBox.Size = new System.Drawing.Size(86, 21);
-            this.AuxOutputPowerBox.TabIndex = 5;
-            this.AuxOutputPowerBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // AuxOutputSelectBox
-            // 
-            this.AuxOutputSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AuxOutputSelectBox.FormattingEnabled = true;
-            this.AuxOutputSelectBox.Items.AddRange(new object[] {
-            "Divided",
-            "Fundamental"});
-            this.AuxOutputSelectBox.Location = new System.Drawing.Point(114, 66);
-            this.AuxOutputSelectBox.Name = "AuxOutputSelectBox";
-            this.AuxOutputSelectBox.Size = new System.Drawing.Size(86, 21);
-            this.AuxOutputSelectBox.TabIndex = 3;
-            this.AuxOutputSelectBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(73, 46);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(40, 13);
-            this.label49.TabIndex = 0;
-            this.label49.Text = "MTLD:";
-            // 
-            // MTLDBox
-            // 
-            this.MTLDBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.MTLDBox.FormattingEnabled = true;
-            this.MTLDBox.Items.AddRange(new object[] {
-            "Disabled",
-            "Enabled"});
-            this.MTLDBox.Location = new System.Drawing.Point(114, 42);
-            this.MTLDBox.Name = "MTLDBox";
-            this.MTLDBox.Size = new System.Drawing.Size(86, 21);
-            this.MTLDBox.TabIndex = 2;
-            this.MTLDBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(22, 22);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(91, 13);
-            this.label38.TabIndex = 0;
-            this.label38.Text = "VCO Powerdown:";
-            // 
-            // VCOPowerdownBox
-            // 
-            this.VCOPowerdownBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.VCOPowerdownBox.FormattingEnabled = true;
-            this.VCOPowerdownBox.Items.AddRange(new object[] {
-            "Disabled",
-            "Enabled"});
-            this.VCOPowerdownBox.Location = new System.Drawing.Point(114, 18);
-            this.VCOPowerdownBox.Name = "VCOPowerdownBox";
-            this.VCOPowerdownBox.Size = new System.Drawing.Size(86, 21);
-            this.VCOPowerdownBox.TabIndex = 1;
-            this.VCOPowerdownBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
             // groupBox4
             // 
@@ -1764,7 +1130,7 @@
             this.TsyncLabel.AutoSize = true;
             this.TsyncLabel.Location = new System.Drawing.Point(260, 96);
             this.TsyncLabel.Name = "TsyncLabel";
-            this.TsyncLabel.Size = new System.Drawing.Size(77, 13);
+            this.TsyncLabel.Size = new System.Drawing.Size(99, 17);
             this.TsyncLabel.TabIndex = 12;
             this.TsyncLabel.Text = "Tsync = xxx us";
             // 
@@ -1777,7 +1143,7 @@
             0,
             0});
             this.ClockDividerValueBox.Name = "ClockDividerValueBox";
-            this.ClockDividerValueBox.Size = new System.Drawing.Size(67, 20);
+            this.ClockDividerValueBox.Size = new System.Drawing.Size(67, 22);
             this.ClockDividerValueBox.TabIndex = 2;
             this.ClockDividerValueBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ClockDividerValueBox.Value = new decimal(new int[] {
@@ -1792,7 +1158,7 @@
             this.ABPLabel.AutoSize = true;
             this.ABPLabel.Location = new System.Drawing.Point(249, 22);
             this.ABPLabel.Name = "ABPLabel";
-            this.ABPLabel.Size = new System.Drawing.Size(31, 13);
+            this.ABPLabel.Size = new System.Drawing.Size(39, 17);
             this.ABPLabel.TabIndex = 0;
             this.ABPLabel.Text = "ABP:";
             // 
@@ -1801,7 +1167,7 @@
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(31, 72);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(103, 13);
+            this.label32.Size = new System.Drawing.Size(134, 17);
             this.label32.TabIndex = 0;
             this.label32.Text = "Clock Divider Value:";
             // 
@@ -1816,7 +1182,7 @@
             "Reserved"});
             this.CLKDivModeBox.Location = new System.Drawing.Point(136, 92);
             this.CLKDivModeBox.Name = "CLKDivModeBox";
-            this.CLKDivModeBox.Size = new System.Drawing.Size(112, 21);
+            this.CLKDivModeBox.Size = new System.Drawing.Size(112, 25);
             this.CLKDivModeBox.TabIndex = 3;
             this.CLKDivModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1829,7 +1195,7 @@
             "3 ns (INT-N)"});
             this.ABPBox.Location = new System.Drawing.Point(281, 18);
             this.ABPBox.Name = "ABPBox";
-            this.ABPBox.Size = new System.Drawing.Size(98, 21);
+            this.ABPBox.Size = new System.Drawing.Size(98, 25);
             this.ABPBox.TabIndex = 4;
             this.ABPBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1838,7 +1204,7 @@
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(57, 96);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(79, 13);
+            this.label33.Size = new System.Drawing.Size(101, 17);
             this.label33.TabIndex = 0;
             this.label33.Text = "CLK Div Mode:";
             // 
@@ -1851,7 +1217,7 @@
             "Enabled"});
             this.CSRBox.Location = new System.Drawing.Point(293, 43);
             this.CSRBox.Name = "CSRBox";
-            this.CSRBox.Size = new System.Drawing.Size(86, 21);
+            this.CSRBox.Size = new System.Drawing.Size(86, 25);
             this.CSRBox.TabIndex = 5;
             this.CSRBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1860,7 +1226,7 @@
             this.BandSelectModeLabel.AutoSize = true;
             this.BandSelectModeLabel.Location = new System.Drawing.Point(6, 22);
             this.BandSelectModeLabel.Name = "BandSelectModeLabel";
-            this.BandSelectModeLabel.Size = new System.Drawing.Size(128, 13);
+            this.BandSelectModeLabel.Size = new System.Drawing.Size(165, 17);
             this.BandSelectModeLabel.TabIndex = 0;
             this.BandSelectModeLabel.Text = "Band Select Clock Mode:";
             // 
@@ -1869,7 +1235,7 @@
             this.label34.AutoSize = true;
             this.label34.Location = new System.Drawing.Point(260, 47);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(32, 13);
+            this.label34.Size = new System.Drawing.Size(40, 17);
             this.label34.TabIndex = 0;
             this.label34.Text = "CSR:";
             // 
@@ -1882,7 +1248,7 @@
             "High"});
             this.BandSelectClockModeBox.Location = new System.Drawing.Point(136, 18);
             this.BandSelectClockModeBox.Name = "BandSelectClockModeBox";
-            this.BandSelectClockModeBox.Size = new System.Drawing.Size(65, 21);
+            this.BandSelectClockModeBox.Size = new System.Drawing.Size(65, 25);
             this.BandSelectClockModeBox.TabIndex = 0;
             this.BandSelectClockModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1895,7 +1261,7 @@
             "Enabled"});
             this.ChargeCancellationBox.Location = new System.Drawing.Point(136, 43);
             this.ChargeCancellationBox.Name = "ChargeCancellationBox";
-            this.ChargeCancellationBox.Size = new System.Drawing.Size(86, 21);
+            this.ChargeCancellationBox.Size = new System.Drawing.Size(86, 25);
             this.ChargeCancellationBox.TabIndex = 1;
             this.ChargeCancellationBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1904,7 +1270,7 @@
             this.ChargeCancellationLabel.AutoSize = true;
             this.ChargeCancellationLabel.Location = new System.Drawing.Point(29, 47);
             this.ChargeCancellationLabel.Name = "ChargeCancellationLabel";
-            this.ChargeCancellationLabel.Size = new System.Drawing.Size(105, 13);
+            this.ChargeCancellationLabel.Size = new System.Drawing.Size(139, 17);
             this.ChargeCancellationLabel.TabIndex = 0;
             this.ChargeCancellationLabel.Text = "Charge Cancellation:";
             // 
@@ -1943,7 +1309,7 @@
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(221, 122);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(73, 13);
+            this.label31.Size = new System.Drawing.Size(98, 17);
             this.label31.TabIndex = 0;
             this.label31.Text = "Counter reset:";
             // 
@@ -1952,7 +1318,7 @@
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(263, 22);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(31, 13);
+            this.label27.Size = new System.Drawing.Size(39, 17);
             this.label27.TabIndex = 0;
             this.label27.Text = "LDP:";
             // 
@@ -1965,7 +1331,7 @@
             "Enabled"});
             this.CounterResetBox.Location = new System.Drawing.Point(295, 118);
             this.CounterResetBox.Name = "CounterResetBox";
-            this.CounterResetBox.Size = new System.Drawing.Size(86, 21);
+            this.CounterResetBox.Size = new System.Drawing.Size(86, 25);
             this.CounterResetBox.TabIndex = 10;
             this.CounterResetBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1978,7 +1344,7 @@
             "6 ns"});
             this.LDPBox.Location = new System.Drawing.Point(295, 18);
             this.LDPBox.Name = "LDPBox";
-            this.LDPBox.Size = new System.Drawing.Size(86, 21);
+            this.LDPBox.Size = new System.Drawing.Size(86, 25);
             this.LDPBox.TabIndex = 6;
             this.LDPBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1987,7 +1353,7 @@
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(235, 97);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(59, 13);
+            this.label30.Size = new System.Drawing.Size(78, 17);
             this.label30.TabIndex = 0;
             this.label30.Text = "CP 3-state:";
             // 
@@ -1996,7 +1362,7 @@
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(92, 122);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(30, 13);
+            this.label26.Size = new System.Drawing.Size(38, 17);
             this.label26.TabIndex = 0;
             this.label26.Text = "LDF:";
             // 
@@ -2009,7 +1375,7 @@
             "Enabled"});
             this.CP3StateBox.Location = new System.Drawing.Point(295, 93);
             this.CP3StateBox.Name = "CP3StateBox";
-            this.CP3StateBox.Size = new System.Drawing.Size(86, 21);
+            this.CP3StateBox.Size = new System.Drawing.Size(86, 25);
             this.CP3StateBox.TabIndex = 9;
             this.CP3StateBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2022,7 +1388,7 @@
             "INT-N"});
             this.LDFBox.Location = new System.Drawing.Point(123, 118);
             this.LDFBox.Name = "LDFBox";
-            this.LDFBox.Size = new System.Drawing.Size(86, 21);
+            this.LDFBox.Size = new System.Drawing.Size(86, 25);
             this.LDFBox.TabIndex = 5;
             this.LDFBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2031,7 +1397,7 @@
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(228, 72);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(66, 13);
+            this.label29.Size = new System.Drawing.Size(84, 17);
             this.label29.TabIndex = 0;
             this.label29.Text = "Powerdown:";
             // 
@@ -2040,7 +1406,7 @@
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(13, 97);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(109, 13);
+            this.label25.Size = new System.Drawing.Size(146, 17);
             this.label25.TabIndex = 0;
             this.label25.Text = "Charge pump current:";
             // 
@@ -2053,7 +1419,7 @@
             "Enabled"});
             this.PowerdownBox.Location = new System.Drawing.Point(295, 68);
             this.PowerdownBox.Name = "PowerdownBox";
-            this.PowerdownBox.Size = new System.Drawing.Size(86, 21);
+            this.PowerdownBox.Size = new System.Drawing.Size(86, 25);
             this.PowerdownBox.TabIndex = 8;
             this.PowerdownBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2080,7 +1446,7 @@
             "5.00"});
             this.ChargePumpCurrentBox.Location = new System.Drawing.Point(123, 93);
             this.ChargePumpCurrentBox.Name = "ChargePumpCurrentBox";
-            this.ChargePumpCurrentBox.Size = new System.Drawing.Size(86, 21);
+            this.ChargePumpCurrentBox.Size = new System.Drawing.Size(86, 25);
             this.ChargePumpCurrentBox.TabIndex = 4;
             this.ChargePumpCurrentBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2089,7 +1455,7 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(232, 47);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(62, 13);
+            this.label28.Size = new System.Drawing.Size(82, 17);
             this.label28.TabIndex = 0;
             this.label28.Text = "PD Polarity:";
             // 
@@ -2102,7 +1468,7 @@
             "Positive"});
             this.PDPolarityBox.Location = new System.Drawing.Point(295, 43);
             this.PDPolarityBox.Name = "PDPolarityBox";
-            this.PDPolarityBox.Size = new System.Drawing.Size(86, 21);
+            this.PDPolarityBox.Size = new System.Drawing.Size(86, 25);
             this.PDPolarityBox.TabIndex = 7;
             this.PDPolarityBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2111,7 +1477,7 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(57, 72);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(65, 13);
+            this.label24.Size = new System.Drawing.Size(85, 17);
             this.label24.TabIndex = 0;
             this.label24.Text = "Double buff:";
             // 
@@ -2124,7 +1490,7 @@
             "Enabled"});
             this.DoubleBuffBox.Location = new System.Drawing.Point(123, 68);
             this.DoubleBuffBox.Name = "DoubleBuffBox";
-            this.DoubleBuffBox.Size = new System.Drawing.Size(86, 21);
+            this.DoubleBuffBox.Size = new System.Drawing.Size(86, 25);
             this.DoubleBuffBox.TabIndex = 3;
             this.DoubleBuffBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2133,7 +1499,7 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(77, 47);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(45, 13);
+            this.label23.Size = new System.Drawing.Size(57, 17);
             this.label23.TabIndex = 0;
             this.label23.Text = "Muxout:";
             // 
@@ -2152,7 +1518,7 @@
             "Testmodes"});
             this.MuxoutBox.Location = new System.Drawing.Point(123, 43);
             this.MuxoutBox.Name = "MuxoutBox";
-            this.MuxoutBox.Size = new System.Drawing.Size(101, 21);
+            this.MuxoutBox.Size = new System.Drawing.Size(101, 25);
             this.MuxoutBox.TabIndex = 2;
             this.MuxoutBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2161,7 +1527,7 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(5, 22);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(117, 13);
+            this.label22.Size = new System.Drawing.Size(150, 17);
             this.label22.TabIndex = 0;
             this.label22.Text = "Low Noise/Spur Mode:";
             // 
@@ -2176,7 +1542,7 @@
             "Low spur mode"});
             this.LowNoiseSpurModeBox.Location = new System.Drawing.Point(123, 18);
             this.LowNoiseSpurModeBox.Name = "LowNoiseSpurModeBox";
-            this.LowNoiseSpurModeBox.Size = new System.Drawing.Size(101, 21);
+            this.LowNoiseSpurModeBox.Size = new System.Drawing.Size(101, 25);
             this.LowNoiseSpurModeBox.TabIndex = 1;
             this.LowNoiseSpurModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2260,7 +1626,7 @@
             0,
             0});
             this.PhaseValueBox.Name = "PhaseValueBox";
-            this.PhaseValueBox.Size = new System.Drawing.Size(67, 20);
+            this.PhaseValueBox.Size = new System.Drawing.Size(67, 22);
             this.PhaseValueBox.TabIndex = 11;
             this.PhaseValueBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.PhaseValueBox.Value = new decimal(new int[] {
@@ -2284,7 +1650,7 @@
             0,
             0});
             this.RcounterBox.Name = "RcounterBox";
-            this.RcounterBox.Size = new System.Drawing.Size(67, 20);
+            this.RcounterBox.Size = new System.Drawing.Size(67, 22);
             this.RcounterBox.TabIndex = 4;
             this.RcounterBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.RcounterBox.Value = new decimal(new int[] {
@@ -2299,7 +1665,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(20, 81);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(76, 13);
+            this.label15.Size = new System.Drawing.Size(101, 17);
             this.label15.TabIndex = 2;
             this.label15.Text = "Output divider:";
             // 
@@ -2308,7 +1674,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(7, 56);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 13);
+            this.label11.Size = new System.Drawing.Size(117, 17);
             this.label11.TabIndex = 2;
             this.label11.Text = "Channel spacing:";
             // 
@@ -2318,7 +1684,7 @@
             this.RefD2Box.Location = new System.Drawing.Point(241, 128);
             this.RefD2Box.Name = "RefD2Box";
             this.RefD2Box.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.RefD2Box.Size = new System.Drawing.Size(60, 17);
+            this.RefD2Box.Size = new System.Drawing.Size(72, 21);
             this.RefD2Box.TabIndex = 6;
             this.RefD2Box.Text = ":Ref /2";
             this.RefD2Box.UseVisualStyleBackColor = true;
@@ -2330,7 +1696,7 @@
             this.RefDoublerBox.Location = new System.Drawing.Point(148, 128);
             this.RefDoublerBox.Name = "RefDoublerBox";
             this.RefDoublerBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.RefDoublerBox.Size = new System.Drawing.Size(86, 17);
+            this.RefDoublerBox.Size = new System.Drawing.Size(110, 21);
             this.RefDoublerBox.TabIndex = 5;
             this.RefDoublerBox.Text = ":Ref Doubler";
             this.RefDoublerBox.UseVisualStyleBackColor = true;
@@ -2341,7 +1707,7 @@
             this.NvalueLabel.AutoSize = true;
             this.NvalueLabel.Location = new System.Drawing.Point(156, 285);
             this.NvalueLabel.Name = "NvalueLabel";
-            this.NvalueLabel.Size = new System.Drawing.Size(31, 13);
+            this.NvalueLabel.Size = new System.Drawing.Size(40, 17);
             this.NvalueLabel.TabIndex = 6;
             this.NvalueLabel.Text = "0000";
             // 
@@ -2350,7 +1716,7 @@
             this.NLabel.AutoSize = true;
             this.NLabel.Location = new System.Drawing.Point(133, 285);
             this.NLabel.Name = "NLabel";
-            this.NLabel.Size = new System.Drawing.Size(27, 13);
+            this.NLabel.Size = new System.Drawing.Size(34, 17);
             this.NLabel.TabIndex = 6;
             this.NLabel.Text = "N = ";
             // 
@@ -2359,7 +1725,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(19, 31);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 13);
+            this.label12.Size = new System.Drawing.Size(101, 17);
             this.label12.TabIndex = 1;
             this.label12.Text = "RF Frequency:";
             // 
@@ -2368,7 +1734,7 @@
             this.OutputDividerBox.Enabled = false;
             this.OutputDividerBox.Location = new System.Drawing.Point(98, 77);
             this.OutputDividerBox.Name = "OutputDividerBox";
-            this.OutputDividerBox.Size = new System.Drawing.Size(86, 20);
+            this.OutputDividerBox.Size = new System.Drawing.Size(86, 22);
             this.OutputDividerBox.TabIndex = 0;
             this.OutputDividerBox.Text = "1";
             this.OutputDividerBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2379,7 +1745,7 @@
             this.RFoutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RFoutLabel.Location = new System.Drawing.Point(241, 246);
             this.RFoutLabel.Name = "RFoutLabel";
-            this.RFoutLabel.Size = new System.Drawing.Size(78, 13);
+            this.RFoutLabel.Size = new System.Drawing.Size(99, 17);
             this.RFoutLabel.TabIndex = 5;
             this.RFoutLabel.Text = "RFout (MHz)";
             // 
@@ -2388,7 +1754,7 @@
             this.VCOChannelSpacingBox.Enabled = false;
             this.VCOChannelSpacingBox.Location = new System.Drawing.Point(182, 52);
             this.VCOChannelSpacingBox.Name = "VCOChannelSpacingBox";
-            this.VCOChannelSpacingBox.Size = new System.Drawing.Size(86, 20);
+            this.VCOChannelSpacingBox.Size = new System.Drawing.Size(86, 22);
             this.VCOChannelSpacingBox.TabIndex = 0;
             this.VCOChannelSpacingBox.TabStop = false;
             this.VCOChannelSpacingBox.Text = "100";
@@ -2400,7 +1766,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(198, 247);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(26, 13);
+            this.label16.Size = new System.Drawing.Size(31, 17);
             this.label16.TabIndex = 5;
             this.label16.Text = "Div";
             // 
@@ -2410,7 +1776,7 @@
             this.PFDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PFDLabel.Location = new System.Drawing.Point(126, 246);
             this.PFDLabel.Name = "PFDLabel";
-            this.PFDLabel.Size = new System.Drawing.Size(68, 13);
+            this.PFDLabel.Size = new System.Drawing.Size(86, 17);
             this.PFDLabel.TabIndex = 5;
             this.PFDLabel.Text = "PFD (MHz)";
             // 
@@ -2419,7 +1785,7 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(168, 323);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(70, 13);
+            this.label20.Size = new System.Drawing.Size(92, 17);
             this.label20.TabIndex = 0;
             this.label20.Text = "Phase Value:";
             // 
@@ -2427,7 +1793,7 @@
             // 
             this.OutputChannelSpacingBox.Location = new System.Drawing.Point(98, 52);
             this.OutputChannelSpacingBox.Name = "OutputChannelSpacingBox";
-            this.OutputChannelSpacingBox.Size = new System.Drawing.Size(86, 20);
+            this.OutputChannelSpacingBox.Size = new System.Drawing.Size(86, 22);
             this.OutputChannelSpacingBox.TabIndex = 1;
             this.OutputChannelSpacingBox.Text = "100";
             this.OutputChannelSpacingBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2438,7 +1804,7 @@
             this.RcounterLabel.AutoSize = true;
             this.RcounterLabel.Location = new System.Drawing.Point(11, 130);
             this.RcounterLabel.Name = "RcounterLabel";
-            this.RcounterLabel.Size = new System.Drawing.Size(57, 13);
+            this.RcounterLabel.Size = new System.Drawing.Size(74, 17);
             this.RcounterLabel.TabIndex = 0;
             this.RcounterLabel.Text = "R counter:";
             // 
@@ -2447,7 +1813,7 @@
             this.VCOFreqBox.Enabled = false;
             this.VCOFreqBox.Location = new System.Drawing.Point(182, 27);
             this.VCOFreqBox.Name = "VCOFreqBox";
-            this.VCOFreqBox.Size = new System.Drawing.Size(86, 20);
+            this.VCOFreqBox.Size = new System.Drawing.Size(86, 22);
             this.VCOFreqBox.TabIndex = 0;
             this.VCOFreqBox.TabStop = false;
             this.VCOFreqBox.Text = "2500";
@@ -2458,7 +1824,7 @@
             this.ReferenceFrequencyLabel.AutoSize = true;
             this.ReferenceFrequencyLabel.Location = new System.Drawing.Point(10, 104);
             this.ReferenceFrequencyLabel.Name = "ReferenceFrequencyLabel";
-            this.ReferenceFrequencyLabel.Size = new System.Drawing.Size(113, 13);
+            this.ReferenceFrequencyLabel.Size = new System.Drawing.Size(149, 17);
             this.ReferenceFrequencyLabel.TabIndex = 0;
             this.ReferenceFrequencyLabel.Text = "Reference Frequency:";
             // 
@@ -2466,7 +1832,7 @@
             // 
             this.RFOutFreqBox.Location = new System.Drawing.Point(98, 27);
             this.RFOutFreqBox.Name = "RFOutFreqBox";
-            this.RFOutFreqBox.Size = new System.Drawing.Size(86, 20);
+            this.RFOutFreqBox.Size = new System.Drawing.Size(86, 22);
             this.RFOutFreqBox.TabIndex = 0;
             this.RFOutFreqBox.Text = "2500";
             this.RFOutFreqBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2476,7 +1842,7 @@
             // 
             this.RefFreqBox.Location = new System.Drawing.Point(125, 101);
             this.RefFreqBox.Name = "RefFreqBox";
-            this.RefFreqBox.Size = new System.Drawing.Size(59, 20);
+            this.RefFreqBox.Size = new System.Drawing.Size(59, 22);
             this.RefFreqBox.TabIndex = 3;
             this.RefFreqBox.Text = "25";
             this.RefFreqBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2488,7 +1854,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(208, 11);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.Size = new System.Drawing.Size(40, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "VCO";
             // 
@@ -2498,7 +1864,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(119, 11);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 13);
+            this.label9.Size = new System.Drawing.Size(57, 17);
             this.label9.TabIndex = 0;
             this.label9.Text = "Output";
             // 
@@ -2507,7 +1873,7 @@
             this.MHzLabel2.AutoSize = true;
             this.MHzLabel2.Location = new System.Drawing.Point(190, 104);
             this.MHzLabel2.Name = "MHzLabel2";
-            this.MHzLabel2.Size = new System.Drawing.Size(29, 13);
+            this.MHzLabel2.Size = new System.Drawing.Size(36, 17);
             this.MHzLabel2.TabIndex = 3;
             this.MHzLabel2.Text = "MHz";
             // 
@@ -2517,7 +1883,7 @@
             this.BLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BLabel.Location = new System.Drawing.Point(23, 247);
             this.BLabel.Name = "BLabel";
-            this.BLabel.Size = new System.Drawing.Size(28, 13);
+            this.BLabel.Size = new System.Drawing.Size(33, 17);
             this.BLabel.TabIndex = 5;
             this.BLabel.Text = "INT";
             // 
@@ -2526,7 +1892,7 @@
             this.RFoutBox.Enabled = false;
             this.RFoutBox.Location = new System.Drawing.Point(239, 262);
             this.RFoutBox.Name = "RFoutBox";
-            this.RFoutBox.Size = new System.Drawing.Size(80, 20);
+            this.RFoutBox.Size = new System.Drawing.Size(80, 22);
             this.RFoutBox.TabIndex = 4;
             this.RFoutBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2535,7 +1901,7 @@
             this.DivBox.Enabled = false;
             this.DivBox.Location = new System.Drawing.Point(199, 262);
             this.DivBox.Name = "DivBox";
-            this.DivBox.Size = new System.Drawing.Size(25, 20);
+            this.DivBox.Size = new System.Drawing.Size(25, 22);
             this.DivBox.TabIndex = 4;
             this.DivBox.Text = "00";
             this.DivBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2545,7 +1911,7 @@
             this.PFDBox.Enabled = false;
             this.PFDBox.Location = new System.Drawing.Point(134, 262);
             this.PFDBox.Name = "PFDBox";
-            this.PFDBox.Size = new System.Drawing.Size(53, 20);
+            this.PFDBox.Size = new System.Drawing.Size(53, 22);
             this.PFDBox.TabIndex = 4;
             this.PFDBox.Text = "8888";
             this.PFDBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2555,7 +1921,7 @@
             this.MODBox.Enabled = false;
             this.MODBox.Location = new System.Drawing.Point(78, 275);
             this.MODBox.Name = "MODBox";
-            this.MODBox.Size = new System.Drawing.Size(37, 20);
+            this.MODBox.Size = new System.Drawing.Size(37, 22);
             this.MODBox.TabIndex = 4;
             this.MODBox.Text = "8888";
             this.MODBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2565,7 +1931,7 @@
             this.FRACBox.Enabled = false;
             this.FRACBox.Location = new System.Drawing.Point(78, 250);
             this.FRACBox.Name = "FRACBox";
-            this.FRACBox.Size = new System.Drawing.Size(37, 20);
+            this.FRACBox.Size = new System.Drawing.Size(37, 22);
             this.FRACBox.TabIndex = 4;
             this.FRACBox.Text = "8888";
             this.FRACBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2575,7 +1941,7 @@
             this.INTBox.Enabled = false;
             this.INTBox.Location = new System.Drawing.Point(14, 262);
             this.INTBox.Name = "INTBox";
-            this.INTBox.Size = new System.Drawing.Size(44, 20);
+            this.INTBox.Size = new System.Drawing.Size(44, 22);
             this.INTBox.TabIndex = 4;
             this.INTBox.Text = "888887";
             this.INTBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2585,7 +1951,7 @@
             this.kHzLabel.AutoSize = true;
             this.kHzLabel.Location = new System.Drawing.Point(214, 157);
             this.kHzLabel.Name = "kHzLabel";
-            this.kHzLabel.Size = new System.Drawing.Size(29, 13);
+            this.kHzLabel.Size = new System.Drawing.Size(36, 17);
             this.kHzLabel.TabIndex = 3;
             this.kHzLabel.Text = "MHz";
             // 
@@ -2598,7 +1964,7 @@
             "Fundamental"});
             this.FeedbackSelectBox.Location = new System.Drawing.Point(125, 203);
             this.FeedbackSelectBox.Name = "FeedbackSelectBox";
-            this.FeedbackSelectBox.Size = new System.Drawing.Size(86, 21);
+            this.FeedbackSelectBox.Size = new System.Drawing.Size(86, 25);
             this.FeedbackSelectBox.TabIndex = 9;
             this.FeedbackSelectBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2611,7 +1977,7 @@
             "1. On"});
             this.PhaseAdjustBox.Location = new System.Drawing.Point(83, 319);
             this.PhaseAdjustBox.Name = "PhaseAdjustBox";
-            this.PhaseAdjustBox.Size = new System.Drawing.Size(51, 21);
+            this.PhaseAdjustBox.Size = new System.Drawing.Size(51, 25);
             this.PhaseAdjustBox.TabIndex = 10;
             this.PhaseAdjustBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2625,7 +1991,7 @@
             "8/9"});
             this.PrescalerBox.Location = new System.Drawing.Point(125, 178);
             this.PrescalerBox.Name = "PrescalerBox";
-            this.PrescalerBox.Size = new System.Drawing.Size(86, 21);
+            this.PrescalerBox.Size = new System.Drawing.Size(86, 25);
             this.PrescalerBox.TabIndex = 8;
             this.PrescalerBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2634,7 +2000,7 @@
             this.FeedbackFrequencyLabel.AutoSize = true;
             this.FeedbackFrequencyLabel.Location = new System.Drawing.Point(217, 207);
             this.FeedbackFrequencyLabel.Name = "FeedbackFrequencyLabel";
-            this.FeedbackFrequencyLabel.Size = new System.Drawing.Size(56, 13);
+            this.FeedbackFrequencyLabel.Size = new System.Drawing.Size(72, 17);
             this.FeedbackFrequencyLabel.TabIndex = 0;
             this.FeedbackFrequencyLabel.Text = "2500 MHz";
             // 
@@ -2643,7 +2009,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(35, 207);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(88, 13);
+            this.label17.Size = new System.Drawing.Size(115, 17);
             this.label17.TabIndex = 0;
             this.label17.Text = "Feedback signal:";
             // 
@@ -2652,7 +2018,7 @@
             this.PhaseAdjustLabel.AutoSize = true;
             this.PhaseAdjustLabel.Location = new System.Drawing.Point(12, 323);
             this.PhaseAdjustLabel.Name = "PhaseAdjustLabel";
-            this.PhaseAdjustLabel.Size = new System.Drawing.Size(71, 13);
+            this.PhaseAdjustLabel.Size = new System.Drawing.Size(94, 17);
             this.PhaseAdjustLabel.TabIndex = 0;
             this.PhaseAdjustLabel.Text = "Phase adjust:";
             // 
@@ -2661,7 +2027,7 @@
             this.PFDFreqBox.Enabled = false;
             this.PFDFreqBox.Location = new System.Drawing.Point(125, 153);
             this.PFDFreqBox.Name = "PFDFreqBox";
-            this.PFDFreqBox.Size = new System.Drawing.Size(86, 20);
+            this.PFDFreqBox.Size = new System.Drawing.Size(86, 22);
             this.PFDFreqBox.TabIndex = 7;
             this.PFDFreqBox.Text = "25";
             this.PFDFreqBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2671,7 +2037,7 @@
             this.PrescalerLabel.AutoSize = true;
             this.PrescalerLabel.Location = new System.Drawing.Point(69, 182);
             this.PrescalerLabel.Name = "PrescalerLabel";
-            this.PrescalerLabel.Size = new System.Drawing.Size(54, 13);
+            this.PrescalerLabel.Size = new System.Drawing.Size(72, 17);
             this.PrescalerLabel.TabIndex = 0;
             this.PrescalerLabel.Text = "Prescaler:";
             // 
@@ -2680,7 +2046,7 @@
             this.PFDFrequencyLabel.AutoSize = true;
             this.PFDFrequencyLabel.Location = new System.Drawing.Point(39, 157);
             this.PFDFrequencyLabel.Name = "PFDFrequencyLabel";
-            this.PFDFrequencyLabel.Size = new System.Drawing.Size(84, 13);
+            this.PFDFrequencyLabel.Size = new System.Drawing.Size(110, 17);
             this.PFDFrequencyLabel.TabIndex = 0;
             this.PFDFrequencyLabel.Text = "PFD Frequency:";
             // 
@@ -2689,7 +2055,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(187, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(12, 13);
+            this.label5.Size = new System.Drawing.Size(12, 17);
             this.label5.TabIndex = 5;
             this.label5.Text = "/";
             // 
@@ -2698,7 +2064,7 @@
             this.EqualLabel.AutoSize = true;
             this.EqualLabel.Location = new System.Drawing.Point(225, 266);
             this.EqualLabel.Name = "EqualLabel";
-            this.EqualLabel.Size = new System.Drawing.Size(13, 13);
+            this.EqualLabel.Size = new System.Drawing.Size(16, 17);
             this.EqualLabel.TabIndex = 5;
             this.EqualLabel.Text = "=";
             // 
@@ -2707,7 +2073,7 @@
             this.BracketMultiplyLabel.AutoSize = true;
             this.BracketMultiplyLabel.Location = new System.Drawing.Point(115, 266);
             this.BracketMultiplyLabel.Name = "BracketMultiplyLabel";
-            this.BracketMultiplyLabel.Size = new System.Drawing.Size(18, 13);
+            this.BracketMultiplyLabel.Size = new System.Drawing.Size(23, 17);
             this.BracketMultiplyLabel.TabIndex = 5;
             this.BracketMultiplyLabel.Text = ") x";
             // 
@@ -2716,7 +2082,7 @@
             this.MultiplyLabel.AutoSize = true;
             this.MultiplyLabel.Location = new System.Drawing.Point(59, 264);
             this.MultiplyLabel.Name = "MultiplyLabel";
-            this.MultiplyLabel.Size = new System.Drawing.Size(13, 13);
+            this.MultiplyLabel.Size = new System.Drawing.Size(16, 17);
             this.MultiplyLabel.TabIndex = 5;
             this.MultiplyLabel.Text = "+";
             // 
@@ -2725,7 +2091,7 @@
             this.BracketLabel.AutoSize = true;
             this.BracketLabel.Location = new System.Drawing.Point(5, 265);
             this.BracketLabel.Name = "BracketLabel";
-            this.BracketLabel.Size = new System.Drawing.Size(10, 13);
+            this.BracketLabel.Size = new System.Drawing.Size(13, 17);
             this.BracketLabel.TabIndex = 5;
             this.BracketLabel.Text = "(";
             // 
@@ -2734,7 +2100,7 @@
             this.AltPrescalerLabel.AutoSize = true;
             this.AltPrescalerLabel.Location = new System.Drawing.Point(129, 182);
             this.AltPrescalerLabel.Name = "AltPrescalerLabel";
-            this.AltPrescalerLabel.Size = new System.Drawing.Size(24, 13);
+            this.AltPrescalerLabel.Size = new System.Drawing.Size(28, 17);
             this.AltPrescalerLabel.TabIndex = 7;
             this.AltPrescalerLabel.Text = "8/9";
             this.AltPrescalerLabel.Visible = false;
@@ -2744,7 +2110,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(71, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 9;
             this.label6.Text = "_______";
             // 
@@ -2754,7 +2120,7 @@
             this.PLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PLabel.Location = new System.Drawing.Point(77, 237);
             this.PLabel.Name = "PLabel";
-            this.PLabel.Size = new System.Drawing.Size(39, 13);
+            this.PLabel.Size = new System.Drawing.Size(48, 17);
             this.PLabel.TabIndex = 5;
             this.PLabel.Text = "FRAC";
             // 
@@ -2764,7 +2130,7 @@
             this.ALabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ALabel.Location = new System.Drawing.Point(79, 295);
             this.ALabel.Name = "ALabel";
-            this.ALabel.Size = new System.Drawing.Size(35, 13);
+            this.ALabel.Size = new System.Drawing.Size(43, 17);
             this.ALabel.TabIndex = 5;
             this.ALabel.Text = "MOD";
             // 
@@ -2773,7 +2139,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(268, 56);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 13);
+            this.label14.Size = new System.Drawing.Size(32, 17);
             this.label14.TabIndex = 1;
             this.label14.Text = "kHz";
             // 
@@ -2793,7 +2159,7 @@
             0,
             -2147483648});
             this.ChannelUpDownButton.Name = "ChannelUpDownButton";
-            this.ChannelUpDownButton.Size = new System.Drawing.Size(16, 34);
+            this.ChannelUpDownButton.Size = new System.Drawing.Size(16, 42);
             this.ChannelUpDownButton.TabIndex = 2;
             this.ChannelUpDownButton.ValueChanged += new System.EventHandler(this.ChannelUpDownButton_ValueChanged);
             // 
@@ -2802,24 +2168,496 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(267, 31);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 13);
+            this.label13.Size = new System.Drawing.Size(36, 17);
             this.label13.TabIndex = 1;
             this.label13.Text = "MHz";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label35);
+            this.groupBox5.Controls.Add(this.label52);
+            this.groupBox5.Controls.Add(this.AuxOutputEnableBox);
+            this.groupBox5.Controls.Add(this.label51);
+            this.groupBox5.Controls.Add(this.RFOutputEnableBox);
+            this.groupBox5.Controls.Add(this.groupBox2);
+            this.groupBox5.Controls.Add(this.label50);
+            this.groupBox5.Controls.Add(this.AuxOutputPowerBox);
+            this.groupBox5.Controls.Add(this.AuxOutputSelectBox);
+            this.groupBox5.Controls.Add(this.label49);
+            this.groupBox5.Controls.Add(this.MTLDBox);
+            this.groupBox5.Controls.Add(this.label38);
+            this.groupBox5.Controls.Add(this.VCOPowerdownBox);
+            this.groupBox5.Location = new System.Drawing.Point(743, 6);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(224, 273);
+            this.groupBox5.TabIndex = 3;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Register 4";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(14, 94);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(130, 17);
+            this.label35.TabIndex = 0;
+            this.label35.Text = "Aux Output Enable:";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(18, 142);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(125, 17);
+            this.label52.TabIndex = 0;
+            this.label52.Text = "RF Output Enable:";
+            // 
+            // AuxOutputEnableBox
+            // 
+            this.AuxOutputEnableBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AuxOutputEnableBox.FormattingEnabled = true;
+            this.AuxOutputEnableBox.Items.AddRange(new object[] {
+            "0. Disabled",
+            "1. Enabled"});
+            this.AuxOutputEnableBox.Location = new System.Drawing.Point(114, 90);
+            this.AuxOutputEnableBox.Name = "AuxOutputEnableBox";
+            this.AuxOutputEnableBox.Size = new System.Drawing.Size(86, 25);
+            this.AuxOutputEnableBox.TabIndex = 4;
+            this.AuxOutputEnableBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(17, 118);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(125, 17);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Aux Output Power:";
+            // 
+            // RFOutputEnableBox
+            // 
+            this.RFOutputEnableBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RFOutputEnableBox.FormattingEnabled = true;
+            this.RFOutputEnableBox.Items.AddRange(new object[] {
+            "0. Disabled",
+            "1. Enabled"});
+            this.RFOutputEnableBox.Location = new System.Drawing.Point(114, 138);
+            this.RFOutputEnableBox.Name = "RFOutputEnableBox";
+            this.RFOutputEnableBox.Size = new System.Drawing.Size(86, 25);
+            this.RFOutputEnableBox.TabIndex = 6;
+            this.RFOutputEnableBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BandSelectClockFrequencyBox);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.BSCWarning3Icon);
+            this.groupBox2.Controls.Add(this.BandSelectClockDividerBox);
+            this.groupBox2.Controls.Add(this.BSCWarning2Icon);
+            this.groupBox2.Controls.Add(this.BandSelectClockAutosetBox);
+            this.groupBox2.Controls.Add(this.BSCWarning1Icon);
+            this.groupBox2.Location = new System.Drawing.Point(8, 193);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(206, 71);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Band Select Clock";
+            // 
+            // BandSelectClockFrequencyBox
+            // 
+            this.BandSelectClockFrequencyBox.Location = new System.Drawing.Point(132, 43);
+            this.BandSelectClockFrequencyBox.Name = "BandSelectClockFrequencyBox";
+            this.BandSelectClockFrequencyBox.ReadOnly = true;
+            this.BandSelectClockFrequencyBox.Size = new System.Drawing.Size(65, 22);
+            this.BandSelectClockFrequencyBox.TabIndex = 3;
+            this.BandSelectClockFrequencyBox.Text = "125.000";
+            this.BandSelectClockFrequencyBox.TextChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(72, 47);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(79, 17);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Freq (kHz):";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(88, 22);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(56, 17);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Divider:";
+            // 
+            // BandSelectClockDividerBox
+            // 
+            this.BandSelectClockDividerBox.Enabled = false;
+            this.BandSelectClockDividerBox.Location = new System.Drawing.Point(132, 18);
+            this.BandSelectClockDividerBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.BandSelectClockDividerBox.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.BandSelectClockDividerBox.Name = "BandSelectClockDividerBox";
+            this.BandSelectClockDividerBox.Size = new System.Drawing.Size(65, 22);
+            this.BandSelectClockDividerBox.TabIndex = 1;
+            this.BandSelectClockDividerBox.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.BandSelectClockDividerBox.ValueChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // BandSelectClockAutosetBox
+            // 
+            this.BandSelectClockAutosetBox.AutoSize = true;
+            this.BandSelectClockAutosetBox.Checked = true;
+            this.BandSelectClockAutosetBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.BandSelectClockAutosetBox.Location = new System.Drawing.Point(6, 20);
+            this.BandSelectClockAutosetBox.Name = "BandSelectClockAutosetBox";
+            this.BandSelectClockAutosetBox.Size = new System.Drawing.Size(82, 21);
+            this.BandSelectClockAutosetBox.TabIndex = 0;
+            this.BandSelectClockAutosetBox.Text = "Auto set";
+            this.BandSelectClockAutosetBox.UseVisualStyleBackColor = true;
+            this.BandSelectClockAutosetBox.CheckedChanged += new System.EventHandler(this.BandSelectClockAutosetBox_CheckedChanged);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(17, 70);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(125, 17);
+            this.label50.TabIndex = 0;
+            this.label50.Text = "Aux Output Select:";
+            // 
+            // AuxOutputPowerBox
+            // 
+            this.AuxOutputPowerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AuxOutputPowerBox.FormattingEnabled = true;
+            this.AuxOutputPowerBox.Items.AddRange(new object[] {
+            "-4 dBm",
+            "-1 dBm",
+            "+2 dBm",
+            "+5 dBm"});
+            this.AuxOutputPowerBox.Location = new System.Drawing.Point(114, 114);
+            this.AuxOutputPowerBox.Name = "AuxOutputPowerBox";
+            this.AuxOutputPowerBox.Size = new System.Drawing.Size(86, 25);
+            this.AuxOutputPowerBox.TabIndex = 5;
+            this.AuxOutputPowerBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // AuxOutputSelectBox
+            // 
+            this.AuxOutputSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AuxOutputSelectBox.FormattingEnabled = true;
+            this.AuxOutputSelectBox.Items.AddRange(new object[] {
+            "Divided",
+            "Fundamental"});
+            this.AuxOutputSelectBox.Location = new System.Drawing.Point(114, 66);
+            this.AuxOutputSelectBox.Name = "AuxOutputSelectBox";
+            this.AuxOutputSelectBox.Size = new System.Drawing.Size(86, 25);
+            this.AuxOutputSelectBox.TabIndex = 3;
+            this.AuxOutputSelectBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(73, 46);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(50, 17);
+            this.label49.TabIndex = 0;
+            this.label49.Text = "MTLD:";
+            // 
+            // MTLDBox
+            // 
+            this.MTLDBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MTLDBox.FormattingEnabled = true;
+            this.MTLDBox.Items.AddRange(new object[] {
+            "Disabled",
+            "Enabled"});
+            this.MTLDBox.Location = new System.Drawing.Point(114, 42);
+            this.MTLDBox.Name = "MTLDBox";
+            this.MTLDBox.Size = new System.Drawing.Size(86, 25);
+            this.MTLDBox.TabIndex = 2;
+            this.MTLDBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(22, 22);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(117, 17);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "VCO Powerdown:";
+            // 
+            // VCOPowerdownBox
+            // 
+            this.VCOPowerdownBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.VCOPowerdownBox.FormattingEnabled = true;
+            this.VCOPowerdownBox.Items.AddRange(new object[] {
+            "Disabled",
+            "Enabled"});
+            this.VCOPowerdownBox.Location = new System.Drawing.Point(114, 18);
+            this.VCOPowerdownBox.Name = "VCOPowerdownBox";
+            this.VCOPowerdownBox.Size = new System.Drawing.Size(86, 25);
+            this.VCOPowerdownBox.TabIndex = 1;
+            this.VCOPowerdownBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
             // DeviceSelectionTab
             // 
             this.DeviceSelectionTab.BackColor = System.Drawing.Color.Transparent;
             this.DeviceSelectionTab.Controls.Add(this.SweepGroupBox);
             this.DeviceSelectionTab.Controls.Add(this.ConnectionSelectorGroup);
-        //    this.DeviceSelectionTab.Controls.Add(this.groupBox5);
-            this.DeviceSelectionTab.Location = new System.Drawing.Point(4, 22);
+            this.DeviceSelectionTab.Location = new System.Drawing.Point(4, 25);
+            this.DeviceSelectionTab.Margin = new System.Windows.Forms.Padding(4);
             this.DeviceSelectionTab.Name = "DeviceSelectionTab";
-            this.DeviceSelectionTab.Padding = new System.Windows.Forms.Padding(3);
-            this.DeviceSelectionTab.Size = new System.Drawing.Size(989, 471);
+            this.DeviceSelectionTab.Padding = new System.Windows.Forms.Padding(4);
+            this.DeviceSelectionTab.Size = new System.Drawing.Size(260, 565);
             this.DeviceSelectionTab.TabIndex = 0;
             this.DeviceSelectionTab.Text = "Select Device and Connection";
             this.DeviceSelectionTab.UseVisualStyleBackColor = true;
             this.DeviceSelectionTab.Click += new System.EventHandler(this.DeviceSelectionTab_Click);
+            // 
+            // SweepGroupBox
+            // 
+            this.SweepGroupBox.BackColor = System.Drawing.Color.Transparent;
+            this.SweepGroupBox.Controls.Add(this.label21);
+            this.SweepGroupBox.Controls.Add(this.SweepReturnStartBox);
+            this.SweepGroupBox.Controls.Add(this.RFOutputPowerBox);
+            this.SweepGroupBox.Controls.Add(this.time_remaining);
+            this.SweepGroupBox.Controls.Add(this.label46);
+            this.SweepGroupBox.Controls.Add(this.SweepPercentage);
+            this.SweepGroupBox.Controls.Add(this.SweepSpacingBox);
+            this.SweepGroupBox.Controls.Add(this.SweepProgress);
+            this.SweepGroupBox.Controls.Add(this.label43);
+            this.SweepGroupBox.Controls.Add(this.SweepCurrent);
+            this.SweepGroupBox.Controls.Add(this.SweepStopButton);
+            this.SweepGroupBox.Controls.Add(this.SweepStartButton);
+            this.SweepGroupBox.Controls.Add(this.label42);
+            this.SweepGroupBox.Controls.Add(this.label41);
+            this.SweepGroupBox.Controls.Add(this.label40);
+            this.SweepGroupBox.Controls.Add(this.label39);
+            this.SweepGroupBox.Controls.Add(this.SweepDelayBox);
+            this.SweepGroupBox.Controls.Add(this.SweepStopBox);
+            this.SweepGroupBox.Controls.Add(this.SweepStartBox);
+            this.SweepGroupBox.Location = new System.Drawing.Point(8, 6);
+            this.SweepGroupBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepGroupBox.Name = "SweepGroupBox";
+            this.SweepGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.SweepGroupBox.Size = new System.Drawing.Size(259, 379);
+            this.SweepGroupBox.TabIndex = 13;
+            this.SweepGroupBox.TabStop = false;
+            this.SweepGroupBox.Text = "Frequency Sweep";
+            this.SweepGroupBox.Enter += new System.EventHandler(this.SweepGroupBox_Enter);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 214);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(120, 17);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "RF Output Power:";
+            // 
+            // SweepReturnStartBox
+            // 
+            this.SweepReturnStartBox.AutoSize = true;
+            this.SweepReturnStartBox.Location = new System.Drawing.Point(24, 254);
+            this.SweepReturnStartBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepReturnStartBox.Name = "SweepReturnStartBox";
+            this.SweepReturnStartBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SweepReturnStartBox.Size = new System.Drawing.Size(198, 21);
+            this.SweepReturnStartBox.TabIndex = 16;
+            this.SweepReturnStartBox.Text = ":Return to start and repeat";
+            this.SweepReturnStartBox.UseVisualStyleBackColor = true;
+            // 
+            // RFOutputPowerBox
+            // 
+            this.RFOutputPowerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RFOutputPowerBox.FormattingEnabled = true;
+            this.RFOutputPowerBox.Items.AddRange(new object[] {
+            "-4 dBm",
+            "-1 dBm",
+            "+2 dBm",
+            "+5 dBm"});
+            this.RFOutputPowerBox.Location = new System.Drawing.Point(129, 209);
+            this.RFOutputPowerBox.Margin = new System.Windows.Forms.Padding(4);
+            this.RFOutputPowerBox.Name = "RFOutputPowerBox";
+            this.RFOutputPowerBox.Size = new System.Drawing.Size(109, 24);
+            this.RFOutputPowerBox.TabIndex = 7;
+            this.RFOutputPowerBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // time_remaining
+            // 
+            this.time_remaining.AutoSize = true;
+            this.time_remaining.Location = new System.Drawing.Point(175, 310);
+            this.time_remaining.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.time_remaining.Name = "time_remaining";
+            this.time_remaining.Size = new System.Drawing.Size(64, 17);
+            this.time_remaining.TabIndex = 15;
+            this.time_remaining.Text = "00:00:00";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(13, 310);
+            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(166, 17);
+            this.label46.TabIndex = 14;
+            this.label46.Text = "Time remaining (approx):";
+            // 
+            // SweepPercentage
+            // 
+            this.SweepPercentage.AutoSize = true;
+            this.SweepPercentage.Location = new System.Drawing.Point(212, 284);
+            this.SweepPercentage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SweepPercentage.Name = "SweepPercentage";
+            this.SweepPercentage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SweepPercentage.Size = new System.Drawing.Size(28, 17);
+            this.SweepPercentage.TabIndex = 13;
+            this.SweepPercentage.Text = "0%";
+            // 
+            // SweepSpacingBox
+            // 
+            this.SweepSpacingBox.Location = new System.Drawing.Point(132, 96);
+            this.SweepSpacingBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepSpacingBox.Name = "SweepSpacingBox";
+            this.SweepSpacingBox.Size = new System.Drawing.Size(107, 22);
+            this.SweepSpacingBox.TabIndex = 2;
+            this.SweepSpacingBox.Text = "1";
+            // 
+            // SweepProgress
+            // 
+            this.SweepProgress.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.SweepProgress.Location = new System.Drawing.Point(17, 284);
+            this.SweepProgress.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepProgress.Name = "SweepProgress";
+            this.SweepProgress.Size = new System.Drawing.Size(187, 22);
+            this.SweepProgress.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.SweepProgress.TabIndex = 12;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(27, 167);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(97, 17);
+            this.label43.TabIndex = 11;
+            this.label43.Text = "Current (MHz)";
+            // 
+            // SweepCurrent
+            // 
+            this.SweepCurrent.Enabled = false;
+            this.SweepCurrent.Location = new System.Drawing.Point(132, 164);
+            this.SweepCurrent.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepCurrent.Name = "SweepCurrent";
+            this.SweepCurrent.ReadOnly = true;
+            this.SweepCurrent.Size = new System.Drawing.Size(107, 22);
+            this.SweepCurrent.TabIndex = 10;
+            this.SweepCurrent.TabStop = false;
+            // 
+            // SweepStopButton
+            // 
+            this.SweepStopButton.Enabled = false;
+            this.SweepStopButton.Location = new System.Drawing.Point(132, 330);
+            this.SweepStopButton.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepStopButton.Name = "SweepStopButton";
+            this.SweepStopButton.Size = new System.Drawing.Size(101, 42);
+            this.SweepStopButton.TabIndex = 5;
+            this.SweepStopButton.Text = "Stop";
+            this.SweepStopButton.UseVisualStyleBackColor = true;
+            this.SweepStopButton.Click += new System.EventHandler(this.SweepStopButton_Click);
+            // 
+            // SweepStartButton
+            // 
+            this.SweepStartButton.Location = new System.Drawing.Point(11, 330);
+            this.SweepStartButton.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepStartButton.Name = "SweepStartButton";
+            this.SweepStartButton.Size = new System.Drawing.Size(101, 42);
+            this.SweepStartButton.TabIndex = 4;
+            this.SweepStartButton.Text = "Start";
+            this.SweepStartButton.UseVisualStyleBackColor = true;
+            this.SweepStartButton.Click += new System.EventHandler(this.SweepStartButton_Click);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(13, 132);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(111, 17);
+            this.label42.TabIndex = 7;
+            this.label42.Text = "Time Delay (ms)";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(20, 100);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(101, 17);
+            this.label41.TabIndex = 6;
+            this.label41.Text = "Spacing (MHz)";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(7, 68);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(116, 17);
+            this.label40.TabIndex = 5;
+            this.label40.Text = "Stop Freq. (MHz)";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(7, 36);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(117, 17);
+            this.label39.TabIndex = 4;
+            this.label39.Text = "Start Freq. (MHz)";
+            this.label39.Click += new System.EventHandler(this.label39_Click);
+            // 
+            // SweepDelayBox
+            // 
+            this.SweepDelayBox.Location = new System.Drawing.Point(132, 128);
+            this.SweepDelayBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepDelayBox.Name = "SweepDelayBox";
+            this.SweepDelayBox.Size = new System.Drawing.Size(107, 22);
+            this.SweepDelayBox.TabIndex = 3;
+            this.SweepDelayBox.Text = "100";
+            // 
+            // SweepStopBox
+            // 
+            this.SweepStopBox.Location = new System.Drawing.Point(132, 64);
+            this.SweepStopBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepStopBox.Name = "SweepStopBox";
+            this.SweepStopBox.Size = new System.Drawing.Size(107, 22);
+            this.SweepStopBox.TabIndex = 1;
+            this.SweepStopBox.Text = "1010";
+            this.SweepStopBox.TextChanged += new System.EventHandler(this.SweepStopBox_TextChanged);
+            // 
+            // SweepStartBox
+            // 
+            this.SweepStartBox.Location = new System.Drawing.Point(132, 32);
+            this.SweepStartBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SweepStartBox.Name = "SweepStartBox";
+            this.SweepStartBox.Size = new System.Drawing.Size(107, 22);
+            this.SweepStartBox.TabIndex = 0;
+            this.SweepStartBox.Text = "1000";
+            this.SweepStartBox.TextChanged += new System.EventHandler(this.SweepStartBox_TextChanged);
             // 
             // ConnectionSelectorGroup
             // 
@@ -2830,9 +2668,11 @@
             this.ConnectionSelectorGroup.Controls.Add(this.panel1);
             this.ConnectionSelectorGroup.Controls.Add(this.ConnectDeviceButton);
             this.ConnectionSelectorGroup.Controls.Add(this.ConnectingLabel);
-            this.ConnectionSelectorGroup.Location = new System.Drawing.Point(6, 319);
+            this.ConnectionSelectorGroup.Location = new System.Drawing.Point(8, 393);
+            this.ConnectionSelectorGroup.Margin = new System.Windows.Forms.Padding(4);
             this.ConnectionSelectorGroup.Name = "ConnectionSelectorGroup";
-            this.ConnectionSelectorGroup.Size = new System.Drawing.Size(194, 145);
+            this.ConnectionSelectorGroup.Padding = new System.Windows.Forms.Padding(4);
+            this.ConnectionSelectorGroup.Size = new System.Drawing.Size(259, 178);
             this.ConnectionSelectorGroup.TabIndex = 2;
             this.ConnectionSelectorGroup.TabStop = false;
             this.ConnectionSelectorGroup.Text = "Choose connection method";
@@ -2842,9 +2682,10 @@
             // 
             this.ADF4351.AutoSize = true;
             this.ADF4351.Checked = true;
-            this.ADF4351.Location = new System.Drawing.Point(30, 19);
+            this.ADF4351.Location = new System.Drawing.Point(40, 23);
+            this.ADF4351.Margin = new System.Windows.Forms.Padding(4);
             this.ADF4351.Name = "ADF4351";
-            this.ADF4351.Size = new System.Drawing.Size(70, 17);
+            this.ADF4351.Size = new System.Drawing.Size(88, 21);
             this.ADF4351.TabIndex = 1;
             this.ADF4351.TabStop = true;
             this.ADF4351.Text = "ADF4351";
@@ -2853,27 +2694,30 @@
             // 
             // USBDelayBar
             // 
-            this.USBDelayBar.Location = new System.Drawing.Point(8, 267);
+            this.USBDelayBar.Location = new System.Drawing.Point(11, 329);
+            this.USBDelayBar.Margin = new System.Windows.Forms.Padding(4);
             this.USBDelayBar.Name = "USBDelayBar";
-            this.USBDelayBar.Size = new System.Drawing.Size(151, 23);
+            this.USBDelayBar.Size = new System.Drawing.Size(201, 28);
             this.USBDelayBar.TabIndex = 7;
             this.USBDelayBar.Visible = false;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.USBselector);
-            this.panel1.Location = new System.Drawing.Point(30, 42);
+            this.panel1.Location = new System.Drawing.Point(40, 52);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 26);
+            this.panel1.Size = new System.Drawing.Size(172, 32);
             this.panel1.TabIndex = 14;
             // 
             // USBselector
             // 
             this.USBselector.AutoSize = true;
             this.USBselector.Checked = true;
-            this.USBselector.Location = new System.Drawing.Point(3, 3);
+            this.USBselector.Location = new System.Drawing.Point(4, 4);
+            this.USBselector.Margin = new System.Windows.Forms.Padding(4);
             this.USBselector.Name = "USBselector";
-            this.USBselector.Size = new System.Drawing.Size(113, 17);
+            this.USBselector.Size = new System.Drawing.Size(149, 21);
             this.USBselector.TabIndex = 0;
             this.USBselector.TabStop = true;
             this.USBselector.Text = "USB board (green)";
@@ -2882,9 +2726,10 @@
             // 
             // ConnectDeviceButton
             // 
-            this.ConnectDeviceButton.Location = new System.Drawing.Point(48, 74);
+            this.ConnectDeviceButton.Location = new System.Drawing.Point(64, 91);
+            this.ConnectDeviceButton.Margin = new System.Windows.Forms.Padding(4);
             this.ConnectDeviceButton.Name = "ConnectDeviceButton";
-            this.ConnectDeviceButton.Size = new System.Drawing.Size(75, 47);
+            this.ConnectDeviceButton.Size = new System.Drawing.Size(100, 58);
             this.ConnectDeviceButton.TabIndex = 2;
             this.ConnectDeviceButton.Text = "Connect";
             this.ConnectDeviceButton.UseVisualStyleBackColor = true;
@@ -2894,9 +2739,10 @@
             // 
             this.ConnectingLabel.AutoSize = true;
             this.ConnectingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConnectingLabel.Location = new System.Drawing.Point(20, 244);
+            this.ConnectingLabel.Location = new System.Drawing.Point(27, 300);
+            this.ConnectingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConnectingLabel.Name = "ConnectingLabel";
-            this.ConnectingLabel.Size = new System.Drawing.Size(115, 20);
+            this.ConnectingLabel.Size = new System.Drawing.Size(140, 25);
             this.ConnectingLabel.TabIndex = 3;
             this.ConnectingLabel.Text = "Connecting...";
             this.ConnectingLabel.Visible = false;
@@ -2904,17 +2750,388 @@
             // TabControl
             // 
             this.TabControl.Controls.Add(this.DeviceSelectionTab);
-            this.TabControl.Location = new System.Drawing.Point(12, 27);
+            this.TabControl.Location = new System.Drawing.Point(16, 33);
+            this.TabControl.Margin = new System.Windows.Forms.Padding(4);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(997, 497);
+            this.TabControl.Size = new System.Drawing.Size(268, 594);
             this.TabControl.TabIndex = 1;
+            // 
+            // WarningsLabel
+            // 
+            this.WarningsLabel.AutoSize = true;
+            this.WarningsLabel.Location = new System.Drawing.Point(29, 9);
+            this.WarningsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.WarningsLabel.Name = "WarningsLabel";
+            this.WarningsLabel.Size = new System.Drawing.Size(398, 17);
+            this.WarningsLabel.TabIndex = 0;
+            this.WarningsLabel.Text = "Hover your mouse over the warning icon for more information.";
+            // 
+            // WarningsIcon
+            // 
+            this.WarningsIcon.Image = ((System.Drawing.Image)(resources.GetObject("WarningsIcon.Image")));
+            this.WarningsIcon.Location = new System.Drawing.Point(4, 5);
+            this.WarningsIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.WarningsIcon.Name = "WarningsIcon";
+            this.WarningsIcon.Size = new System.Drawing.Size(24, 22);
+            this.WarningsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.WarningsIcon.TabIndex = 13;
+            this.WarningsIcon.TabStop = false;
+            // 
+            // WarningsPanel
+            // 
+            this.WarningsPanel.Controls.Add(this.WarningsIcon);
+            this.WarningsPanel.Controls.Add(this.WarningsLabel);
+            this.WarningsPanel.Location = new System.Drawing.Point(472, 679);
+            this.WarningsPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.WarningsPanel.Name = "WarningsPanel";
+            this.WarningsPanel.Size = new System.Drawing.Size(441, 33);
+            this.WarningsPanel.TabIndex = 13;
+            this.WarningsPanel.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(287, 58);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(75, 24);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SaveConfigurationStripMenuItem,
+            this.LoadConfigurationStripMenuItem,
+            this.toolStripSeparator1,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // SaveConfigurationStripMenuItem
+            // 
+            this.SaveConfigurationStripMenuItem.Name = "SaveConfigurationStripMenuItem";
+            this.SaveConfigurationStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.SaveConfigurationStripMenuItem.Text = "Save Configuration...";
+            this.SaveConfigurationStripMenuItem.Click += new System.EventHandler(this.SaveConfigurationStripMenuItem_Click);
+            // 
+            // LoadConfigurationStripMenuItem
+            // 
+            this.LoadConfigurationStripMenuItem.Name = "LoadConfigurationStripMenuItem";
+            this.LoadConfigurationStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.LoadConfigurationStripMenuItem.Text = "Load Configuration...";
+            this.LoadConfigurationStripMenuItem.Click += new System.EventHandler(this.LoadConfigurationStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(226, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.resetToDefaultValuesToolStripMenuItem,
+            this.EnableGCD,
+            this.Autowrite,
+            this.importADIsimPLLToolStripMenuItem,
+            this.advancedToolStripMenuItem,
+            this.enableEventLogToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // resetToDefaultValuesToolStripMenuItem
+            // 
+            this.resetToDefaultValuesToolStripMenuItem.Name = "resetToDefaultValuesToolStripMenuItem";
+            this.resetToDefaultValuesToolStripMenuItem.Size = new System.Drawing.Size(479, 26);
+            this.resetToDefaultValuesToolStripMenuItem.Text = "Reset to default values";
+            this.resetToDefaultValuesToolStripMenuItem.Click += new System.EventHandler(this.resetToDefaultValuesToolStripMenuItem_Click);
+            // 
+            // EnableGCD
+            // 
+            this.EnableGCD.Checked = true;
+            this.EnableGCD.CheckOnClick = true;
+            this.EnableGCD.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.EnableGCD.Name = "EnableGCD";
+            this.EnableGCD.Size = new System.Drawing.Size(479, 26);
+            this.EnableGCD.Text = "Enable FRAC/MOD GCD";
+            this.EnableGCD.CheckedChanged += new System.EventHandler(this.CallBuildRegisters);
+            // 
+            // Autowrite
+            // 
+            this.Autowrite.CheckOnClick = true;
+            this.Autowrite.Name = "Autowrite";
+            this.Autowrite.Size = new System.Drawing.Size(479, 26);
+            this.Autowrite.Text = "Auto-write (immediately writes a register when it changes)";
+            // 
+            // importADIsimPLLToolStripMenuItem
+            // 
+            this.importADIsimPLLToolStripMenuItem.Name = "importADIsimPLLToolStripMenuItem";
+            this.importADIsimPLLToolStripMenuItem.Size = new System.Drawing.Size(479, 26);
+            this.importADIsimPLLToolStripMenuItem.Text = "Import ADIsimPLL txt file";
+            this.importADIsimPLLToolStripMenuItem.Click += new System.EventHandler(this.importADIsimPLLToolStripMenuItem_Click);
+            // 
+            // advancedToolStripMenuItem
+            // 
+            this.advancedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.UseSPI_SEL_BOption});
+            this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
+            this.advancedToolStripMenuItem.Size = new System.Drawing.Size(479, 26);
+            this.advancedToolStripMenuItem.Text = "Advanced";
+            // 
+            // UseSPI_SEL_BOption
+            // 
+            this.UseSPI_SEL_BOption.CheckOnClick = true;
+            this.UseSPI_SEL_BOption.Name = "UseSPI_SEL_BOption";
+            this.UseSPI_SEL_BOption.Size = new System.Drawing.Size(238, 26);
+            this.UseSPI_SEL_BOption.Text = "Use SPI_SEL_B (Pin 37)";
+            this.UseSPI_SEL_BOption.Click += new System.EventHandler(this.UseSPI_SEL_BOption_Click);
+            // 
+            // enableEventLogToolStripMenuItem
+            // 
+            this.enableEventLogToolStripMenuItem.Checked = true;
+            this.enableEventLogToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.enableEventLogToolStripMenuItem.Name = "enableEventLogToolStripMenuItem";
+            this.enableEventLogToolStripMenuItem.Size = new System.Drawing.Size(479, 26);
+            this.enableEventLogToolStripMenuItem.Text = "Enable event log";
+            this.enableEventLogToolStripMenuItem.Click += new System.EventHandler(this.enableEventLogToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.websiteStripMenuItem,
+            this.ADIsimPLLLink,
+            this.EngineerZoneLink,
+            this.productPagesonlineToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // websiteStripMenuItem
+            // 
+            this.websiteStripMenuItem.Name = "websiteStripMenuItem";
+            this.websiteStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.websiteStripMenuItem.Text = "Analog.com (PLLs) (online)";
+            this.websiteStripMenuItem.Click += new System.EventHandler(this.websiteStripMenuItem_Click);
+            // 
+            // ADIsimPLLLink
+            // 
+            this.ADIsimPLLLink.Name = "ADIsimPLLLink";
+            this.ADIsimPLLLink.Size = new System.Drawing.Size(269, 26);
+            this.ADIsimPLLLink.Text = "ADIsimPLL (online)";
+            this.ADIsimPLLLink.Click += new System.EventHandler(this.ADIsimPLLLink_Click);
+            // 
+            // EngineerZoneLink
+            // 
+            this.EngineerZoneLink.Name = "EngineerZoneLink";
+            this.EngineerZoneLink.Size = new System.Drawing.Size(269, 26);
+            this.EngineerZoneLink.Text = "EngineerZone (RF) (online)";
+            this.EngineerZoneLink.Click += new System.EventHandler(this.EngineerZoneLink_Click);
+            // 
+            // productPagesonlineToolStripMenuItem
+            // 
+            this.productPagesonlineToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aDF4350ToolStripMenuItem,
+            this.aDF4351ToolStripMenuItem});
+            this.productPagesonlineToolStripMenuItem.Name = "productPagesonlineToolStripMenuItem";
+            this.productPagesonlineToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.productPagesonlineToolStripMenuItem.Text = "Product pages (online)";
+            // 
+            // aDF4350ToolStripMenuItem
+            // 
+            this.aDF4350ToolStripMenuItem.Name = "aDF4350ToolStripMenuItem";
+            this.aDF4350ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.aDF4350ToolStripMenuItem.Text = "ADF4350";
+            this.aDF4350ToolStripMenuItem.Click += new System.EventHandler(this.aDF4350ToolStripMenuItem_Click);
+            // 
+            // aDF4351ToolStripMenuItem
+            // 
+            this.aDF4351ToolStripMenuItem.Name = "aDF4351ToolStripMenuItem";
+            this.aDF4351ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.aDF4351ToolStripMenuItem.Text = "ADF4351";
+            this.aDF4351ToolStripMenuItem.Click += new System.EventHandler(this.aDF4351ToolStripMenuItem_Click);
+            // 
+            // MainFormMenu
+            // 
+            this.MainFormMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MainFormMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.MainFormMenu.Location = new System.Drawing.Point(0, 0);
+            this.MainFormMenu.Name = "MainFormMenu";
+            this.MainFormMenu.Size = new System.Drawing.Size(1343, 28);
+            this.MainFormMenu.TabIndex = 2;
+            this.MainFormMenu.Text = "menuStrip1";
+            // 
+            // btConnect
+            // 
+            this.btConnect.Location = new System.Drawing.Point(368, 58);
+            this.btConnect.Name = "btConnect";
+            this.btConnect.Size = new System.Drawing.Size(75, 24);
+            this.btConnect.TabIndex = 15;
+            this.btConnect.Text = "Connect";
+            this.btConnect.UseVisualStyleBackColor = true;
+            // 
+            // btSave
+            // 
+            this.btSave.Location = new System.Drawing.Point(287, 88);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(75, 23);
+            this.btSave.TabIndex = 16;
+            this.btSave.Text = "Save";
+            this.btSave.UseVisualStyleBackColor = true;
+            // 
+            // btPause
+            // 
+            this.btPause.Location = new System.Drawing.Point(449, 88);
+            this.btPause.Name = "btPause";
+            this.btPause.Size = new System.Drawing.Size(75, 23);
+            this.btPause.TabIndex = 17;
+            this.btPause.Text = "Pause";
+            this.btPause.UseVisualStyleBackColor = true;
+            // 
+            // btExit
+            // 
+            this.btExit.Location = new System.Drawing.Point(530, 58);
+            this.btExit.Name = "btExit";
+            this.btExit.Size = new System.Drawing.Size(75, 26);
+            this.btExit.TabIndex = 18;
+            this.btExit.Text = "Exit";
+            this.btExit.UseVisualStyleBackColor = true;
+            // 
+            // btClear
+            // 
+            this.btClear.Location = new System.Drawing.Point(530, 90);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(75, 22);
+            this.btClear.TabIndex = 19;
+            this.btClear.Text = "Clear";
+            this.btClear.UseVisualStyleBackColor = true;
+            // 
+            // btRun
+            // 
+            this.btRun.Location = new System.Drawing.Point(368, 88);
+            this.btRun.Name = "btRun";
+            this.btRun.Size = new System.Drawing.Size(75, 23);
+            this.btRun.TabIndex = 20;
+            this.btRun.Text = "Run";
+            this.btRun.UseVisualStyleBackColor = true;
+            this.btRun.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(449, 59);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(75, 23);
+            this.progressBar1.TabIndex = 21;
+            // 
+            // sfSmithChart1
+            // 
+            this.sfSmithChart1.AccessibleName = "SfSmithChart";
+            this.sfSmithChart1.ColorModel.CustomColors = null;
+            this.sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.Metro;
+            this.sfSmithChart1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
+            this.sfSmithChart1.HorizontalAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.sfSmithChart1.Legend.Style.LabelFont = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.sfSmithChart1.Location = new System.Drawing.Point(287, 117);
+            this.sfSmithChart1.Name = "sfSmithChart1";
+            this.sfSmithChart1.RadialAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.sfSmithChart1.Size = new System.Drawing.Size(806, 506);
+            this.sfSmithChart1.Style.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
+            this.sfSmithChart1.TabIndex = 22;
+            this.sfSmithChart1.Text = "Smith Chart";
+            this.sfSmithChart1.TooltipOptions.Font = new System.Drawing.Font("Segoe UI", 10F);
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(946, 21);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(397, 215);
+            this.listView1.TabIndex = 23;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Rl_db";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Phi_deg";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Rs";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Xs";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Swr";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Z";
+            // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.Location = new System.Drawing.Point(946, 243);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 0D;
+            this.zedGraphControl1.ScrollMaxY = 0D;
+            this.zedGraphControl1.ScrollMaxY2 = 0D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(397, 380);
+            this.zedGraphControl1.TabIndex = 24;
+            this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
             // Main_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 623);
+            this.ClientSize = new System.Drawing.Size(1343, 767);
+            this.Controls.Add(this.zedGraphControl1);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.sfSmithChart1);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.btRun);
+            this.Controls.Add(this.btClear);
+            this.Controls.Add(this.btExit);
+            this.Controls.Add(this.btPause);
+            this.Controls.Add(this.btSave);
+            this.Controls.Add(this.btConnect);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.WarningsPanel);
             this.Controls.Add(this.DeviceWarningIcon);
             this.Controls.Add(this.SoftwareVersionLabel);
@@ -2929,15 +3146,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.MainFormMenu;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Main_Form";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Analog Devices ADF435x Software";
+            this.Load += new System.EventHandler(this.Main_Form_Load);
             this.Leave += new System.EventHandler(this.exitToolStripMenuItem_Click);
             this.MainFormStatusBar.ResumeLayout(false);
             this.MainFormStatusBar.PerformLayout();
-            this.MainFormMenu.ResumeLayout(false);
-            this.MainFormMenu.PerformLayout();
             this.RegisterGroup.ResumeLayout(false);
             this.RegisterGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeviceWarningIcon)).EndInit();
@@ -2953,21 +3170,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning1Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning2Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning3Icon)).EndInit();
-            this.WarningsPanel.ResumeLayout(false);
-            this.WarningsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WarningsIcon)).EndInit();
-            this.SweepGroupBox.ResumeLayout(false);
-            this.SweepGroupBox.PerformLayout();
             this.RegistersTab.ResumeLayout(false);
             this.RegistersTab.PerformLayout();
             this.MainControlsTab.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BandSelectClockDividerBox)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClockDividerValueBox)).EndInit();
@@ -2978,12 +3185,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.PhaseValueBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RcounterBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChannelUpDownButton)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BandSelectClockDividerBox)).EndInit();
             this.DeviceSelectionTab.ResumeLayout(false);
+            this.SweepGroupBox.ResumeLayout(false);
+            this.SweepGroupBox.PerformLayout();
             this.ConnectionSelectorGroup.ResumeLayout(false);
             this.ConnectionSelectorGroup.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.TabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.WarningsIcon)).EndInit();
+            this.WarningsPanel.ResumeLayout(false);
+            this.WarningsPanel.PerformLayout();
+            this.MainFormMenu.ResumeLayout(false);
+            this.MainFormMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2992,10 +3211,6 @@
         #endregion
 
         private System.Windows.Forms.StatusStrip MainFormStatusBar;
-        private System.Windows.Forms.MenuStrip MainFormMenu;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel DeviceConnectionStatus;
         private System.Windows.Forms.TextBox EventLog;
        
@@ -3014,14 +3229,6 @@
         private System.Windows.Forms.TextBox R2Box;
         private System.Windows.Forms.TextBox R1Box;
         private System.Windows.Forms.ToolTip ToolTip;
-        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resetToDefaultValuesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem websiteStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ADIsimPLLLink;
-        private System.Windows.Forms.ToolStripMenuItem EngineerZoneLink;
-        private System.Windows.Forms.ToolStripMenuItem SaveConfigurationStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem LoadConfigurationStripMenuItem;
         private System.Windows.Forms.OpenFileDialog LoadConfigurationDialog;
         private System.Windows.Forms.SaveFileDialog SaveConfigurationDialog;
         private System.Windows.Forms.Label label3;
@@ -3033,44 +3240,13 @@
         private System.Windows.Forms.Button WriteR5Button;
         private System.Windows.Forms.TextBox R5Box;
         private System.Windows.Forms.TextBox R4Box;
-        private System.Windows.Forms.ToolStripMenuItem EnableGCD;
-        private System.Windows.Forms.ToolStripMenuItem Autowrite;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem importADIsimPLLToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog ImportADIsimPLLDialog;
-        private System.Windows.Forms.ToolStripMenuItem advancedToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem UseSPI_SEL_BOption;
         private System.Windows.Forms.Label UsingSPISELBLabel;
         private System.Windows.Forms.ToolTip WarningTooltip;
-        private System.Windows.Forms.ToolStripMenuItem productPagesonlineToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aDF4350ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aDF4351ToolStripMenuItem;
-        private System.Windows.Forms.Panel WarningsPanel;
-        private System.Windows.Forms.PictureBox WarningsIcon;
-        private System.Windows.Forms.Label WarningsLabel;
         private System.Windows.Forms.PictureBox DeviceWarningIcon;
-        private System.Windows.Forms.ToolStripMenuItem enableEventLogToolStripMenuItem;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label SoftwareVersionLabel;
         private System.Windows.Forms.TabPage SweepHopTab;
-        private System.Windows.Forms.GroupBox SweepGroupBox;
-        private System.Windows.Forms.CheckBox SweepReturnStartBox;
-        private System.Windows.Forms.Label time_remaining;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label SweepPercentage;
-        private System.Windows.Forms.TextBox SweepSpacingBox;
-        private System.Windows.Forms.ProgressBar SweepProgress;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox SweepCurrent;
-        private System.Windows.Forms.Button SweepStopButton;
-        private System.Windows.Forms.Button SweepStartButton;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox SweepDelayBox;
-        private System.Windows.Forms.TextBox SweepStopBox;
-        private System.Windows.Forms.TextBox SweepStartBox;
         private System.Windows.Forms.TabPage RegistersTab;
         private System.Windows.Forms.Button WriteR5HexButton;
         private System.Windows.Forms.Button WriteR4HexButton;
@@ -3095,10 +3271,8 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.ComboBox LDPinModeBox;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.ComboBox RFOutputPowerBox;
         private System.Windows.Forms.ComboBox AuxOutputEnableBox;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.ComboBox RFOutputEnableBox;
@@ -3217,14 +3391,77 @@
         private System.Windows.Forms.NumericUpDown ChannelUpDownButton;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabPage DeviceSelectionTab;
-        private System.Windows.Forms.RadioButton ADF4351;
+        private System.Windows.Forms.GroupBox SweepGroupBox;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.CheckBox SweepReturnStartBox;
+        private System.Windows.Forms.ComboBox RFOutputPowerBox;
+        private System.Windows.Forms.Label time_remaining;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label SweepPercentage;
+        private System.Windows.Forms.TextBox SweepSpacingBox;
+        private System.Windows.Forms.ProgressBar SweepProgress;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox SweepCurrent;
+        private System.Windows.Forms.Button SweepStopButton;
+        private System.Windows.Forms.Button SweepStartButton;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox SweepDelayBox;
+        private System.Windows.Forms.TextBox SweepStopBox;
+        private System.Windows.Forms.TextBox SweepStartBox;
         private System.Windows.Forms.GroupBox ConnectionSelectorGroup;
+        private System.Windows.Forms.RadioButton ADF4351;
         private System.Windows.Forms.ProgressBar USBDelayBar;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton USBselector;
         private System.Windows.Forms.Button ConnectDeviceButton;
         private System.Windows.Forms.Label ConnectingLabel;
         private System.Windows.Forms.TabControl TabControl;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label WarningsLabel;
+        private System.Windows.Forms.PictureBox WarningsIcon;
+        private System.Windows.Forms.Panel WarningsPanel;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SaveConfigurationStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LoadConfigurationStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resetToDefaultValuesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EnableGCD;
+        private System.Windows.Forms.ToolStripMenuItem Autowrite;
+        private System.Windows.Forms.ToolStripMenuItem importADIsimPLLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem advancedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem UseSPI_SEL_BOption;
+        private System.Windows.Forms.ToolStripMenuItem enableEventLogToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem websiteStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ADIsimPLLLink;
+        private System.Windows.Forms.ToolStripMenuItem EngineerZoneLink;
+        private System.Windows.Forms.ToolStripMenuItem productPagesonlineToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDF4350ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aDF4351ToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip MainFormMenu;
+        private System.Windows.Forms.Button btConnect;
+        private System.Windows.Forms.Button btSave;
+        private System.Windows.Forms.Button btPause;
+        private System.Windows.Forms.Button btExit;
+        private System.Windows.Forms.Button btClear;
+        private System.Windows.Forms.Button btRun;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private Syncfusion.WinForms.SmithChart.SfSmithChart sfSmithChart1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private ZedGraph.ZedGraphControl zedGraphControl1;
+        private System.IO.Ports.SerialPort serialPort1;
         //private System.Windows.Forms.ComboBox PLLTestmodesBox;
         //private System.Windows.Forms.ComboBox SDTestmodesBox;
         //private System.Windows.Forms.ComboBox ICPADJENBox;
