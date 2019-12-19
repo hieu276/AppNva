@@ -1446,7 +1446,7 @@ namespace ADF435x
             // Take inputs from GUI, and check for valid inputs
             try
             {
-                SweepStop = double.Parse(SweepStopBox.Text);
+                SweepStop = double.Parse(SweepStopBox.Text);   // stop freq of measure, can be use to draw graph
             }
             catch
             {
@@ -1462,7 +1462,7 @@ namespace ADF435x
 
             try
             {
-                SweepCur = double.Parse(SweepStartBox.Text);
+                SweepCur = double.Parse(SweepStartBox.Text); // start freq of measure
             }
             catch
             {
@@ -1478,7 +1478,7 @@ namespace ADF435x
 
             try
             {
-                SweepSpacing = double.Parse(SweepSpacingBox.Text);
+                SweepSpacing = double.Parse(SweepSpacingBox.Text);// spacing freq of measure, may set as default
             }
             catch
             {
@@ -1490,7 +1490,7 @@ namespace ADF435x
 
             try
             {
-                SweepDelay = int.Parse(SweepDelayBox.Text);
+                SweepDelay = int.Parse(SweepDelayBox.Text); // delay time of each freq when measuring, can choose here
             }
             catch
             {
