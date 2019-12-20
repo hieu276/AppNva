@@ -3444,6 +3444,8 @@
         private System.Windows.Forms.ToolStripMenuItem productPagesonlineToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aDF4350ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aDF4351ToolStripMenuItem;
+
+        //add by Hieu
         private System.Windows.Forms.MenuStrip MainFormMenu;
         private System.Windows.Forms.Button btConnect;
         private System.Windows.Forms.Button btSave;

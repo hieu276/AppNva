@@ -22,5 +22,7 @@ namespace ADF435x.Properties {
                 return defaultInstance;
             }
         }
+
+        public string DefaultCOM { get; internal set; }
     }
 }

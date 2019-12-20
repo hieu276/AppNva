@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Threading;
 using CyUSB;
 using sdpApi1;
+//add by Hieu
 using System.Threading.Tasks;
 using Syncfusion.WinForms.SmithChart;
 using System.Collections.ObjectModel;
@@ -72,6 +73,9 @@ namespace ADF435x
         int  PLLTestmodesBox;
         int SDTestmodesBox;
         int ICPADJENBox;
+
+
+        
         // biến string để lấy dữ liệu từ Serial
         string Srl_db = String.Empty;
         string Sphi_deg = String.Empty;
@@ -94,6 +98,8 @@ namespace ADF435x
         double z = 0;
         double re = 0;// dùng để vẽ smith chart
         double im = 0;// dùng để vẽ smith chart
+        double frequency = 0;
+        double s_parameter = 0;
 
 
         ViewModel vm = new ViewModel(); //Khai báo ...
@@ -148,7 +154,7 @@ namespace ADF435x
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.DataSource = SerialPort.GetPortNames(); // Lấy nguồn cho comboBox là tên của cổng COM
-            comboBox1.Text = Properties.Settings.Default.ComName; // Lấy ComName đã làm ở bước 5 cho comboBox
+            comboBox1.Text = Properties.Settings.Default.DefaultCOM; // Lấy ComName đã làm ở bước 5 cho comboBox
 
             // Khởi tạo ZedGraph
             GraphPane myPane = zedGraphControl1.GraphPane;
@@ -164,7 +170,7 @@ namespace ADF435x
             myPane.XAxis.Scale.MinorStep = 1;
             myPane.XAxis.Scale.MajorStep = 5;
             myPane.YAxis.Scale.Min = -100;
-            myPane.YAxis.Scale.Max = 100;
+            myPane.YAxis.Scale.Max = 0;
 
             myPane.AxisChange();
         }
@@ -172,7 +178,7 @@ namespace ADF435x
         // Hàm này lưu lại cổng COM đã chọn cho lần kết nối
         private void SaveSetting()
         {
-            Properties.Settings.Default.ComName = comboBox1.Text;
+            Properties.Settings.Default.DefaultCOM = comboBox1.Text;
             Properties.Settings.Default.Save();
         }
         // Nhận và xử lý string gửi từ Serial
@@ -308,8 +314,8 @@ namespace ADF435x
 
             // Đặt tên cho hai ô A1. B1 lần lượt là "Thời gian (s)" và "Dữ liệu", sau đó tự động dãn độ rộng
             Microsoft.Office.Interop.Excel.Range rg = (Microsoft.Office.Interop.Excel.Range)ws.get_Range("A1", "B1");
-            ws.Cells[1, 1] = "Thời gian (s)";
-            ws.Cells[1, 2] = "Dữ liệu";
+            ws.Cells[1, 1] = "Frequency";
+            ws.Cells[1, 2] = "S_parameter";
             rg.Columns.AutoFit();
 
             // Lưu từ ô đầu tiên của dòng thứ 2, tức ô A2

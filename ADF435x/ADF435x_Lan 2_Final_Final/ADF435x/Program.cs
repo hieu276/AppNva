@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+//add by Hieu
+using System.Threading.Tasks;
+using Syncfusion.WinForms.Controls;
+using Syncfusion.WinForms.Core;
+using Syncfusion.WinForms.Theme;
+using Syncfusion.Licensing;
 
 namespace ADF435x
 {
