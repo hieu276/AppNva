@@ -15,12 +15,6 @@ using Syncfusion.WinForms.SmithChart;
 using System.Collections.ObjectModel;
 
 
-//  Written and managed by:
-//
-//  Robert Brennan
-//  robert.brennan@analog.com
-//  http://about.me/robertbrennan
-//
 // Giao tiếp qua Serial
 using System.IO;
 using System.IO.Ports;
@@ -151,7 +145,7 @@ namespace ADF435x
             sfSmithChart1.ThemeName = "Office2016White";
             sfSmithChart1.Legend.Visible = true;
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void Main_Form_Load(object sender, EventArgs e)
         {
             comboBox1.DataSource = SerialPort.GetPortNames(); // Lấy nguồn cho comboBox là tên của cổng COM
             comboBox1.Text = Properties.Settings.Default.DefaultCOM; // Lấy ComName đã làm ở bước 5 cho comboBox
@@ -173,6 +167,21 @@ namespace ADF435x
             myPane.YAxis.Scale.Max = 0;
 
             myPane.AxisChange();
+        }
+        // Hàm Tick này sẽ bắt sự kiện cổng Serial mở hay không
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (!serialPort1.IsOpen)
+            {
+                return;
+            }
+            else if (serialPort1.IsOpen)
+            {
+                //progressBar1.Value = 100;
+                Draw();
+                Data_Listview();
+                status = 0;
+            }
         }
 
         // Hàm này lưu lại cổng COM đã chọn cho lần kết nối
@@ -387,7 +396,7 @@ namespace ADF435x
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.WriteLine("1"); //Gửi ký tự "1" qua Serial, chạy hàm tạo Random ở Arduino
+                serialPort1.WriteLine("0"); //Gửi ký tự "1" qua Serial, chạy hàm tạo Random ở Arduino
             }
             else
                 MessageBox.Show("Bạn không thể chạy khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -397,7 +406,7 @@ namespace ADF435x
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.WriteLine("0"); //Gửi ký tự "0" qua Serial, Dừng Arduino
+                serialPort1.WriteLine("1"); //Gửi ký tự "0" qua Serial, Dừng Arduino
             }
             else
                 MessageBox.Show("Bạn không thể dừng khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -2117,11 +2126,6 @@ namespace ADF435x
         }
 
         private void DeviceSelectionTab_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Main_Form_Load(object sender, EventArgs e)
         {
 
         }
