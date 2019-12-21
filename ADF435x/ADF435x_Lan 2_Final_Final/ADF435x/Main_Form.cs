@@ -292,7 +292,7 @@ namespace ADF435x
             myPane.XAxis.Scale.MinorStep = 1;
             myPane.XAxis.Scale.MajorStep = 5;
             myPane.YAxis.Scale.Min = -100;
-            myPane.YAxis.Scale.Max = 100;
+            myPane.YAxis.Scale.Max = 0;
 
             zedGraphControl1.AxisChange();
         }
@@ -2131,6 +2131,11 @@ namespace ADF435x
         }
 
         private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sfSmithChart1_Click(object sender, EventArgs e)
         {
 
         }

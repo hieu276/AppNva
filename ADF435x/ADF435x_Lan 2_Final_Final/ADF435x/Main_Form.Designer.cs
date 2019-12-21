@@ -1099,7 +1099,7 @@
             "High"});
             this.LDPinModeBox.Location = new System.Drawing.Point(79, 17);
             this.LDPinModeBox.Name = "LDPinModeBox";
-            this.LDPinModeBox.Size = new System.Drawing.Size(139, 25);
+            this.LDPinModeBox.Size = new System.Drawing.Size(139, 24);
             this.LDPinModeBox.TabIndex = 7;
             this.LDPinModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1182,7 +1182,7 @@
             "Reserved"});
             this.CLKDivModeBox.Location = new System.Drawing.Point(136, 92);
             this.CLKDivModeBox.Name = "CLKDivModeBox";
-            this.CLKDivModeBox.Size = new System.Drawing.Size(112, 25);
+            this.CLKDivModeBox.Size = new System.Drawing.Size(112, 24);
             this.CLKDivModeBox.TabIndex = 3;
             this.CLKDivModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1195,7 +1195,7 @@
             "3 ns (INT-N)"});
             this.ABPBox.Location = new System.Drawing.Point(281, 18);
             this.ABPBox.Name = "ABPBox";
-            this.ABPBox.Size = new System.Drawing.Size(98, 25);
+            this.ABPBox.Size = new System.Drawing.Size(98, 24);
             this.ABPBox.TabIndex = 4;
             this.ABPBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1217,7 +1217,7 @@
             "Enabled"});
             this.CSRBox.Location = new System.Drawing.Point(293, 43);
             this.CSRBox.Name = "CSRBox";
-            this.CSRBox.Size = new System.Drawing.Size(86, 25);
+            this.CSRBox.Size = new System.Drawing.Size(86, 24);
             this.CSRBox.TabIndex = 5;
             this.CSRBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1248,7 +1248,7 @@
             "High"});
             this.BandSelectClockModeBox.Location = new System.Drawing.Point(136, 18);
             this.BandSelectClockModeBox.Name = "BandSelectClockModeBox";
-            this.BandSelectClockModeBox.Size = new System.Drawing.Size(65, 25);
+            this.BandSelectClockModeBox.Size = new System.Drawing.Size(65, 24);
             this.BandSelectClockModeBox.TabIndex = 0;
             this.BandSelectClockModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1261,7 +1261,7 @@
             "Enabled"});
             this.ChargeCancellationBox.Location = new System.Drawing.Point(136, 43);
             this.ChargeCancellationBox.Name = "ChargeCancellationBox";
-            this.ChargeCancellationBox.Size = new System.Drawing.Size(86, 25);
+            this.ChargeCancellationBox.Size = new System.Drawing.Size(86, 24);
             this.ChargeCancellationBox.TabIndex = 1;
             this.ChargeCancellationBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1331,7 +1331,7 @@
             "Enabled"});
             this.CounterResetBox.Location = new System.Drawing.Point(295, 118);
             this.CounterResetBox.Name = "CounterResetBox";
-            this.CounterResetBox.Size = new System.Drawing.Size(86, 25);
+            this.CounterResetBox.Size = new System.Drawing.Size(86, 24);
             this.CounterResetBox.TabIndex = 10;
             this.CounterResetBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1344,7 +1344,7 @@
             "6 ns"});
             this.LDPBox.Location = new System.Drawing.Point(295, 18);
             this.LDPBox.Name = "LDPBox";
-            this.LDPBox.Size = new System.Drawing.Size(86, 25);
+            this.LDPBox.Size = new System.Drawing.Size(86, 24);
             this.LDPBox.TabIndex = 6;
             this.LDPBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1375,7 +1375,7 @@
             "Enabled"});
             this.CP3StateBox.Location = new System.Drawing.Point(295, 93);
             this.CP3StateBox.Name = "CP3StateBox";
-            this.CP3StateBox.Size = new System.Drawing.Size(86, 25);
+            this.CP3StateBox.Size = new System.Drawing.Size(86, 24);
             this.CP3StateBox.TabIndex = 9;
             this.CP3StateBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1388,7 +1388,7 @@
             "INT-N"});
             this.LDFBox.Location = new System.Drawing.Point(123, 118);
             this.LDFBox.Name = "LDFBox";
-            this.LDFBox.Size = new System.Drawing.Size(86, 25);
+            this.LDFBox.Size = new System.Drawing.Size(86, 24);
             this.LDFBox.TabIndex = 5;
             this.LDFBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1419,7 +1419,7 @@
             "Enabled"});
             this.PowerdownBox.Location = new System.Drawing.Point(295, 68);
             this.PowerdownBox.Name = "PowerdownBox";
-            this.PowerdownBox.Size = new System.Drawing.Size(86, 25);
+            this.PowerdownBox.Size = new System.Drawing.Size(86, 24);
             this.PowerdownBox.TabIndex = 8;
             this.PowerdownBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1446,7 +1446,7 @@
             "5.00"});
             this.ChargePumpCurrentBox.Location = new System.Drawing.Point(123, 93);
             this.ChargePumpCurrentBox.Name = "ChargePumpCurrentBox";
-            this.ChargePumpCurrentBox.Size = new System.Drawing.Size(86, 25);
+            this.ChargePumpCurrentBox.Size = new System.Drawing.Size(86, 24);
             this.ChargePumpCurrentBox.TabIndex = 4;
             this.ChargePumpCurrentBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1468,7 +1468,7 @@
             "Positive"});
             this.PDPolarityBox.Location = new System.Drawing.Point(295, 43);
             this.PDPolarityBox.Name = "PDPolarityBox";
-            this.PDPolarityBox.Size = new System.Drawing.Size(86, 25);
+            this.PDPolarityBox.Size = new System.Drawing.Size(86, 24);
             this.PDPolarityBox.TabIndex = 7;
             this.PDPolarityBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1490,7 +1490,7 @@
             "Enabled"});
             this.DoubleBuffBox.Location = new System.Drawing.Point(123, 68);
             this.DoubleBuffBox.Name = "DoubleBuffBox";
-            this.DoubleBuffBox.Size = new System.Drawing.Size(86, 25);
+            this.DoubleBuffBox.Size = new System.Drawing.Size(86, 24);
             this.DoubleBuffBox.TabIndex = 3;
             this.DoubleBuffBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1518,7 +1518,7 @@
             "Testmodes"});
             this.MuxoutBox.Location = new System.Drawing.Point(123, 43);
             this.MuxoutBox.Name = "MuxoutBox";
-            this.MuxoutBox.Size = new System.Drawing.Size(101, 25);
+            this.MuxoutBox.Size = new System.Drawing.Size(101, 24);
             this.MuxoutBox.TabIndex = 2;
             this.MuxoutBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1542,7 +1542,7 @@
             "Low spur mode"});
             this.LowNoiseSpurModeBox.Location = new System.Drawing.Point(123, 18);
             this.LowNoiseSpurModeBox.Name = "LowNoiseSpurModeBox";
-            this.LowNoiseSpurModeBox.Size = new System.Drawing.Size(101, 25);
+            this.LowNoiseSpurModeBox.Size = new System.Drawing.Size(101, 24);
             this.LowNoiseSpurModeBox.TabIndex = 1;
             this.LowNoiseSpurModeBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1964,7 +1964,7 @@
             "Fundamental"});
             this.FeedbackSelectBox.Location = new System.Drawing.Point(125, 203);
             this.FeedbackSelectBox.Name = "FeedbackSelectBox";
-            this.FeedbackSelectBox.Size = new System.Drawing.Size(86, 25);
+            this.FeedbackSelectBox.Size = new System.Drawing.Size(86, 24);
             this.FeedbackSelectBox.TabIndex = 9;
             this.FeedbackSelectBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1977,7 +1977,7 @@
             "1. On"});
             this.PhaseAdjustBox.Location = new System.Drawing.Point(83, 319);
             this.PhaseAdjustBox.Name = "PhaseAdjustBox";
-            this.PhaseAdjustBox.Size = new System.Drawing.Size(51, 25);
+            this.PhaseAdjustBox.Size = new System.Drawing.Size(51, 24);
             this.PhaseAdjustBox.TabIndex = 10;
             this.PhaseAdjustBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -1991,7 +1991,7 @@
             "8/9"});
             this.PrescalerBox.Location = new System.Drawing.Point(125, 178);
             this.PrescalerBox.Name = "PrescalerBox";
-            this.PrescalerBox.Size = new System.Drawing.Size(86, 25);
+            this.PrescalerBox.Size = new System.Drawing.Size(86, 24);
             this.PrescalerBox.TabIndex = 8;
             this.PrescalerBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2221,7 +2221,7 @@
             "1. Enabled"});
             this.AuxOutputEnableBox.Location = new System.Drawing.Point(114, 90);
             this.AuxOutputEnableBox.Name = "AuxOutputEnableBox";
-            this.AuxOutputEnableBox.Size = new System.Drawing.Size(86, 25);
+            this.AuxOutputEnableBox.Size = new System.Drawing.Size(86, 24);
             this.AuxOutputEnableBox.TabIndex = 4;
             this.AuxOutputEnableBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2243,7 +2243,7 @@
             "1. Enabled"});
             this.RFOutputEnableBox.Location = new System.Drawing.Point(114, 138);
             this.RFOutputEnableBox.Name = "RFOutputEnableBox";
-            this.RFOutputEnableBox.Size = new System.Drawing.Size(86, 25);
+            this.RFOutputEnableBox.Size = new System.Drawing.Size(86, 24);
             this.RFOutputEnableBox.TabIndex = 6;
             this.RFOutputEnableBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2349,7 +2349,7 @@
             "+5 dBm"});
             this.AuxOutputPowerBox.Location = new System.Drawing.Point(114, 114);
             this.AuxOutputPowerBox.Name = "AuxOutputPowerBox";
-            this.AuxOutputPowerBox.Size = new System.Drawing.Size(86, 25);
+            this.AuxOutputPowerBox.Size = new System.Drawing.Size(86, 24);
             this.AuxOutputPowerBox.TabIndex = 5;
             this.AuxOutputPowerBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2362,7 +2362,7 @@
             "Fundamental"});
             this.AuxOutputSelectBox.Location = new System.Drawing.Point(114, 66);
             this.AuxOutputSelectBox.Name = "AuxOutputSelectBox";
-            this.AuxOutputSelectBox.Size = new System.Drawing.Size(86, 25);
+            this.AuxOutputSelectBox.Size = new System.Drawing.Size(86, 24);
             this.AuxOutputSelectBox.TabIndex = 3;
             this.AuxOutputSelectBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2384,7 +2384,7 @@
             "Enabled"});
             this.MTLDBox.Location = new System.Drawing.Point(114, 42);
             this.MTLDBox.Name = "MTLDBox";
-            this.MTLDBox.Size = new System.Drawing.Size(86, 25);
+            this.MTLDBox.Size = new System.Drawing.Size(86, 24);
             this.MTLDBox.TabIndex = 2;
             this.MTLDBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2406,7 +2406,7 @@
             "Enabled"});
             this.VCOPowerdownBox.Location = new System.Drawing.Point(114, 18);
             this.VCOPowerdownBox.Name = "VCOPowerdownBox";
-            this.VCOPowerdownBox.Size = new System.Drawing.Size(86, 25);
+            this.VCOPowerdownBox.Size = new System.Drawing.Size(86, 24);
             this.VCOPowerdownBox.TabIndex = 1;
             this.VCOPowerdownBox.SelectedIndexChanged += new System.EventHandler(this.CallBuildRegisters);
             // 
@@ -2792,11 +2792,12 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 58);
+            this.comboBox1.Location = new System.Drawing.Point(287, 57);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(75, 24);
             this.comboBox1.TabIndex = 14;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.Click += new System.EventHandler(this.ConnectionSelectorGroup_Enter);
             // 
             // fileToolStripMenuItem
             // 
@@ -2988,6 +2989,7 @@
             this.btConnect.TabIndex = 15;
             this.btConnect.Text = "Connect";
             this.btConnect.UseVisualStyleBackColor = true;
+            this.btConnect.Click += new System.EventHandler(this.btConnect_Click);
             // 
             // btSave
             // 
@@ -2997,33 +2999,37 @@
             this.btSave.TabIndex = 16;
             this.btSave.Text = "Save";
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btPause
             // 
-            this.btPause.Location = new System.Drawing.Point(449, 88);
+            this.btPause.Location = new System.Drawing.Point(368, 117);
             this.btPause.Name = "btPause";
-            this.btPause.Size = new System.Drawing.Size(75, 23);
+            this.btPause.Size = new System.Drawing.Size(75, 26);
             this.btPause.TabIndex = 17;
             this.btPause.Text = "Pause";
             this.btPause.UseVisualStyleBackColor = true;
+            this.btPause.Click += new System.EventHandler(this.btPause_Click);
             // 
             // btExit
             // 
-            this.btExit.Location = new System.Drawing.Point(530, 58);
+            this.btExit.Location = new System.Drawing.Point(286, 146);
             this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(75, 26);
+            this.btExit.Size = new System.Drawing.Size(75, 28);
             this.btExit.TabIndex = 18;
             this.btExit.Text = "Exit";
             this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // btClear
             // 
-            this.btClear.Location = new System.Drawing.Point(530, 90);
+            this.btClear.Location = new System.Drawing.Point(367, 146);
             this.btClear.Name = "btClear";
-            this.btClear.Size = new System.Drawing.Size(75, 22);
+            this.btClear.Size = new System.Drawing.Size(75, 28);
             this.btClear.TabIndex = 19;
             this.btClear.Text = "Clear";
             this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // btRun
             // 
@@ -3033,14 +3039,15 @@
             this.btRun.TabIndex = 20;
             this.btRun.Text = "Run";
             this.btRun.UseVisualStyleBackColor = true;
-            this.btRun.Click += new System.EventHandler(this.button6_Click);
+            this.btRun.Click += new System.EventHandler(this.btRun_Click);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(449, 59);
+            this.progressBar1.Location = new System.Drawing.Point(286, 117);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(75, 23);
             this.progressBar1.TabIndex = 21;
+            this.progressBar1.Click += new System.EventHandler(this.PaletteChanged);
             // 
             // sfSmithChart1
             // 
@@ -3050,14 +3057,15 @@
             this.sfSmithChart1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
             this.sfSmithChart1.HorizontalAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
             this.sfSmithChart1.Legend.Style.LabelFont = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.sfSmithChart1.Location = new System.Drawing.Point(287, 117);
+            this.sfSmithChart1.Location = new System.Drawing.Point(476, 70);
             this.sfSmithChart1.Name = "sfSmithChart1";
             this.sfSmithChart1.RadialAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
-            this.sfSmithChart1.Size = new System.Drawing.Size(806, 506);
+            this.sfSmithChart1.Size = new System.Drawing.Size(1224, 553);
             this.sfSmithChart1.Style.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
             this.sfSmithChart1.TabIndex = 22;
             this.sfSmithChart1.Text = "Smith Chart";
             this.sfSmithChart1.TooltipOptions.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.sfSmithChart1.Click += new System.EventHandler(this.sfSmithChart1_Click);
             // 
             // listView1
             // 
@@ -3069,9 +3077,9 @@
             this.columnHeader5,
             this.columnHeader6});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(946, 21);
+            this.listView1.Location = new System.Drawing.Point(448, 58);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(397, 215);
+            this.listView1.Size = new System.Drawing.Size(380, 116);
             this.listView1.TabIndex = 23;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -3102,7 +3110,7 @@
             // 
             // zedGraphControl1
             // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(946, 243);
+            this.zedGraphControl1.Location = new System.Drawing.Point(287, 181);
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
@@ -3112,7 +3120,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(397, 380);
+            this.zedGraphControl1.Size = new System.Drawing.Size(541, 442);
             this.zedGraphControl1.TabIndex = 24;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
