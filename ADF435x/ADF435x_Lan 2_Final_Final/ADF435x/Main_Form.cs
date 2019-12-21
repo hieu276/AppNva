@@ -249,6 +249,7 @@ namespace ADF435x
             Scale xScale = zedGraphControl1.GraphPane.XAxis.Scale;
             Scale yScale = zedGraphControl1.GraphPane.YAxis.Scale;
 
+
             // Tự động Scale theo trục x
             if (frequency > xScale.Max - xScale.MajorStep)
             {
