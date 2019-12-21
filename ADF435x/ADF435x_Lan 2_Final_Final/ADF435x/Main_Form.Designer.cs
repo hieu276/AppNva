@@ -2977,7 +2977,7 @@
             this.helpToolStripMenuItem});
             this.MainFormMenu.Location = new System.Drawing.Point(0, 0);
             this.MainFormMenu.Name = "MainFormMenu";
-            this.MainFormMenu.Size = new System.Drawing.Size(1343, 28);
+            this.MainFormMenu.Size = new System.Drawing.Size(1343, 30);
             this.MainFormMenu.TabIndex = 2;
             this.MainFormMenu.Text = "menuStrip1";
             // 
@@ -3158,7 +3158,7 @@
             this.MaximizeBox = false;
             this.Name = "Main_Form";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Analog Devices ADF435x Software";
+            this.Text = "VNA_KSCLC THCN K61";
             this.Load += new System.EventHandler(this.Main_Form_Load);
             this.Leave += new System.EventHandler(this.exitToolStripMenuItem_Click);
             this.MainFormStatusBar.ResumeLayout(false);
