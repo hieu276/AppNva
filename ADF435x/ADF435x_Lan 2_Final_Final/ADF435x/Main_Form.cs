@@ -71,16 +71,15 @@ namespace ADF435x
 
         
         // biến string để lấy dữ liệu từ Serial
-        string Srl_db = String.Empty;
-        string Sphi_deg = String.Empty;
-        string Srs = String.Empty;
-        string Sxs = String.Empty;
-        string Sswr = String.Empty;
-        string Sz = String.Empty;
-        string Sre = String.Empty;
-        string Sim = String.Empty;
+        string Srl_db = String.Empty; //S11
+        string Sphi_deg = String.Empty; // pha 
+        string Srs = String.Empty;     // phức hóa S11, phần thực
+        string Sxs = String.Empty;      // phần ảo
+        string Sswr = String.Empty;    // swr, tỉ số sóng đứng
+        string Sz = String.Empty;     // trở kháng 
+        string Sre = String.Empty;     // phần thực để vẽ smith chart
+        string Sim = String.Empty;     // phần ảo vẽ smith chart
         string Sfrequency = String.Empty;
-        string Ss_parameter = String.Empty;
 
 
         int status = 0; // Khai báo biến để xử lý sự kiện vẽ đồ thị
@@ -93,7 +92,6 @@ namespace ADF435x
         double re = 0;// dùng để vẽ smith chart
         double im = 0;// dùng để vẽ smith chart
         double frequency = 0;
-        double s_parameter = 0;
 
 
         ViewModel vm = new ViewModel(); //Khai báo ...
@@ -152,12 +150,12 @@ namespace ADF435x
 
             // Khởi tạo ZedGraph
             GraphPane myPane = zedGraphControl1.GraphPane;
-            myPane.Title.Text = "Đồ thị S-parameter";
+            myPane.Title.Text = "Đồ thị S11";
             myPane.XAxis.Title.Text = "Frequency";
-            myPane.YAxis.Title.Text = "S-parameter";
+            myPane.YAxis.Title.Text = "S11";
 
             RollingPointPairList list = new RollingPointPairList(60000);
-            LineItem curve = myPane.AddCurve("S-parameter", list, Color.Red, SymbolType.None);
+            LineItem curve = myPane.AddCurve("S11", list, Color.Red, SymbolType.None);
 
             myPane.XAxis.Scale.Min = 0;
             myPane.XAxis.Scale.Max = 30;
@@ -229,10 +227,9 @@ namespace ADF435x
             else
             {
                 ListViewItem item = new ListViewItem(frequency.ToString()); // Gán biến frequency vào cột đầu tiên của ListView
-                item.SubItems.Add(s_parameter.ToString());
-                listView1.Items.Add(item); // Gán biến datas vào cột tiếp theo của ListView
-                                           // Không nên gán string SDatas vì khi xuất dữ liệu sang Excel sẽ là dạng string, không thực hiện các phép toán được
-
+                item.SubItems.Add(rl_db.ToString()); // questionable
+                listView1.Items.Add(item); // Không nên gán string SDatas vì khi xuất dữ liệu sang Excel sẽ là dạng string, không thực hiện các phép toán được
+             
                 listView1.Items[listView1.Items.Count - 1].EnsureVisible(); // Hiện thị dòng được gán gần nhất ở ListView, tức là mình cuộn ListView theo dữ liệu gần nhất đó
             }
         }
@@ -253,7 +250,7 @@ namespace ADF435x
             if (list == null)
                 return;
 
-            list.Add(frequency, s_parameter); // Thêm điểm trên đồ thị
+            list.Add(frequency, rl_db); // Thêm điểm trên đồ thị
 
             Scale xScale = zedGraphControl1.GraphPane.XAxis.Scale;
             Scale yScale = zedGraphControl1.GraphPane.YAxis.Scale;
@@ -267,13 +264,13 @@ namespace ADF435x
             }
 
             // Tự động Scale theo trục y
-            if (s_parameter > yScale.Max - yScale.MajorStep)
+            if (rl_db > yScale.Max - yScale.MajorStep)
             {
-                yScale.Max = s_parameter + yScale.MajorStep;
+                yScale.Max = rl_db + yScale.MajorStep;
             }
-            else if (s_parameter < yScale.Min + yScale.MajorStep)
+            else if (rl_db < yScale.Min + yScale.MajorStep)
             {
-                yScale.Min = s_parameter - yScale.MajorStep;
+                yScale.Min = rl_db - yScale.MajorStep;
             }
 
             zedGraphControl1.AxisChange();
@@ -290,12 +287,12 @@ namespace ADF435x
             zedGraphControl1.Invalidate();
 
             GraphPane myPane = zedGraphControl1.GraphPane;
-            myPane.Title.Text = "Đồ thị S-parameter";
+            myPane.Title.Text = "Đồ thị S11";
             myPane.XAxis.Title.Text = "Frequency";
-            myPane.YAxis.Title.Text = "S-parameter";
+            myPane.YAxis.Title.Text = "S11";
 
             RollingPointPairList list = new RollingPointPairList(60000);
-            LineItem curve = myPane.AddCurve("S-parameter", list, Color.Red, SymbolType.None);
+            LineItem curve = myPane.AddCurve("S11", list, Color.Red, SymbolType.None);
 
             myPane.XAxis.Scale.Min = 0;
             myPane.XAxis.Scale.Max = 30;
@@ -310,8 +307,8 @@ namespace ADF435x
         private void ResetValue()
         {
             frequency = 0;
-            s_parameter = 0;
-            Ss_parameter = String.Empty;
+            rl_db = 0;
+            Srl_db = String.Empty;
             Sfrequency = String.Empty;
             status = 0; // Chuyển status về 0
         }// Hàm lưu ListView sang Excel
@@ -325,7 +322,7 @@ namespace ADF435x
             // Đặt tên cho hai ô A1. B1 lần lượt là "Thời gian (s)" và "Dữ liệu", sau đó tự động dãn độ rộng
             Microsoft.Office.Interop.Excel.Range rg = (Microsoft.Office.Interop.Excel.Range)ws.get_Range("A1", "B1");
             ws.Cells[1, 1] = "Frequency";
-            ws.Cells[1, 2] = "S_parameter";
+            ws.Cells[1, 2] = "rl_db";
             rg.Columns.AutoFit();
 
             // Lưu từ ô đầu tiên của dòng thứ 2, tức ô A2
@@ -396,7 +393,7 @@ namespace ADF435x
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.WriteLine("0"); //Gửi ký tự "1" qua Serial, chạy hàm tạo Random ở Arduino
+                serialPort1.WriteLine("0"); //Gửi kí tự 0 cho arduino, bắt đầu quá trình đo và tính toán 
             }
             else
                 MessageBox.Show("Bạn không thể chạy khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -406,7 +403,7 @@ namespace ADF435x
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.WriteLine("1"); //Gửi ký tự "0" qua Serial, Dừng Arduino
+                serialPort1.WriteLine("1"); //Gửi ký tự "1" qua Serial, dừng quá trình đo
             }
             else
                 MessageBox.Show("Bạn không thể dừng khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
