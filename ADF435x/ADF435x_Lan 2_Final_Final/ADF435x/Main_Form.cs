@@ -90,8 +90,7 @@ namespace ADF435x
         double z = 0;
         double re = 0;// dùng để vẽ smith chart
         double im = 0;// dùng để vẽ smith chart
-        int frequency = 0;
-
+        double frequency = 0; //lấy từ phần phát 
 
         ViewModel vm = new ViewModel(); //Khai báo ...
 
@@ -308,7 +307,6 @@ namespace ADF435x
             frequency = 0;
             rl_db = 0;
             Srl_db = String.Empty;
-            Sfrequency = String.Empty;
             status = 0; // Chuyển status về 0
         }// Hàm lưu ListView sang Excel
         private void SaveToExcel()
@@ -1846,9 +1844,11 @@ namespace ADF435x
 
 
 
+
+
             while ((SweepCur <= SweepStop) & SweepActive)
             {
-
+                frequency = SweepCur;
                 RFOutFreqBox.Text = SweepCur.ToString("0.000");
                 BuildRegisters();
                 WriteAllButton.PerformClick();

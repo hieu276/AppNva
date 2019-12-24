@@ -149,6 +149,6 @@ void loop(){
     Serial.print(g_pt.swr);
     Serial.print("|");
     Serial.println(g_pt.z);
-    delay(1000);
+    delay(500);
   }
 }

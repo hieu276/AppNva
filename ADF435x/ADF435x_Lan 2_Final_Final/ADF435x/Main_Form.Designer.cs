@@ -2573,7 +2573,7 @@
             this.SweepDelayBox.Name = "SweepDelayBox";
             this.SweepDelayBox.Size = new System.Drawing.Size(107, 22);
             this.SweepDelayBox.TabIndex = 3;
-            this.SweepDelayBox.Text = "100";
+            this.SweepDelayBox.Text = "500";
             // 
             // SweepStopBox
             // 
