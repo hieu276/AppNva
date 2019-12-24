@@ -71,6 +71,7 @@
             this.BSCWarning1Icon = new System.Windows.Forms.PictureBox();
             this.BSCWarning2Icon = new System.Windows.Forms.PictureBox();
             this.BSCWarning3Icon = new System.Windows.Forms.PictureBox();
+            this.DeviceWarningIcon = new System.Windows.Forms.PictureBox();
             this.SweepHopTab = new System.Windows.Forms.TabPage();
             this.RegistersTab = new System.Windows.Forms.TabPage();
             this.WriteR5HexButton = new System.Windows.Forms.Button();
@@ -257,11 +258,7 @@
             this.MainFormMenu = new System.Windows.Forms.MenuStrip();
             this.btConnect = new System.Windows.Forms.Button();
             this.btSave = new System.Windows.Forms.Button();
-            this.btPause = new System.Windows.Forms.Button();
-            this.btExit = new System.Windows.Forms.Button();
             this.btClear = new System.Windows.Forms.Button();
-            this.btRun = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.sfSmithChart1 = new Syncfusion.WinForms.SmithChart.SfSmithChart();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -278,7 +275,6 @@
             this.UsingSPISELBLabel = new System.Windows.Forms.Label();
             this.PartInUseLabel2 = new System.Windows.Forms.Label();
             this.SoftwareVersionLabel = new System.Windows.Forms.Label();
-            this.DeviceWarningIcon = new System.Windows.Forms.PictureBox();
             this.WarningsLabel = new System.Windows.Forms.Label();
             this.WarningsIcon = new System.Windows.Forms.PictureBox();
             this.WarningsPanel = new System.Windows.Forms.Panel();
@@ -296,6 +292,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning1Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning2Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning3Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DeviceWarningIcon)).BeginInit();
             this.RegistersTab.SuspendLayout();
             this.MainControlsTab.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -315,7 +312,6 @@
             this.panel1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.MainFormMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeviceWarningIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarningsIcon)).BeginInit();
             this.WarningsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -755,6 +751,19 @@
             this.BSCWarning3Icon.TabStop = false;
             this.WarningTooltip.SetToolTip(this.BSCWarning3Icon, "Band Select Clock Frequency too high. It should be less than 125 kHz.");
             this.BSCWarning3Icon.Visible = false;
+            // 
+            // DeviceWarningIcon
+            // 
+            this.DeviceWarningIcon.Image = ((System.Drawing.Image)(resources.GetObject("DeviceWarningIcon.Image")));
+            this.DeviceWarningIcon.Location = new System.Drawing.Point(1104, 670);
+            this.DeviceWarningIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.DeviceWarningIcon.Name = "DeviceWarningIcon";
+            this.DeviceWarningIcon.Size = new System.Drawing.Size(24, 22);
+            this.DeviceWarningIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DeviceWarningIcon.TabIndex = 13;
+            this.DeviceWarningIcon.TabStop = false;
+            this.WarningTooltip.SetToolTip(this.DeviceWarningIcon, "Return to the Select Device and Connection tab and choose a device.");
+            this.DeviceWarningIcon.Visible = false;
             // 
             // SweepHopTab
             // 
@@ -2895,31 +2904,9 @@
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
-            // btPause
-            // 
-            this.btPause.Location = new System.Drawing.Point(368, 117);
-            this.btPause.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btPause.Name = "btPause";
-            this.btPause.Size = new System.Drawing.Size(75, 26);
-            this.btPause.TabIndex = 17;
-            this.btPause.Text = "Pause";
-            this.btPause.UseVisualStyleBackColor = true;
-            this.btPause.Click += new System.EventHandler(this.btPause_Click);
-            // 
-            // btExit
-            // 
-            this.btExit.Location = new System.Drawing.Point(285, 146);
-            this.btExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(75, 28);
-            this.btExit.TabIndex = 18;
-            this.btExit.Text = "Exit";
-            this.btExit.UseVisualStyleBackColor = true;
-            this.btExit.Click += new System.EventHandler(this.btExit_Click);
-            // 
             // btClear
             // 
-            this.btClear.Location = new System.Drawing.Point(367, 146);
+            this.btClear.Location = new System.Drawing.Point(368, 86);
             this.btClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btClear.Name = "btClear";
             this.btClear.Size = new System.Drawing.Size(75, 28);
@@ -2927,26 +2914,6 @@
             this.btClear.Text = "Clear";
             this.btClear.UseVisualStyleBackColor = true;
             this.btClear.Click += new System.EventHandler(this.btClear_Click);
-            // 
-            // btRun
-            // 
-            this.btRun.Location = new System.Drawing.Point(368, 89);
-            this.btRun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btRun.Name = "btRun";
-            this.btRun.Size = new System.Drawing.Size(75, 23);
-            this.btRun.TabIndex = 20;
-            this.btRun.Text = "Run";
-            this.btRun.UseVisualStyleBackColor = true;
-            this.btRun.Click += new System.EventHandler(this.btRun_Click);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(285, 117);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(75, 23);
-            this.progressBar1.TabIndex = 21;
-            this.progressBar1.Click += new System.EventHandler(this.PaletteChanged);
             // 
             // sfSmithChart1
             // 
@@ -3093,19 +3060,6 @@
             this.SoftwareVersionLabel.Text = "1.2.3";
             this.SoftwareVersionLabel.Visible = false;
             // 
-            // DeviceWarningIcon
-            // 
-            this.DeviceWarningIcon.Image = ((System.Drawing.Image)(resources.GetObject("DeviceWarningIcon.Image")));
-            this.DeviceWarningIcon.Location = new System.Drawing.Point(1104, 670);
-            this.DeviceWarningIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.DeviceWarningIcon.Name = "DeviceWarningIcon";
-            this.DeviceWarningIcon.Size = new System.Drawing.Size(24, 22);
-            this.DeviceWarningIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DeviceWarningIcon.TabIndex = 13;
-            this.DeviceWarningIcon.TabStop = false;
-            this.WarningTooltip.SetToolTip(this.DeviceWarningIcon, "Return to the Select Device and Connection tab and choose a device.");
-            this.DeviceWarningIcon.Visible = false;
-            // 
             // WarningsLabel
             // 
             this.WarningsLabel.AutoSize = true;
@@ -3147,11 +3101,7 @@
             this.Controls.Add(this.zedGraphControl1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.sfSmithChart1);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.btRun);
             this.Controls.Add(this.btClear);
-            this.Controls.Add(this.btExit);
-            this.Controls.Add(this.btPause);
             this.Controls.Add(this.btSave);
             this.Controls.Add(this.btConnect);
             this.Controls.Add(this.comboBox1);
@@ -3192,6 +3142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning1Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning2Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BSCWarning3Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DeviceWarningIcon)).EndInit();
             this.RegistersTab.ResumeLayout(false);
             this.RegistersTab.PerformLayout();
             this.MainControlsTab.ResumeLayout(false);
@@ -3222,7 +3173,6 @@
             this.TabControl.ResumeLayout(false);
             this.MainFormMenu.ResumeLayout(false);
             this.MainFormMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DeviceWarningIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WarningsIcon)).EndInit();
             this.WarningsPanel.ResumeLayout(false);
             this.WarningsPanel.PerformLayout();
@@ -3462,11 +3412,7 @@
         private System.Windows.Forms.MenuStrip MainFormMenu;
         private System.Windows.Forms.Button btConnect;
         private System.Windows.Forms.Button btSave;
-        private System.Windows.Forms.Button btPause;
-        private System.Windows.Forms.Button btExit;
         private System.Windows.Forms.Button btClear;
-        private System.Windows.Forms.Button btRun;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private Syncfusion.WinForms.SmithChart.SfSmithChart sfSmithChart1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;

@@ -79,7 +79,6 @@ namespace ADF435x
         string Sz = String.Empty;     // trở kháng 
         string Sre = String.Empty;     // phần thực để vẽ smith chart
         string Sim = String.Empty;     // phần ảo vẽ smith chart
-        string Sfrequency = String.Empty;
 
 
         int status = 0; // Khai báo biến để xử lý sự kiện vẽ đồ thị
@@ -91,7 +90,7 @@ namespace ADF435x
         double z = 0;
         double re = 0;// dùng để vẽ smith chart
         double im = 0;// dùng để vẽ smith chart
-        double frequency = 0;
+        int frequency = 0;
 
 
         ViewModel vm = new ViewModel(); //Khai báo ...
@@ -349,7 +348,6 @@ namespace ADF435x
                 serialPort1.WriteLine("2"); //Gửi ký tự "2" qua Serial, tương ứng với state = 2
                 serialPort1.Close();
                 btConnect.Text = "Kết nối";
-                btExit.Enabled = true;
                 SaveSetting(); // Lưu cổng COM vào ComName
             }
             else
@@ -360,7 +358,6 @@ namespace ADF435x
                     serialPort1.BaudRate = 9600; // Baudrate là 9600, trùng với baudrate của Arduino
                     serialPort1.Open();
                     btConnect.Text = "Ngắt kết nối";
-                    btExit.Enabled = false;
                 }
                 catch
                 {
@@ -368,22 +365,12 @@ namespace ADF435x
                 }
             }
         }
-        // Sự kiện nhấn nút btExit
-        private void btExit_Click(object sender, EventArgs e)
-        {
-            DialogResult traloi;
-            traloi = MessageBox.Show("Bạn có chắc muốn thoát?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-            if (traloi == DialogResult.OK)
-            {
-                Application.Exit(); // Đóng ứng dụng
-            }
-        }
         // Sự kiện nhấn nút btSave
         private void btSave_Click(object sender, EventArgs e)
         {
-            DialogResult traloi;
-            traloi = MessageBox.Show("Bạn có muốn lưu số liệu?", "Lưu", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-            if (traloi == DialogResult.OK)
+            DialogResult response;
+            response = MessageBox.Show("Bạn có muốn lưu số liệu?", "Lưu", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (response == DialogResult.OK)
             {
                 SaveToExcel(); // Thực thi hàm lưu ListView sang Excel
             }
@@ -396,7 +383,7 @@ namespace ADF435x
                 serialPort1.WriteLine("0"); //Gửi kí tự 0 cho arduino, bắt đầu quá trình đo và tính toán 
             }
             else
-                MessageBox.Show("Bạn không thể chạy khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bạn không thể đo khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         // Sự kiện nhấn nút btPause
         private void btPause_Click(object sender, EventArgs e)
@@ -413,13 +400,13 @@ namespace ADF435x
         {
             if (serialPort1.IsOpen)
             {
-                DialogResult traloi;
-                traloi = MessageBox.Show("Bạn có chắc muốn xóa?", "Xóa dữ liệu", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-                if (traloi == DialogResult.OK)
+                DialogResult response;
+                response = MessageBox.Show("Bạn có chắc muốn xóa?", "Xóa dữ liệu", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (response == DialogResult.OK)
                 {
                     if (serialPort1.IsOpen)
                     {
-                        serialPort1.Write("2"); //Gửi ký tự "2" qua Serial
+                     
                         listView1.Items.Clear(); // Xóa listview
 
                         //Xóa đường trong đồ thị
@@ -434,96 +421,6 @@ namespace ADF435x
             }
             else
                 MessageBox.Show("Bạn không thể xóa khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
-
-        // Đổi màu line Smith Chart
-        private void PaletteChanged(object sender, EventArgs e)
-        {
-            var combo = sender as ComboBox;
-            if (combo.SelectedIndex == 0)
-                sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.Metro;
-            else if (combo.SelectedIndex == 1)
-                sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.WarmCold;
-            else if (combo.SelectedIndex == 2)
-                sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.Triad;
-            else if (combo.SelectedIndex == 3)
-                sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.Colorful;
-            else if (combo.SelectedIndex == 4)
-                sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.Nature;
-        }
-        // Chú thích cho Smith Chart
-        private void LegendPosition(object sender, EventArgs e)
-        {
-            var combo = sender as ComboBox;
-            if (combo.SelectedIndex == 0)
-                sfSmithChart1.Legend.DockPosition = Syncfusion.WinForms.SmithChart.ChartDockPosition.Top;
-            else if (combo.SelectedIndex == 1)
-                sfSmithChart1.Legend.DockPosition = Syncfusion.WinForms.SmithChart.ChartDockPosition.Left;
-            else if (combo.SelectedIndex == 2)
-                sfSmithChart1.Legend.DockPosition = Syncfusion.WinForms.SmithChart.ChartDockPosition.Right;
-            else if (combo.SelectedIndex == 3)
-                sfSmithChart1.Legend.DockPosition = Syncfusion.WinForms.SmithChart.ChartDockPosition.Bottom;
-            else
-                sfSmithChart1.Legend.DockPosition = Syncfusion.WinForms.SmithChart.ChartDockPosition.Floating;
-        }
-
-
-        private void RadialMinor(object sender, EventArgs e)
-        {
-            var check = sender as CheckBox;
-            if (check.Checked)
-                sfSmithChart1.RadialAxis.MinorGridlinesVisible = true;
-            else
-                sfSmithChart1.RadialAxis.MinorGridlinesVisible = false;
-        }
-
-
-        private void HorizontalMinor(object sender, EventArgs e)
-        {
-            var check = sender as CheckBox;
-            if (check.Checked)
-                sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = true;
-            else
-                sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = false;
-        }
-
-
-        private void Radius(object sender, EventArgs e)
-        {
-            var combo = sender as ComboBox;
-            if (combo.SelectedIndex == 0)
-                sfSmithChart1.Radius = 0.1f;
-            else if (combo.SelectedIndex == 1)
-                sfSmithChart1.Radius = 0.2f;
-            else if (combo.SelectedIndex == 2)
-                sfSmithChart1.Radius = 0.3f;
-            else if (combo.SelectedIndex == 3)
-                sfSmithChart1.Radius = 0.4f;
-            else if (combo.SelectedIndex == 4)
-                sfSmithChart1.Radius = 0.5f;
-            else if (combo.SelectedIndex == 5)
-                sfSmithChart1.Radius = 0.6f;
-            else if (combo.SelectedIndex == 6)
-                sfSmithChart1.Radius = 0.7f;
-            else if (combo.SelectedIndex == 7)
-                sfSmithChart1.Radius = 0.8f;
-            else if (combo.SelectedIndex == 8)
-                sfSmithChart1.Radius = 0.9f;
-            else if (combo.SelectedIndex == 9)
-                sfSmithChart1.Radius = 1f;
-        }
-        private void VisualStyleChanged(object sender, EventArgs e)
-        {
-            var combo = sender as ComboBox;
-            if (combo.SelectedIndex == 0)
-                sfSmithChart1.ThemeName = "Office2016White";
-            else if (combo.SelectedIndex == 1)
-                sfSmithChart1.ThemeName = "Office2016DarkGray";
-            else if (combo.SelectedIndex == 2)
-                sfSmithChart1.ThemeName = "Office2016Colorful";
-            else
-                sfSmithChart1.ThemeName = "Office2016Black";
         }
 
 
@@ -1873,6 +1770,8 @@ namespace ADF435x
         private void SweepStartButton_Click(object sender, EventArgs e)
         {
 
+            btRun_Click(sender,e); // bind nút start của phần phát với nút run của phần thu, xóa nút run
+
 
             SweepStartButton.Enabled = false;       // Update buttons on GUI
             SweepStopButton.Enabled = true;
@@ -2007,6 +1906,7 @@ namespace ADF435x
 
         private void SweepStopButton_Click(object sender, EventArgs e)
         {
+            btPause_Click(sender,e); // bind nút stop của phần phát với nút pause của phần thu, xóa pause phần thu
             SweepActive = false;
             SweepProgress.Value = 100;
             SweepPercentage.Text = "100%";
