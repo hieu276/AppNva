@@ -115,31 +115,22 @@ namespace ADF435x
 
             this.FormClosing += new FormClosingEventHandler(exitEventHandler);
             
-            //real impedance part 
+            //S11 smith chart
             LineSeries series = new LineSeries();
             series.MarkerVisible = true;
-            series.LegendText = "real";
+            series.LegendText = "S11";
             series.DataSource = vm.Trace1;
-            series.ResistanceMember = "Resistance";
-            series.ReactanceMember = "Reactance";
+            series.ResistanceMember = "Re";
+            series.ReactanceMember = "Im";
             series.TooltipVisible = true;
             sfSmithChart1.Series.Add(series);
 
-            // complex impedance part
-            LineSeries series1 = new LineSeries();
-            series1.MarkerVisible = true;
-            series1.LegendText = "complex";
-            series1.DataSource = vm.Trace2;
-            series1.ResistanceMember = "Resistance";
-            series1.ReactanceMember = "Reactance";
-            series1.TooltipVisible = true;
-            sfSmithChart1.Series.Add(series1);
 
             sfSmithChart1.RadialAxis.MinorGridlinesVisible = true;
             sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = true;
 
             sfSmithChart1.ThemeName = "Office2016White";
-            sfSmithChart1.Legend.Visible = true;
+            sfSmithChart1.Legend.Visible = false;
         }
         private void Main_Form_Load(object sender, EventArgs e)
         {
@@ -148,17 +139,16 @@ namespace ADF435x
 
             // Khởi tạo ZedGraph
             GraphPane myPane = zedGraphControl1.GraphPane;
-            myPane.Title.Text = "Đồ thị S11";
+            myPane.Title.Text = "Return Loss";
             myPane.XAxis.Title.Text = "Frequency";
-            myPane.YAxis.Title.Text = "S11";
+            myPane.YAxis.Title.Text = "Return Loss";
 
             RollingPointPairList list = new RollingPointPairList(60000);
-            LineItem curve = myPane.AddCurve("S11", list, Color.Red, SymbolType.None);
-
-            myPane.XAxis.Scale.Min = 0;
-            myPane.XAxis.Scale.Max = 30;
-            myPane.XAxis.Scale.MinorStep = 1;
-            myPane.XAxis.Scale.MajorStep = 5;
+            LineItem curve = myPane.AddCurve("Return Loss", list, Color.Red, SymbolType.None);
+            myPane.XAxis.Scale.Min = 350;
+            myPane.XAxis.Scale.Max = 2700;
+            myPane.XAxis.Scale.MinorStep = 100;
+            myPane.XAxis.Scale.MajorStep = 500;
             myPane.YAxis.Scale.Min = -100;
             myPane.YAxis.Scale.Max = 0;
 
@@ -225,7 +215,12 @@ namespace ADF435x
             else
             {
                 ListViewItem item = new ListViewItem(frequency.ToString()); // Gán biến frequency vào cột đầu tiên của ListView
-                item.SubItems.Add(rl_db.ToString()); // questionable
+                item.SubItems.Add(rl_db.ToString());
+                item.SubItems.Add(phi_deg.ToString());
+                item.SubItems.Add(rs.ToString());
+                item.SubItems.Add(xs.ToString());
+                item.SubItems.Add(swr.ToString());
+                item.SubItems.Add(z.ToString());
                 listView1.Items.Add(item); // Không nên gán string SDatas vì khi xuất dữ liệu sang Excel sẽ là dạng string, không thực hiện các phép toán được
              
                 listView1.Items[listView1.Items.Count - 1].EnsureVisible(); // Hiện thị dòng được gán gần nhất ở ListView, tức là mình cuộn ListView theo dữ liệu gần nhất đó
@@ -254,22 +249,22 @@ namespace ADF435x
             Scale yScale = zedGraphControl1.GraphPane.YAxis.Scale;
 
 
-            // Tự động Scale theo trục x
-            if (frequency > xScale.Max - xScale.MajorStep)
-            {
-                xScale.Max = frequency + xScale.MajorStep;
-                xScale.Min = xScale.Max - 30;
-            }
+            //// Tự động Scale theo trục x
+            //if (frequency > xScale.Max - xScale.MajorStep)
+            //{
+            //    xScale.Max = frequency + xScale.MajorStep;
+            //    xScale.Min = xScale.Max - 30;
+            //}
 
-            // Tự động Scale theo trục y
-            if (rl_db > yScale.Max - yScale.MajorStep)
-            {
-                yScale.Max = rl_db + yScale.MajorStep;
-            }
-            else if (rl_db < yScale.Min + yScale.MajorStep)
-            {
-                yScale.Min = rl_db - yScale.MajorStep;
-            }
+            //// Tự động Scale theo trục y
+            //if (rl_db > yScale.Max - yScale.MajorStep)
+            //{
+            //    yScale.Max = rl_db + yScale.MajorStep;
+            //}
+            //else if (rl_db < yScale.Min + yScale.MajorStep)
+            //{
+            //    yScale.Min = rl_db - yScale.MajorStep;
+            //}
 
             zedGraphControl1.AxisChange();
             zedGraphControl1.Invalidate();
@@ -316,10 +311,15 @@ namespace ADF435x
             Microsoft.Office.Interop.Excel.Workbook wb = xla.Workbooks.Add(Microsoft.Office.Interop.Excel.XlSheetType.xlWorksheet);
             Microsoft.Office.Interop.Excel.Worksheet ws = (Microsoft.Office.Interop.Excel.Worksheet)xla.ActiveSheet;
 
-            // Đặt tên cho hai ô A1. B1 lần lượt là "Thời gian (s)" và "Dữ liệu", sau đó tự động dãn độ rộng
+            // đặt tên cột
             Microsoft.Office.Interop.Excel.Range rg = (Microsoft.Office.Interop.Excel.Range)ws.get_Range("A1", "B1");
-            ws.Cells[1, 1] = "Frequency";
-            ws.Cells[1, 2] = "rl_db";
+            ws.Cells[1, 1] = "Tần số";
+            ws.Cells[1, 2] = "Return Loss";
+            ws.Cells[1, 3] = "Phase";
+            ws.Cells[1, 4] = "Rs";
+            ws.Cells[1, 5] = "Xs";
+            ws.Cells[1, 6] = "Swr";
+            ws.Cells[1, 7] = "Z";
             rg.Columns.AutoFit();
 
             // Lưu từ ô đầu tiên của dòng thứ 2, tức ô A2
