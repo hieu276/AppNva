@@ -92,8 +92,7 @@ namespace ADF435x
         double im = 0;// dùng để vẽ smith chart
         double frequency = 0; //lấy từ phần phát 
 
-        ViewModel vm = new ViewModel(); //Khai báo ...
-
+        SmithLineModel model = new SmithLineModel();
 
         #endregion
 
@@ -114,12 +113,13 @@ namespace ADF435x
             usbDevices.DeviceRemoved += new EventHandler(usbDevices_DeviceRemoved);
 
             this.FormClosing += new FormClosingEventHandler(exitEventHandler);
-            
+
+           
             //S11 smith chart
             LineSeries series = new LineSeries();
             series.MarkerVisible = true;
             series.LegendText = "S11";
-            series.DataSource = vm.Trace1;
+            series.DataSource = model.Trace1;
             series.ResistanceMember = "Re";
             series.ReactanceMember = "Im";
             series.TooltipVisible = true;
@@ -177,7 +177,7 @@ namespace ADF435x
             Properties.Settings.Default.Save();
         }
         // Nhận và xử lý string gửi từ Serial
-        private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        public void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             try
             {
@@ -200,6 +200,9 @@ namespace ADF435x
                 double.TryParse(Sim, out im);
                 double.TryParse(Sswr, out swr);
                 double.TryParse(Sz, out z);
+
+                SmithPointModel tmp = new SmithPointModel() {Re = re, Im = im};
+                model.Trace1.Add(tmp);
                 status = 1; // Bắt sự kiện xử lý xong chuỗi, đổi starus về 1 để hiển thị dữ liệu trong ListView và vẽ đồ thị
             }
             catch
@@ -2266,55 +2269,28 @@ namespace ADF435x
 
     }
 
-    public class Model
-    {
-        public double Resistance { get; set; }
 
-        public double Reactance { get; set; }
-    }
-    public class ViewModel
+    public class SmithPointModel
     {
-        public ViewModel()
+        public double Re { get; set; }
+
+        public double Im { get; set; }
+    }
+
+    public class SmithLineModel
+    {
+        public SmithLineModel()
         {
-            Trace1 = new ObservableCollection<Model>();
+            Trace1 = new ObservableCollection<SmithPointModel>();
 
-            Trace1.Add(new Model() { Resistance = 0, Reactance = 0.05 });
-            Trace1.Add(new Model() { Resistance = 0.3, Reactance = 0.1 });
-            Trace1.Add(new Model() { Resistance = 0.5, Reactance = 0.2 });
-            Trace1.Add(new Model() { Resistance = 1.0, Reactance = 0.4 });
-            Trace1.Add(new Model() { Resistance = 1.5, Reactance = 0.5 });
-            Trace1.Add(new Model() { Resistance = 2.0, Reactance = 0.5 });
-            Trace1.Add(new Model() { Resistance = 2.5, Reactance = 0.4 });
-            Trace1.Add(new Model() { Resistance = 3.5, Reactance = 0.0 });
-            Trace1.Add(new Model() { Resistance = 4.5, Reactance = -0.5 });
-            Trace1.Add(new Model() { Resistance = 5, Reactance = -1.0 });
-            Trace1.Add(new Model() { Resistance = 6, Reactance = -1.5 });
-            Trace1.Add(new Model() { Resistance = 7, Reactance = -2.5 });
-            Trace1.Add(new Model() { Resistance = 8, Reactance = -3.5 });
-            Trace1.Add(new Model() { Resistance = 9, Reactance = -4.5 });
-            Trace1.Add(new Model() { Resistance = 10, Reactance = -10 });
-            Trace1.Add(new Model() { Resistance = 20, Reactance = -50 });
 
-            Trace2 = new ObservableCollection<Model>();
-
-            Trace2.Add(new Model() { Resistance = 0, Reactance = 0.15 });
-            Trace2.Add(new Model() { Resistance = 0.3, Reactance = 0.2 });
-            Trace2.Add(new Model() { Resistance = 0.5, Reactance = 0.4 });
-            Trace2.Add(new Model() { Resistance = 1.0, Reactance = 0.8 });
-            Trace2.Add(new Model() { Resistance = 1.5, Reactance = 1.0 });
-            Trace2.Add(new Model() { Resistance = 2.0, Reactance = 1.2 });
-            Trace2.Add(new Model() { Resistance = 2.5, Reactance = 1.3 });
-            Trace2.Add(new Model() { Resistance = 3.5, Reactance = 1.6 });
-            Trace2.Add(new Model() { Resistance = 4.5, Reactance = 2.0 });
-            Trace2.Add(new Model() { Resistance = 6, Reactance = 4.5 });
-            Trace2.Add(new Model() { Resistance = 8, Reactance = 6 });
-            Trace2.Add(new Model() { Resistance = 10, Reactance = 25 });
         }
-
-        public ObservableCollection<Model> Trace1 { get; set; }
-        public ObservableCollection<Model> Trace2 { get; set; }
+        public void AddMember()
+        {
+            Trace1.Add(new SmithPointModel{Re = 0, Im = 5 });
+        }
+        public ObservableCollection<SmithPointModel> Trace1 { get; set; }
     }
-        
 }
 #endregion
 
