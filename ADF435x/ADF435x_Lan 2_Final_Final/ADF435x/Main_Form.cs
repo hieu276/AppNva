@@ -1595,6 +1595,16 @@ namespace ADF435x
             catch { }
         }
 
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sfSmithChart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
 
         #region Registers tab

@@ -2361,7 +2361,7 @@
             this.DeviceSelectionTab.Padding = new System.Windows.Forms.Padding(4);
             this.DeviceSelectionTab.Size = new System.Drawing.Size(260, 652);
             this.DeviceSelectionTab.TabIndex = 0;
-            this.DeviceSelectionTab.Text = "Select Device and Connection";
+            this.DeviceSelectionTab.Text = "Main Control";
             this.DeviceSelectionTab.UseVisualStyleBackColor = true;
             // 
             // SweepGroupBox
@@ -2933,6 +2933,7 @@
             this.sfSmithChart1.TabIndex = 22;
             this.sfSmithChart1.Text = "Smith Chart";
             this.sfSmithChart1.TooltipOptions.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.sfSmithChart1.Click += new System.EventHandler(this.sfSmithChart1_Click);
             // 
             // listView1
             // 
@@ -2952,6 +2953,11 @@
             this.listView1.TabIndex = 23;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "freq";
             // 
             // columnHeader7
             // 
