@@ -2359,7 +2359,7 @@
             this.DeviceSelectionTab.Margin = new System.Windows.Forms.Padding(4);
             this.DeviceSelectionTab.Name = "DeviceSelectionTab";
             this.DeviceSelectionTab.Padding = new System.Windows.Forms.Padding(4);
-            this.DeviceSelectionTab.Size = new System.Drawing.Size(260, 652);
+            this.DeviceSelectionTab.Size = new System.Drawing.Size(271, 674);
             this.DeviceSelectionTab.TabIndex = 0;
             this.DeviceSelectionTab.Text = "Main Control";
             this.DeviceSelectionTab.UseVisualStyleBackColor = true;
@@ -2683,20 +2683,20 @@
             // TabControl
             // 
             this.TabControl.Controls.Add(this.DeviceSelectionTab);
-            this.TabControl.Location = new System.Drawing.Point(16, 33);
+            this.TabControl.Location = new System.Drawing.Point(5, 11);
             this.TabControl.Margin = new System.Windows.Forms.Padding(4);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(268, 681);
+            this.TabControl.Size = new System.Drawing.Size(279, 703);
             this.TabControl.TabIndex = 1;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 57);
+            this.comboBox1.Location = new System.Drawing.Point(299, 61);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(75, 24);
+            this.comboBox1.Size = new System.Drawing.Size(81, 24);
             this.comboBox1.TabIndex = 14;
             // 
             // fileToolStripMenuItem
@@ -2885,10 +2885,10 @@
             // 
             // btConnect
             // 
-            this.btConnect.Location = new System.Drawing.Point(368, 58);
+            this.btConnect.Location = new System.Drawing.Point(392, 58);
             this.btConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btConnect.Name = "btConnect";
-            this.btConnect.Size = new System.Drawing.Size(75, 25);
+            this.btConnect.Size = new System.Drawing.Size(90, 38);
             this.btConnect.TabIndex = 15;
             this.btConnect.Text = "Connect";
             this.btConnect.UseVisualStyleBackColor = true;
@@ -2896,10 +2896,10 @@
             // 
             // btSave
             // 
-            this.btSave.Location = new System.Drawing.Point(287, 89);
+            this.btSave.Location = new System.Drawing.Point(297, 102);
             this.btSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSave.Name = "btSave";
-            this.btSave.Size = new System.Drawing.Size(75, 23);
+            this.btSave.Size = new System.Drawing.Size(89, 36);
             this.btSave.TabIndex = 16;
             this.btSave.Text = "Save";
             this.btSave.UseVisualStyleBackColor = true;
@@ -2907,10 +2907,10 @@
             // 
             // btClear
             // 
-            this.btClear.Location = new System.Drawing.Point(368, 86);
+            this.btClear.Location = new System.Drawing.Point(392, 101);
             this.btClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btClear.Name = "btClear";
-            this.btClear.Size = new System.Drawing.Size(75, 28);
+            this.btClear.Size = new System.Drawing.Size(90, 37);
             this.btClear.TabIndex = 19;
             this.btClear.Text = "Clear";
             this.btClear.UseVisualStyleBackColor = true;
@@ -2919,21 +2919,25 @@
             // sfSmithChart1
             // 
             this.sfSmithChart1.AccessibleName = "SfSmithChart";
+            this.sfSmithChart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sfSmithChart1.BackColor = System.Drawing.Color.White;
+            this.sfSmithChart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.sfSmithChart1.ColorModel.CustomColors = null;
             this.sfSmithChart1.ColorModel.Palette = Syncfusion.WinForms.SmithChart.ChartColorPalette.Metro;
             this.sfSmithChart1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
             this.sfSmithChart1.HorizontalAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
             this.sfSmithChart1.Legend.Style.LabelFont = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.sfSmithChart1.Location = new System.Drawing.Point(468, 122);
+            this.sfSmithChart1.Location = new System.Drawing.Point(932, 181);
             this.sfSmithChart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sfSmithChart1.Name = "sfSmithChart1";
             this.sfSmithChart1.RadialAxis.Style.LabelFont = new System.Drawing.Font("Segoe UI", 10F);
-            this.sfSmithChart1.Size = new System.Drawing.Size(1359, 590);
+            this.sfSmithChart1.Size = new System.Drawing.Size(575, 531);
+            this.sfSmithChart1.Style.BackColor = System.Drawing.Color.White;
             this.sfSmithChart1.Style.Font = new System.Drawing.Font("Segoe UI Semibold", 16F);
             this.sfSmithChart1.TabIndex = 22;
-            this.sfSmithChart1.Text = "Smith Chart";
             this.sfSmithChart1.TooltipOptions.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.sfSmithChart1.Click += new System.EventHandler(this.sfSmithChart1_Click);
             // 
             // listView1
             // 
@@ -2946,30 +2950,28 @@
             this.columnHeader5,
             this.columnHeader6});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(448, 58);
+            this.listView1.Location = new System.Drawing.Point(547, 36);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(554, 116);
+            this.listView1.Size = new System.Drawing.Size(956, 116);
             this.listView1.TabIndex = 23;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "freq";
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "freq";
+            this.columnHeader7.Text = "Freq (MHz)";
+            this.columnHeader7.Width = 87;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Return Loss";
+            this.columnHeader1.Text = "Return Loss (dB)";
+            this.columnHeader1.Width = 138;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Phase ";
+            this.columnHeader2.Text = "Phase (deg)";
+            this.columnHeader2.Width = 128;
             // 
             // columnHeader3
             // 
@@ -2986,7 +2988,8 @@
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Z";
+            this.columnHeader6.Text = "Z (Ohm)";
+            this.columnHeader6.Width = 387;
             // 
             // zedGraphControl1
             // 
@@ -3000,7 +3003,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(596, 531);
+            this.zedGraphControl1.Size = new System.Drawing.Size(626, 531);
             this.zedGraphControl1.TabIndex = 24;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 

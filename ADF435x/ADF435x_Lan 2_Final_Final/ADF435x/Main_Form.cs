@@ -125,7 +125,6 @@ namespace ADF435x
             series.TooltipVisible = true;
             sfSmithChart1.Series.Add(series);
 
-
             sfSmithChart1.RadialAxis.MinorGridlinesVisible = true;
             sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = true;
 
@@ -290,14 +289,19 @@ namespace ADF435x
             RollingPointPairList list = new RollingPointPairList(60000);
             LineItem curve = myPane.AddCurve("S11", list, Color.Red, SymbolType.None);
 
-            myPane.XAxis.Scale.Min = 0;
-            myPane.XAxis.Scale.Max = 30;
-            myPane.XAxis.Scale.MinorStep = 1;
-            myPane.XAxis.Scale.MajorStep = 5;
+            myPane.XAxis.Scale.Min = 350;
+            myPane.XAxis.Scale.Max = 2700;
+            myPane.XAxis.Scale.MinorStep = 100;
+            myPane.XAxis.Scale.MajorStep = 500;
             myPane.YAxis.Scale.Min = -100;
             myPane.YAxis.Scale.Max = 0;
 
             zedGraphControl1.AxisChange();
+        }
+        // Xóa Smith chart
+        private void ClearSmithChart()
+        {
+            sfSmithChart1.Series.Clear();
         }
         // Hàm xóa dữ liệu
         private void ResetValue()
@@ -415,6 +419,9 @@ namespace ADF435x
 
                         //Xóa dữ liệu trong Form
                         ResetValue();
+
+                        //xóa đường trong smith chart
+                        ClearSmithChart();
                     }
                     else
                         MessageBox.Show("Bạn không thể dừng khi chưa kết nối với thiết bị", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1597,17 +1604,6 @@ namespace ADF435x
             }
             catch { }
         }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sfSmithChart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         #endregion
 
         #region Registers tab
