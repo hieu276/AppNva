@@ -115,21 +115,7 @@ namespace ADF435x
             this.FormClosing += new FormClosingEventHandler(exitEventHandler);
 
            
-            //S11 smith chart
-            LineSeries series = new LineSeries();
-            series.MarkerVisible = true;
-            series.LegendText = "S11";
-            series.DataSource = model.Trace1;
-            series.ResistanceMember = "Re";
-            series.ReactanceMember = "Im";
-            series.TooltipVisible = true;
-            sfSmithChart1.Series.Add(series);
-
-            sfSmithChart1.RadialAxis.MinorGridlinesVisible = true;
-            sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = true;
-
-            sfSmithChart1.ThemeName = "Office2016White";
-            sfSmithChart1.Legend.Visible = false;
+          
         }
         private void Main_Form_Load(object sender, EventArgs e)
         {
@@ -152,6 +138,22 @@ namespace ADF435x
             myPane.YAxis.Scale.Max = 0;
 
             myPane.AxisChange();
+
+            //S11 smith chart
+            LineSeries series = new LineSeries();
+            series.MarkerVisible = true;
+            series.LegendText = "S11";
+            series.DataSource = model.Trace1;
+            series.ResistanceMember = "Re";
+            series.ReactanceMember = "Im";
+            series.TooltipVisible = true;
+            sfSmithChart1.Series.Add(series);
+
+            sfSmithChart1.RadialAxis.MinorGridlinesVisible = true;
+            sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = true;
+
+            sfSmithChart1.ThemeName = "Office2016White";
+            sfSmithChart1.Legend.Visible = false;
         }
         // Hàm Tick này sẽ bắt sự kiện cổng Serial mở hay không
         private void timer1_Tick(object sender, EventArgs e)
@@ -200,7 +202,7 @@ namespace ADF435x
                 double.TryParse(Sswr, out swr);
                 double.TryParse(Sz, out z);
 
-                SmithPointModel tmp = new SmithPointModel() {Re = re, Im = im};
+                SmithPointModel tmp = new SmithPointModel() {Re = rs/50, Im = xs/50};
                 model.Trace1.Add(tmp);
                 status = 1; // Bắt sự kiện xử lý xong chuỗi, đổi starus về 1 để hiển thị dữ liệu trong ListView và vẽ đồ thị
             }
@@ -302,6 +304,23 @@ namespace ADF435x
         private void ClearSmithChart()
         {
             sfSmithChart1.Series.Clear();
+            model.Trace1.Clear();
+
+            //S11 smith chart
+            LineSeries series = new LineSeries();
+            series.MarkerVisible = true;
+            series.LegendText = "S11";
+            series.DataSource = model.Trace1;
+            series.ResistanceMember = "Re";
+            series.ReactanceMember = "Im";
+            series.TooltipVisible = true;
+            sfSmithChart1.Series.Add(series);
+
+            sfSmithChart1.RadialAxis.MinorGridlinesVisible = true;
+            sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = true;
+
+            sfSmithChart1.ThemeName = "Office2016White";
+            sfSmithChart1.Legend.Visible = false;
         }
         // Hàm xóa dữ liệu
         private void ResetValue()
@@ -352,7 +371,7 @@ namespace ADF435x
             {
                 serialPort1.WriteLine("2"); //Gửi ký tự "2" qua Serial, tương ứng với state = 2
                 serialPort1.Close();
-                btConnect.Text = "Kết nối";
+                btConnect.Text = "Connect";
                 SaveSetting(); // Lưu cổng COM vào ComName
             }
             else
@@ -362,7 +381,7 @@ namespace ADF435x
                     serialPort1.PortName = comboBox1.Text; // Lấy cổng COM
                     serialPort1.BaudRate = 9600; // Baudrate là 9600, trùng với baudrate của Arduino
                     serialPort1.Open();
-                    btConnect.Text = "Ngắt kết nối";
+                    btConnect.Text = "Disconnect";
                 }
                 catch
                 {
@@ -2280,10 +2299,6 @@ namespace ADF435x
             Trace1 = new ObservableCollection<SmithPointModel>();
 
 
-        }
-        public void AddMember()
-        {
-            Trace1.Add(new SmithPointModel{Re = 0, Im = 5 });
         }
         public ObservableCollection<SmithPointModel> Trace1 { get; set; }
     }
