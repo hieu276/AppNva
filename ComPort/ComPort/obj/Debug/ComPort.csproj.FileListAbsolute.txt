@@ -1,0 +1,45 @@
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\bin\Debug\ComPort.exe.config
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\bin\Debug\ComPort.exe
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\bin\Debug\ComPort.pdb
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\obj\Debug\ComPort.csprojResolveAssemblyReference.cache
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\obj\Debug\ComPort.Form1.resources
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\obj\Debug\ComPort.Properties.Resources.resources
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\obj\Debug\ComPort.csproj.GenerateResource.Cache
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\obj\Debug\ComPort.exe
+c:\users\jackman\documents\visual studio 2015\Projects\ComPort\ComPort\obj\Debug\ComPort.pdb
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\bin\Debug\ComPort.exe.config
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\bin\Debug\ComPort.exe
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\bin\Debug\ComPort.pdb
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\obj\Debug\ComPort.csprojAssemblyReference.cache
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\obj\Debug\ComPort.Form1.resources
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\obj\Debug\ComPort.Properties.Resources.resources
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\obj\Debug\ComPort.csproj.GenerateResource.cache
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\obj\Debug\ComPort.csproj.CoreCompileInputs.cache
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\obj\Debug\ComPort.exe
+D:\Local Repos Visual Studio\ComPort\ComPort\ComPort\obj\Debug\ComPort.pdb
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\ComPort.exe.config
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\ComPort.exe
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\ComPort.pdb
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.csprojAssemblyReference.cache
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.Form1.resources
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.Properties.Resources.resources
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.csproj.GenerateResource.cache
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.csproj.CoreCompileInputs.cache
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.exe
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.pdb
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\ZedGraph.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\ZedGraph.xml
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\de\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\es\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\fr\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\hu\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\it\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\ja\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\pt\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\ru\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\sk\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\sv\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\tr\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\Local Repos Visual Studio\ComPort\ComPort\obj\Debug\ComPort.csproj.CopyComplete
